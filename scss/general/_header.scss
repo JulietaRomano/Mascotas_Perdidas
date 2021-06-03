@@ -1,0 +1,90 @@
+//Imagen Logo//
+header{
+    .logo {
+    max-width: 50%;
+    }
+    //carousel index//
+        //caja1//
+    .carouselPortada_container-1{
+        height: 75%;
+        .carouselPortada_caja-1{
+            @include carousel_cajas(50%);
+            //Titulos//
+            h2{
+                @include tituloRammetto(1.875rem,400);
+                color: $celeste;
+            }
+            p{
+                @include textoThambi (1.1875rem,600);
+                color: $texto1;
+            }
+            .carouselPortada_botones{
+                @include flex;
+                justify-content: space-around;
+            }
+        }
+    }
+    //Caja 2 y 3//
+    .carouselPortada_container-2{
+        height: 70%;
+        .carouselPortada_caja-2{
+            @include carousel_cajas(50%);
+
+            h2{
+                @include tituloRammetto(1.875rem,400);
+                color: $celeste;
+            }
+            p{
+                @include textoThambi (1.1875rem,600);
+                color: $texto1;
+            }
+        }
+    }
+    .carouselPortada_container-3{
+        height: 70%;
+        .carouselPortada_caja-3{
+            @include carousel_cajas(0%);
+            h2{
+                @include tituloRammetto(1.875rem,400);
+                color: $celeste;
+            }
+            p{
+                @include textoThambi (1.1875rem,600);
+                color: $texto1;
+            }
+        }
+    }
+    //Portadas para todas las Pages (menos Index)//
+    .portada{
+        position: relative;
+        width: 100vw;
+        font-size: 16px;
+        //Portada Registro.html//
+        .portada_Registro{
+            @include portadas;
+            background-image: url(/Imagenes/Portadas/portada_registro.jpeg);
+            background-position-y:-15em;
+        }
+        /*Portada Colabora*/
+        .portada_Colabora{
+            @include portadas;
+            background-image: url(/Imagenes/Portadas/portada_colabora.jpeg);
+            background-position-y:-6.25em;
+        }
+        /*Portada Reencuentro*/
+        .portada_Reencuentro{
+            @include portadas;
+            background-image: url(/Imagenes/Portadas/portada_reencuentro.jpeg);
+            background-position-y:-9.375em;
+            border-bottom:solid #FFFCF2 0.625em;
+        }
+        /*Portada Tips*/
+        .portada_Tips{
+            @include portadas;
+            background-image: url(/Imagenes/Portadas/portada_tips.jpeg);
+            background-position-y:-11.25em;
+            border-bottom:solid #FFFCF2 0.625em;
+        }
+    }
+}
+

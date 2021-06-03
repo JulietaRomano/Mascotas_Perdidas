@@ -1,0 +1,47 @@
+footer{
+    border-bottom: solid rgb(104, 97, 97);
+    #redes{
+        background-image: url(../Imagenes/Fondos/fondo_footer.png);
+        display:grid;
+        font-size: 16px;
+        grid-template-columns: repeat(2,53.125em);
+        grid-template-rows: repeat(2,3.75em);
+        grid-template-areas: 
+        "titulo img"
+        "logos img";
+        padding: 1.5625em 0 1.5625em 0;
+        .redes_titulos{
+            font-size: 1.4375em;
+            color: rgb(51, 47, 47);
+            margin: auto;
+            grid-area: titulo;
+            font-family: 'Rammetto One', cursive;
+        }
+        .redes_logos{
+            margin: auto;
+            width: 23.75em;
+            display: flex;
+            justify-content: space-around;
+            grid-area: logos;
+            a{
+                img{
+                    width: 3.125em;
+                }
+            }
+        }
+        .redes_imagen{
+            width: 28.125em;
+            grid-area: img;
+            padding-top: 1.5625em;
+            img{
+                width: 30.625em;
+            }
+        }
+    }
+    .pieDePagina{
+        padding: 1.13rem 0 1rem 0;
+        font-weight: 600;
+        background-color: rgb(104, 97, 97);
+        color: white;
+    }
+}

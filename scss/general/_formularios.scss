@@ -1,0 +1,44 @@
+.formularios_Section{
+    background-image: url(../Imagenes/Fondos/fondo_animales.png);
+    display:flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding: 5rem 0rem 3.75rem 0rem;
+    .formularios_Container{
+        width: 35%;
+        border-radius: 1.875rem;
+        background-color: #F9EAD9;
+        padding: 0rem 0.625rem 1.875rem 0.625rem;
+        display: block;
+        box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+        .formularios_Titulo{
+            background-color: #ffd9007a;
+            border-radius: 2.1875rem;
+            width: 18.75rem;
+            margin: auto;
+            margin-top: 0.9375rem;
+            margin-bottom: 1.25rem;
+            padding: 0.3125rem;
+            box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+                h2{
+                @include tituloRammetto (1.25rem,400);
+                color: rgb(87, 84, 84);
+                margin-top:0.625rem;
+                }
+        }
+        .formularios_Texto{
+            padding:0rem 2.5rem 0rem 2.5rem;
+            font-weight: 500;
+            color: rgb(105, 86, 86);
+            font-size: 1.125rem;
+        }
+        .formularios label, input{
+            display: block;
+            font-weight: 700;
+            margin: auto;
+            margin-top: 0.3125rem;
+            margin-bottom: 0.3125rem;
+        }
+    }
+
+}

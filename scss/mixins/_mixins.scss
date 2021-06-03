@@ -1,0 +1,69 @@
+//Display//
+
+@mixin flex {
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+//Tipografia//
+@mixin tituloRammetto ($fontsize,$weight){
+    display: inline-block;
+    position: relative;
+    font-family: 'Rammetto One';
+    font-size: $fontsize;
+    font-weight: $weight;
+}
+@mixin textoThambi ($fontsize,$weight) {
+    font-family: 'Baloo Thambi 2';
+    font-size: $fontsize;
+    font-weight: $weight;
+}
+@mixin SubtitulosIndex{
+    display: inline-block;
+    position: relative;
+    font-size: 2em;
+    color: #fdffff;
+    font-weight: 900;
+    margin-bottom: 2em;
+    border-radius: 1.5625em;
+    border-right: solid 0.1875em $celeste;
+    border-bottom: solid 0.25em $celeste;
+    padding: 0.4em 1.2em 0.4em 1.2em;
+    background-color:#7abeb9;
+}
+//Portadas//
+    //Index Carousel//
+@mixin carousel_cajas ($margin){
+    background-color: #a7a7a421;
+    border-radius:40px;
+    padding: 20px 0px 20px 0px;
+    width: 53%;
+    box-shadow: 3px 3px 8px rgb(70, 67, 53);
+    transition: 1s linear;
+    overflow: hidden;
+    padding-top: 35px;
+    margin-left: $margin;
+    border: rgb(255, 255, 255) solid;
+}
+    //Portadas para todas las Pages (menos Index)//
+@mixin portadas{
+    position: relative;
+    height: 28em;
+    width: 100%;
+    border-bottom-left-radius: 35%;
+    border-bottom-right-radius: 35%;
+    background-attachment: fixed;
+    background-size: cover;
+    border-bottom:solid #FFFCF2 0.625em;
+}
+
+    //Tips Grid Imagenes//
+@mixin tipsGridImg {
+    background-size: 28.125rem;
+    width: 28.125rem;
+    background-repeat: no-repeat;
+    background-position: cover;
+    border-radius: 1.25rem;
+    box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+}

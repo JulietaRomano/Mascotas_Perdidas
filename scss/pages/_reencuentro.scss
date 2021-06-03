@@ -1,0 +1,54 @@
+main{
+    .reencuentro_Container{
+        background-color: rgba(233, 210, 210, 0.76);
+        display: flex;
+        height: 15.625rem;
+        margin: 6.25rem 2.5rem 0rem 2.5rem;
+        border-radius: 0.9375rem;
+        box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+        .cieloImg{
+            width: 43.75rem;
+            background-image: url(../Imagenes/Reencuentro/cielo.png);
+            background-position: center;
+            background-size:cover;
+            background-repeat: no-repeat;
+            border-radius: 0.9375rem;
+        }
+        .reencuentro_Descripcion{
+            .reencuentro_Titulo{//mismo titulo que el de los formularios, arreglar codigo//
+                background-color: #ffd9007a;
+                border-radius: 2.1875rem;
+                width: 18.75rem;
+                margin: auto;
+                margin-top: 0.9375rem;
+                margin-bottom: 1.25rem;
+                padding: 0.3125rem;
+                box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+                h2{
+                    @include tituloRammetto (1.25rem,400);
+                    color: rgb(87, 84, 84);
+                    margin-top:0.625rem;
+                }
+            }
+            .reencuentro_Texto{
+                @include textoThambi(16ox, 400);
+                padding: 0rem 3.125rem 0rem 3.125rem;
+                text-align: left;
+            }
+        }
+    }
+    .reencuentro_pruebas{
+        display: flex;
+        margin: 3.125rem;
+        justify-content: space-around;
+        .reencuentro_pruebas-imagen{
+            background-image: url(/Imagenes/Reencuentro/cieloReencuentro.jpeg);
+            background-size: contain;
+            border-radius: 1.25rem;
+            width: 25rem;
+            box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+        }
+    }
+
+
+}

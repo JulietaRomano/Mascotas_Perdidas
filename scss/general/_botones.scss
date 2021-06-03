@@ -1,0 +1,48 @@
+//botones generales//
+a{
+    .botones {
+        .botones1{
+            background-color: rgb(250, 130, 17);
+            height: 3em;
+            border-radius: 3.125em;
+            border-right: solid rgb(248, 225, 92) 0.8125em;
+            padding: 0.625em 0.1875em 0em 0.625em;
+            box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
+            transition: .6s linear;
+            display: inline-block;
+            .botonesP{
+            color: rgba(253, 253, 253, 0.925);
+            font-size: 1.25em;
+            font-weight: 600;
+            }
+            &:hover{
+                background-color: rgb(17, 146, 135);
+                border-right: solid rgb(157, 219, 214) 0.8125em;
+            }
+        }  
+    }
+}
+//botones Seccion:¿Quienes somos? index//
+a{
+    .item1_botones{
+        .item1_botones1{
+            background-color: rgb(250, 130, 17);
+            border-radius: 12px;
+            border-right: solid rgb(248, 225, 92) 8px;
+            padding: 8px;
+            box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
+            transition: .6s linear;
+            display: inline-block;
+            .item1_botonesP{
+                color: rgba(253, 253, 253, 0.925);
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &:hover{
+                transform: scale(1.05);
+                background-color: rgb(255, 166, 0);
+            }
+        }
+
+    }
+}

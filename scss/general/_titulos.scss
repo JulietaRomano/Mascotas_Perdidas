@@ -1,0 +1,88 @@
+//Titulos h1//
+    //Index//
+        .titulo_celeste{
+            @include tituloRammetto (3.2rem, 800);
+            color: $celeste;
+            &.titulo_celeste::after, &.titulo_celeste::before{
+                content: '';
+                position: absolute;
+                width: 2.5em;
+                height: 0.05em;
+                background-color: rgb(116, 115, 115);
+                top: 0.5em;
+            }
+            &.titulo_celeste::after{
+                right: -3em;
+            }
+            &.titulo_celeste::before{
+                left: -3em;
+            }
+        }
+//Titulos portadas//
+    .portada_Titulo{
+        width: 34.375rem;
+        padding: 1.875rem 0.625rem 1.875rem 0.625rem;
+        background-image: url(/Imagenes/Fondos/fondo_titulos.png);
+        position: absolute;
+        border: solid #FFFCF2 0.625rem;
+        left: 28.125rem;
+        top: 23.75rem;
+        border-radius: 50%;
+        display: inline-block;
+        .titulos{
+            @include tituloRammetto (1.7rem, 800);
+            color: #ffffff;
+        }
+    }
+//Subtitulos Portadas//
+    main{
+        .PagesSub_Conteiner{
+            height: 18.75rem;
+            width: 100%;
+            @include flex;
+            background-image: linear-gradient(to bottom, #FFFCF2,rgb(227, 243, 238));
+            justify-content: center;
+            margin-top: 5rem;
+            border-bottom: rgb(197, 191, 173) 0.3125rem solid;
+            .PagesSub_texto{
+                @include textoThambi(19px, 400);
+                color: $texto1;
+                padding: 30px 160px 0 160px;
+            }
+            //Registro.html//
+            .PagesSub_Registro-Img{
+                img{
+                    width: 20.3125rem;
+                }
+            }
+            //Colabora.html//
+            .colabora_Textos{
+                h2{
+                    @include textoThambi(30px, 800);
+                    color: $texto1;
+                }
+            }
+            .PagesSub_Colabora-Img{
+                img{
+                    width: 15.125rem;
+                }
+            }
+            .PagesSub_Tips-Img{
+                img{
+                    width: 17.1875rem;
+                }
+            }
+            .PagesSub_Reencuentro-Img{
+                img{
+                    width: 20.5rem;
+                }
+            }
+
+        }
+        .textoResaltado{
+            @include textoThambi(18px, 800);
+        }
+    }
+    
+    
+ 
