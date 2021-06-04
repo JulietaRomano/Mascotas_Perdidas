@@ -17,7 +17,7 @@ main{
         }
         .tipsCaja_Img1{
             @include tipsGridImg;
-            background-image: url(/Imagenes/Tips/tipsGridImg1.jpeg);
+            background-image: url(../Imagenes/Tips/tipsGridImg1.jpeg);
             grid-area: img1;
         }
         .tipsGrid_Caja2{
@@ -26,7 +26,7 @@ main{
         }
         .tipsCaja_Img2{
             @include tipsGridImg;
-            background-image: url(/Imagenes/Tips/tipsGridImg2.jpeg);
+            background-image: url(../Imagenes/Tips/tipsGridImg2.jpeg);
             grid-area: img2;
         }
         .tipsGrid_Caja3{
@@ -35,7 +35,7 @@ main{
         }
         .tipsCaja_Img3{
             @include tipsGridImg;
-            background-image: url(/Imagenes/Tips/tipsGridImg3.jpg);
+            background-image: url(../Imagenes/Tips/tipsGridImg3.jpg);
             grid-area: img3;
         }
         .tipsGrid_Caja4{
@@ -67,7 +67,7 @@ main{
         width: 100%;
         height: 21.875rem;
         grid-area: img4;
-        background-image: url(/Imagenes/Tips/tipsGridImg4.jpeg);
+        background-image: url(../Imagenes/Tips/tipsGridImg4.jpeg);
         background-size: 75rem;
         background-size: cover;
         background-position: 50% 45%;

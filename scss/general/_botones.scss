@@ -1,5 +1,6 @@
 //botones generales//
 a{
+    font-size: 16px;
     .botones {
         .botones1{
             background-color: rgb(250, 130, 17);
@@ -24,24 +25,29 @@ a{
 }
 //botones Seccion:¿Quienes somos? index//
 a{
+    font-size: 16px;
     .item1_botones{
         .item1_botones1{
             background-color: rgb(250, 130, 17);
-            border-radius: 12px;
-            border-right: solid rgb(248, 225, 92) 8px;
-            padding: 8px;
+            border-radius: .75em;
+            border-right: solid rgb(248, 225, 92) .5em;
+            padding: .5em;
             box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
             transition: .6s linear;
             display: inline-block;
             .item1_botonesP{
                 color: rgba(253, 253, 253, 0.925);
-                font-size: 16px;
+                font-size: 1em;
                 font-weight: 600;
             }
             &:hover{
                 transform: scale(1.05);
                 background-color: rgb(255, 166, 0);
             }
+        }
+        //media queries//
+        @include smarthphone{
+            font-size: 11px;
         }
 
     }

@@ -1,5 +1,5 @@
 {
-  "name": "mascotas_final",
+  "name": "proyecto_coder",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,8 +8,16 @@
     "watch-css": "nodemon -e scss -x \"npm run build-css\"",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JulietaRomano/Proyecto_Final_Coder.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JulietaRomano/Proyecto_Final_Coder/issues"
+  },
+  "homepage": "https://github.com/JulietaRomano/Proyecto_Final_Coder#readme",
   "dependencies": {
     "node-sass": "^6.0.0",
     "nodemon": "^2.0.7"

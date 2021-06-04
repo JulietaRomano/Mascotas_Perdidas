@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*Media Queries*/
 * {
   margin: 0;
   padding: 0;
@@ -17,38 +18,45 @@ body {
     margin-block-start: 0em;
     margin-block-end: 0em; }
 
-a .botones .botones1 {
-  background-color: #fa8211;
-  height: 3em;
-  border-radius: 3.125em;
-  border-right: solid #f8e15c 0.8125em;
-  padding: 0.625em 0.1875em 0em 0.625em;
-  box-shadow: 0em 0.125em 0.1875em #2b2929;
-  transition: .6s linear;
-  display: inline-block; }
-  a .botones .botones1 .botonesP {
-    color: rgba(253, 253, 253, 0.925);
-    font-size: 1.25em;
-    font-weight: 600; }
-  a .botones .botones1:hover {
-    background-color: #119287;
-    border-right: solid #9ddbd6 0.8125em; }
+a {
+  font-size: 16px; }
+  a .botones .botones1 {
+    background-color: #fa8211;
+    height: 3em;
+    border-radius: 3.125em;
+    border-right: solid #f8e15c 0.8125em;
+    padding: 0.625em 0.1875em 0em 0.625em;
+    box-shadow: 0em 0.125em 0.1875em #2b2929;
+    transition: .6s linear;
+    display: inline-block; }
+    a .botones .botones1 .botonesP {
+      color: rgba(253, 253, 253, 0.925);
+      font-size: 1.25em;
+      font-weight: 600; }
+    a .botones .botones1:hover {
+      background-color: #119287;
+      border-right: solid #9ddbd6 0.8125em; }
 
-a .item1_botones .item1_botones1 {
-  background-color: #fa8211;
-  border-radius: 12px;
-  border-right: solid #f8e15c 8px;
-  padding: 8px;
-  box-shadow: 0em 0.125em 0.1875em #2b2929;
-  transition: .6s linear;
-  display: inline-block; }
-  a .item1_botones .item1_botones1 .item1_botonesP {
-    color: rgba(253, 253, 253, 0.925);
-    font-size: 16px;
-    font-weight: 600; }
-  a .item1_botones .item1_botones1:hover {
-    transform: scale(1.05);
-    background-color: #ffa600; }
+a {
+  font-size: 16px; }
+  a .item1_botones .item1_botones1 {
+    background-color: #fa8211;
+    border-radius: .75em;
+    border-right: solid #f8e15c 0.5em;
+    padding: .5em;
+    box-shadow: 0em 0.125em 0.1875em #2b2929;
+    transition: .6s linear;
+    display: inline-block; }
+    a .item1_botones .item1_botones1 .item1_botonesP {
+      color: rgba(253, 253, 253, 0.925);
+      font-size: 1em;
+      font-weight: 600; }
+    a .item1_botones .item1_botones1:hover {
+      transform: scale(1.05);
+      background-color: #ffa600; }
+  @media (max-width: 480px) {
+    a .item1_botones {
+      font-size: 11px; } }
 
 header .logo {
   max-width: 50%; }
@@ -152,7 +160,7 @@ header .portada {
     background-attachment: fixed;
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
-    background-image: url(/Imagenes/Portadas/portada_registro.jpeg);
+    background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
     background-position-y: -15em; }
   header .portada .portada_Colabora {
     position: relative;
@@ -163,7 +171,7 @@ header .portada {
     background-attachment: fixed;
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
-    background-image: url(/Imagenes/Portadas/portada_colabora.jpeg);
+    background-image: url(../Imagenes/Portadas/portada_colabora.jpeg);
     background-position-y: -6.25em; }
   header .portada .portada_Reencuentro {
     position: relative;
@@ -174,7 +182,7 @@ header .portada {
     background-attachment: fixed;
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
-    background-image: url(/Imagenes/Portadas/portada_reencuentro.jpeg);
+    background-image: url(../Imagenes/Portadas/portada_reencuentro.jpeg);
     background-position-y: -9.375em;
     border-bottom: solid #FFFCF2 0.625em; }
   header .portada .portada_Tips {
@@ -186,7 +194,7 @@ header .portada {
     background-attachment: fixed;
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
-    background-image: url(/Imagenes/Portadas/portada_tips.jpeg);
+    background-image: url(../Imagenes/Portadas/portada_tips.jpeg);
     background-position-y: -11.25em;
     border-bottom: solid #FFFCF2 0.625em; }
 
@@ -227,10 +235,11 @@ footer {
     color: white; }
 
 .titulo_celeste {
+  font-size: 16px;
   display: inline-block;
   position: relative;
   font-family: 'Rammetto One';
-  font-size: 3.2rem;
+  font-size: 3.2em;
   font-weight: 800;
   color: #108896; }
   .titulo_celeste.titulo_celeste::after, .titulo_celeste.titulo_celeste::before {
@@ -244,11 +253,15 @@ footer {
     right: -3em; }
   .titulo_celeste.titulo_celeste::before {
     left: -3em; }
+  @media (max-width: 480px) {
+    .titulo_celeste {
+      font-size: 22px;
+      padding: 0 1em 0 1em; } }
 
 .portada_Titulo {
   width: 34.375rem;
   padding: 1.875rem 0.625rem 1.875rem 0.625rem;
-  background-image: url(/Imagenes/Fondos/fondo_titulos.png);
+  background-image: url(../Imagenes/Fondos/fondo_titulos.png);
   position: absolute;
   border: solid #FFFCF2 0.625rem;
   left: 28.125rem;
@@ -340,139 +353,155 @@ main .textoResaltado {
       margin-top: 0.3125rem;
       margin-bottom: 0.3125rem; }
 
-main .QuienesSomos_Container {
-  padding-top: 7%;
-  padding-bottom: 7%;
-  background-image: url(../Imagenes/Fondos/fondo_animales.png); }
-  main .QuienesSomos_Container .QuienesSomos_Texto .QuienesSomos_P {
-    font-family: 'Baloo Thambi 2';
-    font-size: 18px;
-    font-weight: 400;
-    margin-top: 30px;
-    color: #706666; }
-  main .QuienesSomos_Container .QuienesSomos_Carousel {
-    height: 550px;
-    margin: 0;
-    display: grid;
-    grid-template-rows: 500px 10px;
-    grid-template-columns: 1fr 30px 30px 30px 1fr;
-    align-items: center;
-    justify-items: center; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(1) {
-      grid-column: 2 / 3;
-      grid-row: 2 / 3; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(1):checked ~ div#carousel_id {
-      --position: 1; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(2) {
-      grid-column: 3 / 4;
-      grid-row: 2 / 3; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(2):checked ~ div#carousel_id {
-      --position: 2; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(3) {
-      grid-column: 4 /5;
-      grid-row: 2 / 3; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(3):checked ~ div#carousel_id {
-      --position: 3; }
-    main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id {
-      display: flex;
+main {
+  font-size: 16px;
+  overflow: hidden; }
+  main .QuienesSomos_Container {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background-image: url(../Imagenes/Fondos/fondo_animales.png); }
+    main .QuienesSomos_Container .QuienesSomos_Texto .QuienesSomos_P {
+      font-family: 'Baloo Thambi 2';
+      font-size: 1.125em;
+      font-weight: 400;
+      color: #706666;
+      margin-top: 1em;
+      padding: 0 1em 0 1em; }
+    @media (max-width: 480px) {
+      main .QuienesSomos_Container .QuienesSomos_Texto {
+        font-size: 12px; } }
+    main .QuienesSomos_Container .QuienesSomos_Carousel {
+      height: 35em;
+      margin: 0;
+      display: grid;
+      grid-template-rows: 32em .60em;
+      grid-template-columns: 1fr 1.875em 1.875em 1.875em 1fr;
       align-items: center;
-      align-content: center;
-      grid-row: 1 / 2;
-      grid-column: 1 / 8;
-      width: 100vw;
-      height: 425px;
-      justify-content: center;
-      overflow: hidden;
-      transform-style: preserve-3d;
-      perspective: 600px;
-      --items: 5;
-      --middle: 3;
-      --position: 1; }
-      main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 {
+      justify-items: center; }
+      @media (max-width: 480px) {
+        main .QuienesSomos_Container .QuienesSomos_Carousel {
+          height: 30em;
+          grid-template-rows: 28em .60em; } }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(1) {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(1):checked ~ div#carousel_id {
+        --position: 1; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(2) {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(2):checked ~ div#carousel_id {
+        --position: 2; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(3) {
+        grid-column: 4 /5;
+        grid-row: 2 / 3; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel input:nth-of-type(3):checked ~ div#carousel_id {
+        --position: 3; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        grid-row: 1 / 2;
+        grid-column: 1 / 8;
+        width: 100vw;
+        height: 26.5625em;
+        justify-content: center;
+        overflow: hidden;
+        transform-style: preserve-3d;
+        perspective: 37.5em;
+        --items: 3;
+        --middle: 3;
+        --position: 1; }
+      main .QuienesSomos_Container .QuienesSomos_Carousel .item1 {
         position: absolute;
-        width: 300px;
-        height: 400px;
-        border-radius: 20px;
-        box-shadow: 3px 3px 8px #464335;
+        width: 18.75em;
+        height: 25em;
+        border-radius: 1.25em;
+        box-shadow: 0.1875em 0.1875em 0.5em #464335;
         --r: calc(var(--position) - var(--offset));
         --abs: max(calc(var(--r) * -1), var(--r));
         transition: all 0.25s linear;
-        transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-300px * var(--r)));
+        transform: rotateY(calc(-10deg * var(--r))) translateX(calc(-18.75em * var(--r)));
         z-index: calc((var(--position) - var(--abs))); }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1:nth-of-type(1) {
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1:nth-of-type(1) {
           --offset: 1;
           background-color: #dce6fc; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1:nth-of-type(2) {
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1:nth-of-type(2) {
           --offset: 2;
           background-color: #dce6fc; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1:nth-of-type(3) {
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1:nth-of-type(3) {
           --offset: 3;
           background-color: #dce6fc; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img1, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img2, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img3 {
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img1, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img2, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img3 {
           position: relative;
-          height: 210px;
-          border-radius: 20px;
+          height: 13.125em;
+          border-radius: 1.25em;
           background-size: cover;
           background-repeat: no-repeat;
-          padding-top: 185px;
-          background-image: url(/Imagenes/Index/ayudaEncuentro.png); }
-          main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img1 .wave, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img2 .wave, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img3 .wave {
-            height: 30px;
+          padding-top: 11.5625em;
+          background-image: url(../Imagenes/Index/ayudaEncuentro.png); }
+          main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img1 .wave, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img2 .wave, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img3 .wave {
+            height: 1.875em;
             overflow: hidden; }
-            main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img1 .wave svg, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img2 .wave svg, main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img3 .wave svg {
+            main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img1 .wave svg, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img2 .wave svg, main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img3 .wave svg {
               height: 100%;
               width: 100%;
               stroke: none;
               fill: #dce6fc; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .item1_caja .item1_Titulo {
-          margin-top: 10px;
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .item1_caja .item1_Titulo {
+          margin-top: .625em;
           display: inline-block;
           position: relative;
           font-family: 'Rammetto One';
-          font-size: 16px;
+          font-size: 1em;
           font-weight: 800;
           color: #363225; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .item1_caja .item1_Texto {
-          padding: 10px;
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .item1_caja .item1_Texto {
+          padding: .625em;
           font-family: 'Baloo Thambi 2';
-          font-size: 16px;
+          font-size: 1em;
           font-weight: 400;
           color: #706666; }
-        main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .item1 .img2 {
-          background-image: url(/Imagenes/Index/ayudaPerdido.jpeg); }
-      main .QuienesSomos_Container .QuienesSomos_Carousel #carousel_id .img3 {
-        background-image: url(/Imagenes/Index/ayudanos.jpg) !important; }
+        main .QuienesSomos_Container .QuienesSomos_Carousel .item1 .img2 {
+          background-image: url(../Imagenes/Index/ayudaPerdido.jpeg); }
+      main .QuienesSomos_Container .QuienesSomos_Carousel .img3 {
+        background-image: url(../Imagenes/Index/ayudanos.jpg) !important; }
+      @media (max-width: 480px) {
+        main .QuienesSomos_Container .QuienesSomos_Carousel {
+          font-size: 11px; }
+          main .QuienesSomos_Container .QuienesSomos_Carousel .item1 {
+            transform: none; } }
 
-main #SobreNosotros_Container {
+#SobreNosotros_Container {
   font-size: 16px;
   background-color: #f6f4ef;
   padding-top: 3.75em; }
-  main #SobreNosotros_Container .SobreNosotros_article {
+  #SobreNosotros_Container .SobreNosotros_article {
     padding: 2em 0em 1.25em 0em;
     display: flex;
     justify-content: space-around;
     margin-bottom: 1.25em; }
-    main #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto {
+    #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto {
       width: 40.625em;
       margin-top: 1.875em;
       text-align: justify; }
-      main #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_titulo {
+      #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_titulo {
         font-family: 'Baloo Thambi 2';
         font-size: 26px;
         font-weight: 900;
         color: #363225; }
-      main #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
+      #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
         line-height: 35px;
         font-family: 'Baloo Thambi 2';
         font-size: 19px;
         font-weight: 400;
         margin-top: 30px;
         color: #706666; }
-    main #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
+    #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
       width: 25em; }
-      main #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen img {
+      #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen img {
         width: 26.875em; }
-  main #SobreNosotros_Container .tarjetas_Container {
+  #SobreNosotros_Container .tarjetas_Container {
     font-size: 16px;
     padding-top: 3.125em;
     padding-bottom: 6.25em;
@@ -482,7 +511,7 @@ main #SobreNosotros_Container {
     border-top: solid white 0.625em;
     border-bottom: solid white 0.3125em;
     transform-style: preserve-3d; }
-    main #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
+    #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
       display: inline-block;
       position: relative;
       font-size: 2em;
@@ -494,19 +523,19 @@ main #SobreNosotros_Container {
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
       background-color: #7abeb9; }
-    main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex {
+    #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex {
       display: flex;
       justify-content: space-around;
       -webkit-box-pack: center;
       -webkit-justify-content: space-around;
       -ms-flex-pack: center; }
-      main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja {
+      #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja {
         margin: 0.625em;
         perspective: 800;
         -webkit-perspective: 800; }
-        main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja:hover .tarjeta {
+        #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja:hover .tarjeta {
           transform: rotateY(180deg); }
-        main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta {
+        #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta {
           width: 18.75em;
           height: 21.875em;
           background-color: #FFFCF2;
@@ -519,7 +548,7 @@ main #SobreNosotros_Container {
           border-radius: 1.25em;
           -webkit-transform-style: preserve-3d;
           transform-style: preserve-3d; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante, main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante, #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
             width: 100%;
             height: 100%;
             position: absolute;
@@ -528,18 +557,18 @@ main #SobreNosotros_Container {
             -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
             border-radius: 1.25em; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante {
             width: 100%; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card1 {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card1 {
             background-image: url(../Imagenes/Index/QuienesSomos.png);
             background-size: cover; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card2 {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card2 {
             background-image: url(../Imagenes/Index/NuestroPropósito.png);
             background-size: cover; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card3 {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card3 {
             background-image: url(../Imagenes/Index/PorQueExistimos.png);
             background-size: cover; }
-          main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
+          #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
             transform: rotateY(180deg);
             -webkit-transform: rotateY(180deg);
             padding: 0.9375em;
@@ -548,20 +577,20 @@ main #SobreNosotros_Container {
             flex-direction: column;
             align-items: center;
             text-align: center; }
-            main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
+            #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
               color: #645c5c;
               font-size: 0.9375em;
               font-weight: 400;
               text-align: justify;
               padding: 0.625em 0.625em 0rem 0.625em;
               font-family: 'Baloo Thambi 2'; }
-            main #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
+            #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
               color: #108896;
               font-size: 1.75em;
               font-weight: 900;
               font-family: "Baloo Thambi 2"; }
 
-main .Boletin_Imagen {
+.Boletin_Imagen {
   font-size: 16px;
   height: 60vh;
   background-image: url(../Imagenes/Index/perrita.jpg);
@@ -569,7 +598,7 @@ main .Boletin_Imagen {
   background-size: cover;
   display: flex;
   align-items: center; }
-  main .Boletin_Imagen .Boletin_Caja {
+  .Boletin_Imagen .Boletin_Caja {
     border-radius: 1.875em;
     height: 18.75em;
     width: 31.25em;
@@ -578,7 +607,7 @@ main .Boletin_Imagen {
     padding: 1.875em 2.5em 0 2.5em;
     background-color: #108896;
     border-right: solid #9ddbd6 0.8125em; }
-    main .Boletin_Imagen .Boletin_Caja h3 {
+    .Boletin_Imagen .Boletin_Caja h3 {
       display: inline-block;
       position: relative;
       font-family: 'Rammetto One';
@@ -586,27 +615,27 @@ main .Boletin_Imagen {
       font-weight: 800;
       color: #fdffff;
       margin-bottom: 1.25em; }
-    main .Boletin_Imagen .Boletin_Caja p {
+    .Boletin_Imagen .Boletin_Caja p {
       font-family: 'Baloo Thambi 2';
       font-size: 19px;
       font-weight: 400;
       color: white;
       margin-bottom: 26px; }
-    main .Boletin_Imagen .Boletin_Caja .Boletin_Input {
+    .Boletin_Imagen .Boletin_Caja .Boletin_Input {
       border: solid #cf840c 0.125em; }
-    main .Boletin_Imagen .Boletin_Caja .Boletin_Boton {
+    .Boletin_Imagen .Boletin_Caja .Boletin_Boton {
       color: white;
       font-size: 1.0625em;
       font-weight: 900;
       background-color: #ff953d; }
-      main .Boletin_Imagen .Boletin_Caja .Boletin_Boton:hover {
+      .Boletin_Imagen .Boletin_Caja .Boletin_Boton:hover {
         background-color: #fc7405;
         border: solid 0.1875em #fc7405; }
 
-main .Funcionamiento {
+.Funcionamiento {
   font-size: 16px;
   padding-top: 4.375em; }
-  main .Funcionamiento .Funcionamiento_Subtitulo {
+  .Funcionamiento .Funcionamiento_Subtitulo {
     display: inline-block;
     position: relative;
     font-size: 2em;
@@ -618,31 +647,31 @@ main .Funcionamiento {
     border-bottom: solid 0.25em #108896;
     padding: 0.4em 1.2em 0.4em 1.2em;
     background-color: #7abeb9; }
-  main .Funcionamiento .Funcionamiento_Container {
+  .Funcionamiento .Funcionamiento_Container {
     display: flex;
     justify-content: space-around;
     padding-top: 4.375em;
     padding-bottom: 4.375em; }
-    main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
+    .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
       width: 38%;
       display: flex;
       align-items: center;
       align-content: center;
       justify-content: center; }
-      main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen img {
+      .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen img {
         width: 31.25em; }
-    main .Funcionamiento .Funcionamiento_Container .sun {
+    .Funcionamiento .Funcionamiento_Container .sun {
       height: 9.375em;
       position: relative; }
-      main .Funcionamiento .Funcionamiento_Container .sun img {
+      .Funcionamiento .Funcionamiento_Container .sun img {
         width: 9.375em; }
-    main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
+    .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
       width: 50%; }
-      main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
+      .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
         display: flex;
         justify-content: center;
         margin-bottom: 2.5em; }
-        main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Numero {
+        .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Numero {
           display: flex;
           align-items: center;
           align-content: center;
@@ -655,21 +684,21 @@ main .Funcionamiento {
           font-size: 1.3em;
           color: #f6f8ff;
           font-weight: 700; }
-        main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto {
+        .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto {
           width: 25em;
           margin-left: 1.875em; }
-          main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Texto-p {
+          .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Texto-p {
             font-family: 'Baloo Thambi 2';
             font-size: 1.2em;
             font-weight: 400;
             color: #706666; }
-          main .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
+          .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
             font-family: 'Baloo Thambi 2';
             font-size: 1.875em;
             font-weight: 600;
             color: #fc7405; }
 
-main .ContactoIndex_Container {
+.ContactoIndex_Container {
   font-size: 16px;
   padding-top: 2.5em;
   background-image: url(../Imagenes/Img_PNG/imgFinal.png);
@@ -678,19 +707,19 @@ main .ContactoIndex_Container {
   background-position-x: right;
   background-position-y: center;
   background-color: white; }
-  main .ContactoIndex_Container .wave_footer {
+  .ContactoIndex_Container .wave_footer {
     height: 50px;
     overflow: hidden; }
-    main .ContactoIndex_Container .wave_footer svg {
+    .ContactoIndex_Container .wave_footer svg {
       height: 100%;
       width: 100%; }
-      main .ContactoIndex_Container .wave_footer svg path {
+      .ContactoIndex_Container .wave_footer svg path {
         stroke: none;
         fill: #E6E4E0; }
-  main .ContactoIndex_Container .ContactoIndex_Caja {
+  .ContactoIndex_Container .ContactoIndex_Caja {
     width: 50%;
     padding-left: 1.875em; }
-    main .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
+    .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
       display: inline-block;
       position: relative;
       font-size: 2em;
@@ -702,9 +731,62 @@ main .ContactoIndex_Container {
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
       background-color: #7abeb9; }
-    main .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
+    .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
       border: solid #bea844 2px;
       margin-bottom: 5px; }
+  .ContactoIndex_Container .row1-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 130px; }
+    .ContactoIndex_Container .row1-container .box {
+      border-radius: 5px;
+      box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+      padding: 30px;
+      margin: 40px;
+      cursor: pointer;
+      transition: 2s; }
+      .ContactoIndex_Container .row1-container .box p {
+        color: var(--grayishBlue); }
+      .ContactoIndex_Container .row1-container .box h2 {
+        color: #4c4e61;
+        font-weight: 600; }
+      .ContactoIndex_Container .row1-container .box img {
+        float: right; }
+    .ContactoIndex_Container .row1-container .cyan {
+      border-top: 3px solid #45d3d3; }
+    .ContactoIndex_Container .row1-container .red {
+      border-top: 3px solid #ea5353; }
+    .ContactoIndex_Container .row1-container .blue {
+      border-top: 3px solid #549ef2; }
+    .ContactoIndex_Container .row1-container .orange {
+      border-top: 3px solid #fcaf4a; }
+  .ContactoIndex_Container .box:hover {
+    transform: translateY(-10px); }
+  @media (max-width: 450px) {
+    .ContactoIndex_Container .box {
+      height: 200px; } }
+  @media (max-width: 950px) and (min-width: 450px) {
+    .ContactoIndex_Container .box {
+      text-align: center;
+      height: 180px; } }
+  @media (min-width: 950px) {
+    .ContactoIndex_Container .row1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 130px; }
+    .ContactoIndex_Container .row2-container {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .ContactoIndex_Container .box-down {
+      position: relative;
+      top: 150px; }
+    .ContactoIndex_Container .box {
+      width: 20%; }
+    .ContactoIndex_Container .header p {
+      width: 30%; } }
 
 main .tipsGrid_Container {
   display: grid;
@@ -724,7 +806,7 @@ main .tipsGrid_Container {
     background-position: cover;
     border-radius: 1.25rem;
     box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
-    background-image: url(/Imagenes/Tips/tipsGridImg1.jpeg);
+    background-image: url(../Imagenes/Tips/tipsGridImg1.jpeg);
     grid-area: img1; }
   main .tipsGrid_Container .tipsGrid_Caja2 {
     padding: 0rem 1.25rem 0rem 1.25rem;
@@ -736,7 +818,7 @@ main .tipsGrid_Container {
     background-position: cover;
     border-radius: 1.25rem;
     box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
-    background-image: url(/Imagenes/Tips/tipsGridImg2.jpeg);
+    background-image: url(../Imagenes/Tips/tipsGridImg2.jpeg);
     grid-area: img2; }
   main .tipsGrid_Container .tipsGrid_Caja3 {
     padding: 0rem 1.25rem 0rem 1.25rem;
@@ -748,7 +830,7 @@ main .tipsGrid_Container {
     background-position: cover;
     border-radius: 1.25rem;
     box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
-    background-image: url(/Imagenes/Tips/tipsGridImg3.jpg);
+    background-image: url(../Imagenes/Tips/tipsGridImg3.jpg);
     grid-area: img3; }
   main .tipsGrid_Container .tipsGrid_Caja4 {
     padding: 0rem 1.25rem 0rem 1.25rem;
@@ -776,7 +858,7 @@ main .tipsImg_Final {
   width: 100%;
   height: 21.875rem;
   grid-area: img4;
-  background-image: url(/Imagenes/Tips/tipsGridImg4.jpeg);
+  background-image: url(../Imagenes/Tips/tipsGridImg4.jpeg);
   background-size: 75rem;
   background-size: cover;
   background-position: 50% 45%;
@@ -826,7 +908,7 @@ main .reencuentro_pruebas {
   margin: 3.125rem;
   justify-content: space-around; }
   main .reencuentro_pruebas .reencuentro_pruebas-imagen {
-    background-image: url(/Imagenes/Reencuentro/cieloReencuentro.jpeg);
+    background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
     background-size: contain;
     border-radius: 1.25rem;
     width: 25rem;

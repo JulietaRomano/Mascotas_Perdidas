@@ -1,8 +1,10 @@
 //Titulos h1//
     //Index//
         .titulo_celeste{
-            @include tituloRammetto (3.2rem, 800);
+            font-size: 16px;
+            @include tituloRammetto (3.2em, 800);
             color: $celeste;
+
             &.titulo_celeste::after, &.titulo_celeste::before{
                 content: '';
                 position: absolute;
@@ -17,12 +19,16 @@
             &.titulo_celeste::before{
                 left: -3em;
             }
+            @include smarthphone{
+                font-size: 22px;
+                padding: 0 1em 0 1em;
+            }
         }
 //Titulos portadas//
     .portada_Titulo{
         width: 34.375rem;
         padding: 1.875rem 0.625rem 1.875rem 0.625rem;
-        background-image: url(/Imagenes/Fondos/fondo_titulos.png);
+        background-image: url(../Imagenes/Fondos/fondo_titulos.png);
         position: absolute;
         border: solid #FFFCF2 0.625rem;
         left: 28.125rem;
