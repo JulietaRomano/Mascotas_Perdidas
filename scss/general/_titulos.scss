@@ -1,16 +1,15 @@
 //Titulos h1//
     //Index//
         .titulo_celeste{
-            font-size: 16px;
-            @include tituloRammetto (3.2em, 800);
+            @include tituloRammetto (2.9em, 800);
             color: $celeste;
 
             &.titulo_celeste::after, &.titulo_celeste::before{
                 content: '';
                 position: absolute;
                 width: 2.5em;
-                height: 0.05em;
-                background-color: rgb(116, 115, 115);
+                height: 0.03em;
+                background-color: rgba(41, 177, 182, 0.719);
                 top: 0.5em;
             }
             &.titulo_celeste::after{
@@ -18,10 +17,6 @@
             }
             &.titulo_celeste::before{
                 left: -3em;
-            }
-            @include smarthphone{
-                font-size: 22px;
-                padding: 0 1em 0 1em;
             }
         }
 //Titulos portadas//

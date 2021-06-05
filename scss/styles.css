@@ -1,0 +1,1759 @@
+@charset "UTF-8";
+/*Media Queries*/
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #FFFCF2;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+
+body a {
+  text-decoration: none;
+}
+
+body p {
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  margin: 0;
+}
+
+body ul {
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 0em;
+          margin-block-start: 0em;
+  -webkit-margin-after: 0em;
+          margin-block-end: 0em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+}
+
+a {
+  font-size: 16px;
+}
+
+a .botones .botones1 {
+  background-color: #fa8211;
+  height: 3em;
+  border-radius: 3.125em;
+  border-right: solid #f8e15c 0.8125em;
+  padding: 0.625em 0.1875em 0em 0.625em;
+  -webkit-box-shadow: 0em 0.125em 0.1875em #2b2929;
+          box-shadow: 0em 0.125em 0.1875em #2b2929;
+  -webkit-transition: .6s linear;
+  transition: .6s linear;
+  display: inline-block;
+}
+
+a .botones .botones1 .botonesP {
+  color: rgba(253, 253, 253, 0.925);
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+a .botones .botones1:hover {
+  background-color: #119287;
+  border-right: solid #9ddbd6 0.8125em;
+}
+
+a {
+  font-size: 16px;
+}
+
+a .item1_botones .item1_botones1 {
+  background-color: #fa8211;
+  border-radius: .75em;
+  border-right: solid #f8e15c 0.5em;
+  padding: .5em;
+  -webkit-box-shadow: 0em 0.125em 0.1875em #2b2929;
+          box-shadow: 0em 0.125em 0.1875em #2b2929;
+  -webkit-transition: .6s linear;
+  transition: .6s linear;
+  display: inline-block;
+}
+
+a .item1_botones .item1_botones1 .item1_botonesP {
+  color: rgba(253, 253, 253, 0.925);
+  font-size: 1em;
+  font-weight: 600;
+}
+
+a .item1_botones .item1_botones1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #ffa600;
+}
+
+@media (max-width: 480px) {
+  a .item1_botones {
+    font-size: 11px;
+  }
+}
+
+header .logo {
+  max-width: 50%;
+}
+
+header .carouselPortada_container-1 {
+  height: 75%;
+}
+
+header .carouselPortada_container-1 .carouselPortada_caja-1 {
+  background-color: #a7a7a421;
+  border-radius: 40px;
+  padding: 20px 0px 20px 0px;
+  width: 53%;
+  -webkit-box-shadow: 3px 3px 8px #464335;
+          box-shadow: 3px 3px 8px #464335;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  overflow: hidden;
+  padding-top: 35px;
+  margin-left: 50%;
+  border: white solid;
+}
+
+header .carouselPortada_container-1 .carouselPortada_caja-1 h2 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #108896;
+}
+
+header .carouselPortada_container-1 .carouselPortada_caja-1 p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: #706666;
+}
+
+header .carouselPortada_container-1 .carouselPortada_caja-1 .carouselPortada_botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+header .carouselPortada_container-2 {
+  height: 70%;
+}
+
+header .carouselPortada_container-2 .carouselPortada_caja-2 {
+  background-color: #a7a7a421;
+  border-radius: 40px;
+  padding: 20px 0px 20px 0px;
+  width: 53%;
+  -webkit-box-shadow: 3px 3px 8px #464335;
+          box-shadow: 3px 3px 8px #464335;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  overflow: hidden;
+  padding-top: 35px;
+  margin-left: 50%;
+  border: white solid;
+}
+
+header .carouselPortada_container-2 .carouselPortada_caja-2 h2 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #108896;
+}
+
+header .carouselPortada_container-2 .carouselPortada_caja-2 p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: #706666;
+}
+
+header .carouselPortada_container-3 {
+  height: 70%;
+}
+
+header .carouselPortada_container-3 .carouselPortada_caja-3 {
+  background-color: #a7a7a421;
+  border-radius: 40px;
+  padding: 20px 0px 20px 0px;
+  width: 53%;
+  -webkit-box-shadow: 3px 3px 8px #464335;
+          box-shadow: 3px 3px 8px #464335;
+  -webkit-transition: 1s linear;
+  transition: 1s linear;
+  overflow: hidden;
+  padding-top: 35px;
+  margin-left: 0%;
+  border: white solid;
+}
+
+header .carouselPortada_container-3 .carouselPortada_caja-3 h2 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.875rem;
+  font-weight: 400;
+  color: #108896;
+}
+
+header .carouselPortada_container-3 .carouselPortada_caja-3 p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.1875rem;
+  font-weight: 600;
+  color: #706666;
+}
+
+header .portada {
+  position: relative;
+  width: 100vw;
+  font-size: 16px;
+  /*Portada Colabora*/
+  /*Portada Reencuentro*/
+  /*Portada Tips*/
+}
+
+header .portada .portada_Registro {
+  position: relative;
+  height: 28em;
+  width: 100%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: solid #FFFCF2 0.625em;
+  background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
+  background-position-y: -15em;
+}
+
+header .portada .portada_Colabora {
+  position: relative;
+  height: 28em;
+  width: 100%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: solid #FFFCF2 0.625em;
+  background-image: url(../Imagenes/Portadas/portada_colabora.jpeg);
+  background-position-y: -6.25em;
+}
+
+header .portada .portada_Reencuentro {
+  position: relative;
+  height: 28em;
+  width: 100%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: solid #FFFCF2 0.625em;
+  background-image: url(../Imagenes/Portadas/portada_reencuentro.jpeg);
+  background-position-y: -9.375em;
+  border-bottom: solid #FFFCF2 0.625em;
+}
+
+header .portada .portada_Tips {
+  position: relative;
+  height: 28em;
+  width: 100%;
+  border-bottom-left-radius: 35%;
+  border-bottom-right-radius: 35%;
+  background-attachment: fixed;
+  background-size: cover;
+  border-bottom: solid #FFFCF2 0.625em;
+  background-image: url(../Imagenes/Portadas/portada_tips.jpeg);
+  background-position-y: -11.25em;
+  border-bottom: solid #FFFCF2 0.625em;
+}
+
+footer {
+  border-bottom: solid #686161;
+}
+
+footer #redes {
+  background-image: url(../Imagenes/Fondos/fondo_footer.png);
+  display: -ms-grid;
+  display: grid;
+  font-size: 16px;
+  -ms-grid-columns: (53.125em)[2];
+      grid-template-columns: repeat(2, 53.125em);
+  -ms-grid-rows: (3.75em)[2];
+      grid-template-rows: repeat(2, 3.75em);
+      grid-template-areas: "titulo img" "logos img";
+  padding: 1.5625em 0 1.5625em 0;
+}
+
+footer #redes .redes_titulos {
+  font-size: 1.4375em;
+  color: #332f2f;
+  margin: auto;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: titulo;
+  font-family: 'Rammetto One', cursive;
+}
+
+footer #redes .redes_logos {
+  margin: auto;
+  width: 23.75em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: logos;
+}
+
+footer #redes .redes_logos a img {
+  width: 3.125em;
+}
+
+footer #redes .redes_imagen {
+  width: 28.125em;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: img;
+  padding-top: 1.5625em;
+}
+
+footer #redes .redes_imagen img {
+  width: 30.625em;
+}
+
+footer .pieDePagina {
+  padding: 1.13rem 0 1rem 0;
+  font-weight: 600;
+  background-color: #686161;
+  color: white;
+}
+
+.titulo_celeste {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 2.9em;
+  font-weight: 800;
+  color: #108896;
+}
+
+.titulo_celeste.titulo_celeste::after, .titulo_celeste.titulo_celeste::before {
+  content: '';
+  position: absolute;
+  width: 2.5em;
+  height: 0.03em;
+  background-color: rgba(41, 177, 182, 0.719);
+  top: 0.5em;
+}
+
+.titulo_celeste.titulo_celeste::after {
+  right: -3em;
+}
+
+.titulo_celeste.titulo_celeste::before {
+  left: -3em;
+}
+
+.portada_Titulo {
+  width: 34.375rem;
+  padding: 1.875rem 0.625rem 1.875rem 0.625rem;
+  background-image: url(../Imagenes/Fondos/fondo_titulos.png);
+  position: absolute;
+  border: solid #FFFCF2 0.625rem;
+  left: 28.125rem;
+  top: 23.75rem;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.portada_Titulo .titulos {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+main .PagesSub_Conteiner {
+  height: 18.75rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#FFFCF2), to(#e3f3ee));
+  background-image: linear-gradient(to bottom, #FFFCF2, #e3f3ee);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 5rem;
+  border-bottom: #c5bfad 0.3125rem solid;
+}
+
+main .PagesSub_Conteiner .PagesSub_texto {
+  font-family: 'Baloo Thambi 2';
+  font-size: 19px;
+  font-weight: 400;
+  color: #706666;
+  padding: 30px 160px 0 160px;
+}
+
+main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+  width: 20.3125rem;
+}
+
+main .PagesSub_Conteiner .colabora_Textos h2 {
+  font-family: 'Baloo Thambi 2';
+  font-size: 30px;
+  font-weight: 800;
+  color: #706666;
+}
+
+main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+  width: 15.125rem;
+}
+
+main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+  width: 17.1875rem;
+}
+
+main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+  width: 20.5rem;
+}
+
+main .textoResaltado {
+  font-family: 'Baloo Thambi 2';
+  font-size: 18px;
+  font-weight: 800;
+}
+
+.formularios_Section {
+  background-image: url(../Imagenes/Fondos/fondo_animales.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 5rem 0rem 3.75rem 0rem;
+}
+
+.formularios_Section .formularios_Container {
+  width: 35%;
+  border-radius: 1.875rem;
+  background-color: #F9EAD9;
+  padding: 0rem 0.625rem 1.875rem 0.625rem;
+  display: block;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+.formularios_Section .formularios_Container .formularios_Titulo {
+  background-color: #ffd9007a;
+  border-radius: 2.1875rem;
+  width: 18.75rem;
+  margin: auto;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.25rem;
+  padding: 0.3125rem;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+.formularios_Section .formularios_Container .formularios_Titulo h2 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #575454;
+  margin-top: 0.625rem;
+}
+
+.formularios_Section .formularios_Container .formularios_Texto {
+  padding: 0rem 2.5rem 0rem 2.5rem;
+  font-weight: 500;
+  color: #695656;
+  font-size: 1.125rem;
+}
+
+.formularios_Section .formularios_Container .formularios label, .formularios_Section .formularios_Container input {
+  display: block;
+  font-weight: 700;
+  margin: auto;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+}
+
+main {
+  font-size: 16px;
+}
+
+main .Inicio_Index {
+  margin-top: 5em;
+  font-size: 16px;
+}
+
+main .Inicio_Index .Inicio_Index-Texto {
+  padding: 0 18.75em 2em 18.75em;
+}
+
+main .Inicio_Index .Inicio_Index-Texto p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.25em;
+  font-weight: 500;
+  color: #7a7575;
+}
+
+@media (max-width: 480px) {
+  main .Inicio_Index .Inicio_Index-Texto {
+    font-size: 9px;
+    padding: 0 1.5em 2em 1.5em;
+  }
+}
+
+main .Inicio_Index .Inicio_Index-Container {
+  width: 80%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: auto;
+  font-size: 16px;
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
+  display: inline-block;
+  width: 15em;
+  text-align: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  cursor: pointer;
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover {
+  -webkit-transform: translateY(-0.9375em);
+          transform: translateY(-0.9375em);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover .Inicio_Index-Img1 {
+  background-image: url(../Imagenes/averg.gif);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover .Inicio_Index-Img2 {
+  background-image: url(../Imagenes/perri.gif);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover .Inicio_Index-Img3 {
+  background-image: url(../Imagenes/prueba.gif);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img1 {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 30px 0px 0px 0px;
+  height: 180px;
+  width: 200px;
+  background-size: cover;
+  background-position-y: -10px;
+  background-image: url(../Imagenes/averg.jpg);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img2 {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 30px 0px 0px 0px;
+  height: 180px;
+  width: 200px;
+  background-size: cover;
+  background-position-y: -10px;
+  background-image: url(../Imagenes/perri.jpg);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img3 {
+  display: inline-block;
+  border-radius: 20px;
+  margin: 30px 0px 0px 0px;
+  height: 180px;
+  width: 200px;
+  background-size: cover;
+  background-position-y: -10px;
+  background-image: url(../Imagenes/prueba.jpg);
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto {
+  -webkit-box-shadow: 0px 0px 0.625em 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 0.625em 0px rgba(0, 0, 0, 0.2);
+  padding: 7.5em 1.25em 1.25em 1.25em;
+  border-radius: 1.25em;
+  background: white;
+  margin: -7.5em 0px 0px 0px;
+  line-height: 1.1875em;
+  font-size: .875em;
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
+  margin: .625em 0px .625em 0px;
+  color: #81818d;
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.3em;
+  font-weight: 400;
+}
+
+main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1em;
+  font-weight: 500;
+  color: #7a7575;
+}
+
+#SobreNosotros_Container {
+  font-size: 16px;
+  background-color: white;
+  padding-top: 3.75em;
+}
+
+#SobreNosotros_Container .SobreNosotros_article {
+  padding: 2em 0em 1.25em 0em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-bottom: 1.25em;
+}
+
+#SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto {
+  width: 40.625em;
+  margin-top: 1.875em;
+  text-align: justify;
+}
+
+#SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_titulo {
+  font-family: 'Baloo Thambi 2';
+  font-size: 26px;
+  font-weight: 900;
+  color: #363225;
+}
+
+#SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
+  line-height: 35px;
+  font-family: 'Baloo Thambi 2';
+  font-size: 19px;
+  font-weight: 400;
+  margin-top: 30px;
+  color: #706666;
+}
+
+#SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
+  width: 25em;
+}
+
+#SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen img {
+  width: 26.875em;
+}
+
+#SobreNosotros_Container .tarjetas_Container {
+  font-size: 16px;
+  padding-top: 3.125em;
+  padding-bottom: 6.25em;
+  background-color: #d8d7d485;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  border-top: solid white 0.625em;
+  border-bottom: solid white 0.3125em;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+  color: #fdffff;
+  font-weight: 900;
+  margin-bottom: 2em;
+  border-radius: 1.5625em;
+  border-right: solid 0.1875em #108896;
+  border-bottom: solid 0.25em #108896;
+  padding: 0.4em 1.2em 0.4em 1.2em;
+  background-color: #7abeb9;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-pack: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: center;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja {
+  margin: 0.625em;
+  perspective: 800;
+  -webkit-perspective: 800;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja:hover .tarjeta {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta {
+  width: 18.75em;
+  height: 21.875em;
+  background-color: #FFFCF2;
+  position: relative;
+  transform-style: preserve-3d;
+  -webkit-transition: .9s ease;
+  -webkit-transition: 1.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transition: 1.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+  -webkit-box-shadow: 0em 0.625em 0.9375em -0.3125em rgba(0, 0, 0, 0.65);
+  box-shadow: 0em 0.625em 0.9375em -0.3125em rgba(0, 0, 0, 0.65);
+  border-radius: 1.25em;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante, #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  border-radius: 1.25em;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .adelante {
+  width: 100%;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card1 {
+  background-image: url(../Imagenes/Index/QuienesSomos.png);
+  background-size: cover;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card2 {
+  background-image: url(../Imagenes/Index/NuestroPropósito.png);
+  background-size: cover;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .card3 {
+  background-image: url(../Imagenes/Index/PorQueExistimos.png);
+  background-size: cover;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  padding: 0.9375em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
+  color: #645c5c;
+  font-size: 0.9375em;
+  font-weight: 400;
+  text-align: justify;
+  padding: 0.625em 0.625em 0rem 0.625em;
+  font-family: 'Baloo Thambi 2';
+}
+
+#SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
+  color: #108896;
+  font-size: 1.75em;
+  font-weight: 900;
+  font-family: "Baloo Thambi 2";
+}
+
+.Boletin_Imagen {
+  font-size: 16px;
+  height: 60vh;
+  background-image: url(../Imagenes/Index/perrita.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Boletin_Imagen .Boletin_Caja {
+  border-radius: 1.875em;
+  height: 18.75em;
+  width: 31.25em;
+  margin-left: auto;
+  margin-right: 1.875em;
+  padding: 1.875em 2.5em 0 2.5em;
+  background-color: #108896;
+  border-right: solid #9ddbd6 0.8125em;
+}
+
+.Boletin_Imagen .Boletin_Caja h3 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.75em;
+  font-weight: 800;
+  color: #fdffff;
+  margin-bottom: 1.25em;
+}
+
+.Boletin_Imagen .Boletin_Caja p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 19px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 26px;
+}
+
+.Boletin_Imagen .Boletin_Caja .Boletin_Input {
+  border: solid #cf840c 0.125em;
+}
+
+.Boletin_Imagen .Boletin_Caja .Boletin_Boton {
+  color: white;
+  font-size: 1.0625em;
+  font-weight: 900;
+  background-color: #ff953d;
+}
+
+.Boletin_Imagen .Boletin_Caja .Boletin_Boton:hover {
+  background-color: #fc7405;
+  border: solid 0.1875em #fc7405;
+}
+
+.Funcionamiento {
+  font-size: 16px;
+  padding-top: 4.375em;
+  background-color: #F6F4EF;
+}
+
+.Funcionamiento .Funcionamiento_Subtitulo {
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+  color: #fdffff;
+  font-weight: 900;
+  margin-bottom: 2em;
+  border-radius: 1.5625em;
+  border-right: solid 0.1875em #108896;
+  border-bottom: solid 0.25em #108896;
+  padding: 0.4em 1.2em 0.4em 1.2em;
+  background-color: #7abeb9;
+}
+
+.Funcionamiento .Funcionamiento_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-top: 5.5em;
+  padding-bottom: 4.375em;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
+  width: 38%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen img {
+  width: 31.25em;
+}
+
+.Funcionamiento .Funcionamiento_Container .sun {
+  height: 9.375em;
+  position: relative;
+}
+
+.Funcionamiento .Funcionamiento_Container .sun img {
+  width: 9.375em;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
+  width: 50%;
+  padding-top: 60px;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 2.9em;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Numero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #e29e00;
+  border-radius: 6.25em;
+  width: 2.4em;
+  height: 2.4em;
+  font-size: 1.3em;
+  color: #f6f8ff;
+  font-weight: 700;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto {
+  width: 25em;
+  margin-left: 3em;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Texto-p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 17px;
+  font-weight: 500;
+  color: #7a7575;
+}
+
+.Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.7em;
+  font-weight: 800;
+  color: #7a7575;
+}
+
+.ContactoIndex_Container {
+  font-size: 16px;
+  padding-top: 2.5em;
+  background-image: url(../Imagenes/Img_PNG/imgFinal.png);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+  background-color: white;
+}
+
+.ContactoIndex_Container .wave_footer {
+  height: 50px;
+  overflow: hidden;
+}
+
+.ContactoIndex_Container .wave_footer svg {
+  height: 100%;
+  width: 100%;
+}
+
+.ContactoIndex_Container .wave_footer svg path {
+  stroke: none;
+  fill: #E6E4E0;
+}
+
+.ContactoIndex_Container .ContactoIndex_Caja {
+  width: 50%;
+  padding-left: 1.875em;
+}
+
+.ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
+  display: inline-block;
+  position: relative;
+  font-size: 2em;
+  color: #fdffff;
+  font-weight: 900;
+  margin-bottom: 2em;
+  border-radius: 1.5625em;
+  border-right: solid 0.1875em #108896;
+  border-bottom: solid 0.25em #108896;
+  padding: 0.4em 1.2em 0.4em 1.2em;
+  background-color: #7abeb9;
+}
+
+.ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
+  border: solid #bea844 2px;
+  margin-bottom: 5px;
+}
+
+.ContactoIndex_Container .row1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 130px;
+}
+
+.ContactoIndex_Container .row1-container .box {
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+          box-shadow: 0px 30px 40px -20px var(--grayishBlue);
+  padding: 30px;
+  margin: 40px;
+  cursor: pointer;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+
+.ContactoIndex_Container .row1-container .box p {
+  color: var(--grayishBlue);
+}
+
+.ContactoIndex_Container .row1-container .box h2 {
+  color: #4c4e61;
+  font-weight: 600;
+}
+
+.ContactoIndex_Container .row1-container .box img {
+  float: right;
+}
+
+.ContactoIndex_Container .row1-container .cyan {
+  border-top: 3px solid #45d3d3;
+}
+
+.ContactoIndex_Container .row1-container .red {
+  border-top: 3px solid #ea5353;
+}
+
+.ContactoIndex_Container .row1-container .blue {
+  border-top: 3px solid #549ef2;
+}
+
+.ContactoIndex_Container .row1-container .orange {
+  border-top: 3px solid #fcaf4a;
+}
+
+.ContactoIndex_Container .box:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+@media (max-width: 450px) {
+  .ContactoIndex_Container .box {
+    height: 200px;
+  }
+}
+
+@media (max-width: 950px) and (min-width: 450px) {
+  .ContactoIndex_Container .box {
+    text-align: center;
+    height: 180px;
+  }
+}
+
+@media (min-width: 950px) {
+  .ContactoIndex_Container .row1-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-bottom: 130px;
+  }
+  .ContactoIndex_Container .row2-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .ContactoIndex_Container .box-down {
+    position: relative;
+    top: 150px;
+  }
+  .ContactoIndex_Container .box {
+    width: 20%;
+  }
+  .ContactoIndex_Container .header p {
+    width: 30%;
+  }
+}
+
+main .tipsGrid_Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 129.9975px;
+  -ms-grid-columns: (28.125rem)[2];
+      grid-template-columns: repeat(2, 28.125rem);
+  -ms-grid-rows: (15.625rem)[4];
+      grid-template-rows: repeat(4, 15.625rem);
+      grid-template-areas: "caja1 img1" "img2 caja2" "caja3 img3" "caja4 caja4";
+  row-gap: 7.5rem;
+}
+
+main .tipsGrid_Container .tipsGrid_Caja1 {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: caja1;
+}
+
+main .tipsGrid_Container .tipsCaja_Img1 {
+  background-size: 28.125rem;
+  width: 28.125rem;
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+          box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+  background-image: url(../Imagenes/Tips/tipsGridImg1.jpeg);
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: img1;
+}
+
+main .tipsGrid_Container .tipsGrid_Caja2 {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: caja2;
+}
+
+main .tipsGrid_Container .tipsCaja_Img2 {
+  background-size: 28.125rem;
+  width: 28.125rem;
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+          box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+  background-image: url(../Imagenes/Tips/tipsGridImg2.jpeg);
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: img2;
+}
+
+main .tipsGrid_Container .tipsGrid_Caja3 {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: caja3;
+}
+
+main .tipsGrid_Container .tipsCaja_Img3 {
+  background-size: 28.125rem;
+  width: 28.125rem;
+  background-repeat: no-repeat;
+  background-position: cover;
+  border-radius: 1.25rem;
+  -webkit-box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+          box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+  background-image: url(../Imagenes/Tips/tipsGridImg3.jpg);
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: img3;
+}
+
+main .tipsGrid_Container .tipsGrid_Caja4 {
+  padding: 0rem 1.25rem 0rem 1.25rem;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: caja4;
+}
+
+main .tipsGrid_Container .tipsGrid_Texto {
+  font-family: 'Baloo Thambi 2';
+  font-size: 1em;
+  font-weight: 400;
+  color: #706666;
+}
+
+main .tipsGrid_Container .tipsGrid_Numeros {
+  background-color: #118996;
+  border-radius: 100%;
+  width: 3.125rem;
+  height: 3.125rem;
+  display: block;
+  margin: auto;
+  padding: 0.3125rem;
+  margin-bottom: 1.875rem;
+}
+
+main .tipsGrid_Container .tipsGrid_Numeros p {
+  color: white;
+  font-size: 1.5625rem;
+  font-weight: 800;
+}
+
+main .tipsImg_Final {
+  width: 100%;
+  height: 21.875rem;
+  grid-area: img4;
+  background-image: url(../Imagenes/Tips/tipsGridImg4.jpeg);
+  background-size: 75rem;
+  background-size: cover;
+  background-position: 50% 45%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+main .reencuentro_Container {
+  background-color: rgba(233, 210, 210, 0.76);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 15.625rem;
+  margin: 6.25rem 2.5rem 0rem 2.5rem;
+  border-radius: 0.9375rem;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+main .reencuentro_Container .cieloImg {
+  width: 43.75rem;
+  background-image: url(../Imagenes/Reencuentro/cielo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 0.9375rem;
+}
+
+main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo {
+  background-color: #ffd9007a;
+  border-radius: 2.1875rem;
+  width: 18.75rem;
+  margin: auto;
+  margin-top: 0.9375rem;
+  margin-bottom: 1.25rem;
+  padding: 0.3125rem;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo h2 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: #575454;
+  margin-top: 0.625rem;
+}
+
+main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Texto {
+  font-family: 'Baloo Thambi 2';
+  font-size: 16ox;
+  font-weight: 400;
+  padding: 0rem 3.125rem 0rem 3.125rem;
+  text-align: left;
+}
+
+main .reencuentro_pruebas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 3.125rem;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+main .reencuentro_pruebas .reencuentro_pruebas-imagen {
+  background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
+  background-size: contain;
+  border-radius: 1.25rem;
+  width: 25rem;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+main {
+  /*listado mascotas perdidas*/
+  /* .MascotasPyE_Listado{
+        padding-top: 5rem;
+        display: grid;
+        grid-template-columns: repeat(3, 25%);
+        grid-template-rows: repeat(3, 23.75rem);
+        justify-content: space-around;
+        padding-bottom: 6.25rem;
+        background-image: url(../Imagenes/Fondos/fondo_huellas.png); 
+        grid-row-gap: 5rem;
+
+        .card{
+            margin-left: 3.75rem;
+            border-radius: 0.625rem;
+            box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+            img{
+                height: 15rem;
+                border-radius: 0.625rem;
+            }
+            .card-title{
+                font-size: 1.375rem;
+                color: #12a1b1;
+                font-family: 'Rammetto One', cursive;
+            }
+            .btn{
+                margin-top: 10px;
+                background-color: #f1b36c;
+                border: #fb7303;
+            }
+        
+
+
+        .cards {
+            font-size: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
+
+            .card {
+                position: relative;
+                display: block;
+                height: 100%;  
+                border-radius: 50px;
+                overflow: hidden;
+                text-decoration: none;
+                &:hover .card__overlay {
+                    transform: translateY(0);
+                  }
+                &:hover .card__header {
+                    transform: translateY(0);
+                  }
+                
+                .card__image {      
+                    width: 100%;
+                    height: auto;
+                }
+                .card__overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    border-radius: 50px;
+                    background-color: rgb(204, 41, 41);      
+                    transform: translateY(100%);
+                    transition: .2s ease-in-out;
+                    
+                    .card__description {
+                        color: #D7BDCA;                        
+                    }
+          
+                    .card__header {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 2em;
+                        padding: 1em;
+                        border-top-left-radius: 50px;    
+                        background-color: rgb(99, 233, 10);
+                        transform: translateY(-100%);
+                        transition: .2s ease-in-out;
+                        .card__thumb {
+                            width: 50px;
+                            height: 50px;      
+                            border-radius: 50%; 
+                            border: solid rgb(81, 255, 0);     
+                        }
+                        .card__header-text{
+                            .card__title {
+                                font-size: 1em;
+                                margin: 0 0 .3em;
+                                color: #6A515E;
+                            }
+                          .card__status {
+                            font-size: .8em;
+                            color: #D7BDCA;
+                          }
+                        }
+                    } 
+                }
+            }
+        }*/
+}
+
+main .MascotasPyE_Menu-Container {
+  background-image: url(../Imagenes/Fondos/fondo_animales.png);
+  margin-top: 2.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 6.25rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 20% 70%;
+      grid-template-rows: 20% 70%;
+  -ms-grid-columns: 20% 50%;
+      grid-template-columns: 20% 50%;
+      grid-template-areas: "tittle tittle" "menu img";
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  grid-gap: 1.875rem;
+}
+
+main .MascotasPyE_Menu-Container .MascotasPyE_Titulo {
+  width: 31.25rem;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: tittle;
+  background-image: url(../Imagenes/Fondos/fondo_titulos.png);
+  border-radius: 1.25rem;
+  margin: auto;
+  margin-bottom: 3.125rem;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+  font-family: 'Rammetto One', cursive;
+}
+
+main .MascotasPyE_Menu-Container .MascotasPyE_Titulo h1 {
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.75rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+main .MascotasPyE_Menu-Container nav .MascotasPyE_Menu-Titulo {
+  background-color: #92b2df;
+  padding: 0.375rem;
+  color: white;
+  font-family: 'Baloo Thambi 2';
+  font-size: 1.75rem;
+  font-weight: 900;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+}
+
+main .MascotasPyE_Separador {
+  background-color: rgba(196, 149, 149, 0.534);
+  height: 3.125rem;
+  color: #2a2925;
+  font-size: 1.5625rem;
+  font-weight: 800;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .listadoPerdidas_Container, main .listadoEncontradas_Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja, main .listadoEncontradas_Container .listadoPerdidas_Caja {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  max-width: 80%;
+  margin: 100px auto 100px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 80px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item {
+  height: 270px;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 {
+  border-radius: 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  -webkit-box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+  border: solid 1px;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(1), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(1), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(1), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(1) {
+  background-image: url(../Imagenes/Perdidos/perdido1.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(2), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(2), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(2), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(2) {
+  background-image: url(../Imagenes/Perdidos/perdido2.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(3), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(3), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(3), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(3) {
+  background-image: url(../Imagenes/Perdidos/perdido3.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(4), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(4), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(4), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(4) {
+  background-image: url(../Imagenes/Perdidos/perdido4.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(5), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(5), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(5), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(5) {
+  background-image: url(../Imagenes/Perdidos/perdido5.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(6), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(6), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(6), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(6) {
+  background-image: url(../Imagenes/Perdidos/perdido6.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(7), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(7), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(7), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(7) {
+  background-image: url(../Imagenes/Perdidos/perdido7.jpeg);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(8), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(8), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(8), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(8) {
+  background-image: url(../Imagenes/Perdidos/perdido8.png);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(9), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(9), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(9), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(9) {
+  background-image: url(../Imagenes/Perdidos/perdido9.jpeg);
+  background-size: cover;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 52px;
+  height: 52px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto {
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.2s 0.3s;
+  transition: 0.2s 0.3s;
+  color: black;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay::before {
+  content: "+";
+  color: #77777a;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus {
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  opacity: 0.6;
+  border-radius: 25px;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus::before {
+  content: none;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto {
+  z-index: 1;
+  padding: 20px;
+  line-height: 1.4;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  pointer-events: none;
+  -webkit-transition: 0s;
+  transition: 0s;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto h2, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto h2 {
+  margin: 0;
+  margin-bottom: 16px;
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 25px;
+  font-weight: 400;
+}
+
+main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto p, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto p {
+  font-family: 'Baloo Thambi 2';
+  font-size: 18px;
+  font-weight: 500;
+  color: #363535;
+  margin-bottom: 20px;
+}
+
+main .listadoEncontrados_Caja2:nth-child(1) {
+  background-image: url(../Imagenes/Encontrados/encontrado1.png) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(2) {
+  background-image: url(../Imagenes/Encontrados/encontrado2.jpeg) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(3) {
+  background-image: url(../Imagenes/Encontrados/encontrado3.png) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(4) {
+  background-image: url(../Imagenes/Encontrados/encontrado4.jpeg) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(5) {
+  background-image: url(../Imagenes/Encontrados/encontrado5.jpeg) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(6) {
+  background-image: url(../Imagenes/Encontrados/encontrado6.png) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(7) {
+  background-image: url(../Imagenes/Encontrados/encontrado7.jpeg) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(8) {
+  background-image: url(../Imagenes/Encontrados/encontrado8.png) !important;
+  background-size: cover;
+}
+
+main .listadoEncontrados_Caja2:nth-child(9) {
+  background-image: url(../Imagenes/Encontrados/encontrado9.png) !important;
+  background-size: cover;
+}
+
+main .botonmasc {
+  background-color: #fc7405;
+  color: white;
+  border-radius: 10px;
+  padding: 7px 10px 7px 10px;
+}
+/*# sourceMappingURL=styles.css.map */
