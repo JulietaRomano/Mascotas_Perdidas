@@ -1,4 +1,5 @@
 main{
+
     .MascotasPyE_Menu-Container{
     background-image: url(../Imagenes/Fondos/fondo_animales.png);
     margin-top: 2.5rem;
@@ -50,7 +51,217 @@ main{
         padding-left: 5rem;
         align-items: center;
     }
-    .MascotasPyE_Listado{
+
+    /*listado mascotas perdidas*/
+
+    .listadoPerdidas_Container , .listadoEncontradas_Container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        color: #ffffff;
+      
+        .listadoPerdidas_Caja {
+            flex-grow: 1;
+            max-width: 80%;
+            margin: 100px auto 100px auto;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            .listadoPerdidas_Caja-Container {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 80px;
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                
+                .listadoPerdidas_Caja-item {
+                    height: 270px;
+                }
+                .listadoPerdidas_Caja1,.listadoEncontrados_Caja2 {
+                    border-radius: 25px;
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background-color: #000000;
+                    box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+                    border:solid 1px;
+                    
+                    &:nth-child(1) {
+                    background-image: url(../Imagenes/Perdidos/perdido1.png);
+                    background-size: cover;
+                    }
+                    
+                    &:nth-child(2) {
+                    background-image: url(../Imagenes/Perdidos/perdido2.png);
+                    background-size: cover;
+                    }
+                    &:nth-child(3) {
+                    background-image: url(../Imagenes/Perdidos/perdido3.png);
+                    background-size: cover;
+                    }
+                    &:nth-child(4) {
+                    background-image: url(../Imagenes/Perdidos/perdido4.png);
+                    background-size: cover;
+                    }
+                    &:nth-child(5) {
+                    background-image: url(../Imagenes/Perdidos/perdido5.png);
+                    background-size: cover;
+                    }
+                    
+                    &:nth-child(6) {
+                    background-image: url(../Imagenes/Perdidos/perdido6.png);
+                    background-size: cover;
+                    }
+                    &:nth-child(7) {
+                    background-image: url(../Imagenes/Perdidos/perdido7.jpeg);
+                    background-size: cover;
+                    }
+                    &:nth-child(8) {
+                    background-image: url(../Imagenes/Perdidos/perdido8.png);
+                    background-size: cover;
+                    }
+                    &:nth-child(9) {
+                    background-image: url(../Imagenes/Perdidos/perdido9.jpeg);
+                    background-size: cover;
+                    }
+                
+                    .listadoPerdidas_overlay{
+                        position: absolute;
+                        bottom: 20px;
+                        right: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 52px;
+                        height: 52px;
+                        background-color: #ffffff;
+                        border-radius: 50%;
+                        box-shadow: 0 2px 4px rgba(#000000, 0.2);
+                        transition: 0.5s;
+                        cursor: pointer;
+                        &:hover ~ .listadoPerdidas_Texto{
+                            opacity: 1;
+                            visibility: visible;
+                            transition: 0.2s 0.3s;
+                            color: black;
+                        }
+                        &::before {
+                            content: "+";
+                            color: rgb(119, 119, 122);
+                            font-size: 20px;
+                            text-transform: uppercase;
+                            font-weight: 500;
+                            letter-spacing: 0.02em;
+                        }
+                        &:hover,
+                        &:focus {
+                            bottom: 0;
+                            right: 0;
+                            width: 100%;
+                            height: 100%;
+                            box-shadow: none;
+                            border-radius: 0;
+                            opacity: 0.6; 
+                            border-radius: 25px;
+                            &::before {
+                                content: none;
+                            }
+                        }
+                    }
+                }
+                .listadoPerdidas_Texto {
+                    z-index: 1;
+                    padding: 20px;
+                    line-height: 1.4;
+                    opacity: 0;
+                    visibility: hidden;
+                    box-sizing: border-box;
+                    pointer-events: none;
+                    transition: 0s;
+                    
+                    h2 {
+                        margin: 0;
+                        margin-bottom: 16px;
+                        @include tituloRammetto(25px,400);
+                    }
+                    p{
+                        @include textoThambi (18px,500);
+                        color: rgb(54, 53, 53);
+                        margin-bottom: 20px;
+                    }
+                }  
+
+            }       
+        }
+    }
+        .listadoEncontrados_Caja2{
+            &:nth-child(1) {
+            background-image: url(../Imagenes/Encontrados/encontrado1.png)!important;
+            background-size: cover;
+            }
+            
+            &:nth-child(2) {
+            background-image: url(../Imagenes/Encontrados/encontrado2.jpeg)!important;
+            background-size: cover;
+            }
+            &:nth-child(3) {
+            background-image: url(../Imagenes/Encontrados/encontrado3.png)!important;
+            background-size: cover;
+            }
+            &:nth-child(4) {
+            background-image: url(../Imagenes/Encontrados/encontrado4.jpeg)!important;
+            background-size: cover;
+            }
+            &:nth-child(5) {
+            background-image: url(../Imagenes/Encontrados/encontrado5.jpeg)!important;
+            background-size: cover;
+            }
+            
+            &:nth-child(6) {
+            background-image: url(../Imagenes/Encontrados/encontrado6.png)!important;
+            background-size: cover;
+            }
+            &:nth-child(7) {
+            background-image: url(../Imagenes/Encontrados/encontrado7.jpeg)!important;
+            background-size: cover;
+            }
+            &:nth-child(8) {
+            background-image: url(../Imagenes/Encontrados/encontrado8.png)!important;
+            background-size: cover;
+            }
+            &:nth-child(9) {
+            background-image: url(../Imagenes/Encontrados/encontrado9.png)!important;
+            background-size: cover;
+            }
+        }
+    
+        
+        
+
+   
+
+.botonmasc{
+    background-color: $naranjaFuerte;
+    color: white;
+    border-radius: 10px;
+    padding:7px 10px 7px 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+   /* .MascotasPyE_Listado{
         padding-top: 5rem;
         display: grid;
         grid-template-columns: repeat(3, 25%);
@@ -59,6 +270,7 @@ main{
         padding-bottom: 6.25rem;
         background-image: url(../Imagenes/Fondos/fondo_huellas.png); 
         grid-row-gap: 5rem;
+
         .card{
             margin-left: 3.75rem;
             border-radius: 0.625rem;
@@ -77,6 +289,89 @@ main{
                 background-color: #f1b36c;
                 border: #fb7303;
             }
-        }
-    }
+        
+
+
+        .cards {
+            font-size: 16px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 5vw;
+            padding: 0;
+            list-style-type: none;
+
+            .card {
+                position: relative;
+                display: block;
+                height: 100%;  
+                border-radius: 50px;
+                overflow: hidden;
+                text-decoration: none;
+                &:hover .card__overlay {
+                    transform: translateY(0);
+                  }
+                &:hover .card__header {
+                    transform: translateY(0);
+                  }
+                
+                .card__image {      
+                    width: 100%;
+                    height: auto;
+                }
+                .card__overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 1;
+                    border-radius: 50px;
+                    background-color: rgb(204, 41, 41);      
+                    transform: translateY(100%);
+                    transition: .2s ease-in-out;
+                    
+                    .card__description {
+                        color: #D7BDCA;                        
+                    }
+          
+                    .card__header {
+                        position: relative;
+                        display: flex;
+                        align-items: center;
+                        gap: 2em;
+                        padding: 1em;
+                        border-top-left-radius: 50px;    
+                        background-color: rgb(99, 233, 10);
+                        transform: translateY(-100%);
+                        transition: .2s ease-in-out;
+                        .card__thumb {
+                            width: 50px;
+                            height: 50px;      
+                            border-radius: 50%; 
+                            border: solid rgb(81, 255, 0);     
+                        }
+                        .card__header-text{
+                            .card__title {
+                                font-size: 1em;
+                                margin: 0 0 .3em;
+                                color: #6A515E;
+                            }
+                          .card__status {
+                            font-size: .8em;
+                            color: #D7BDCA;
+                          }
+                        }
+                    } 
+                }
+            }
+        }*/
 }
+
+        
+        
+
+
+
+
+
+

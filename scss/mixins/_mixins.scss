@@ -46,6 +46,23 @@
     margin-left: $margin;
     border: rgb(255, 255, 255) solid;
 }
+
+    //Index Inicio imagenes animadas//
+    @mixin imagenes_animadas{
+        display: inline-block;
+        border-radius: 20px;
+        margin: 30px 0px 0px 0px;
+        height: 180px;
+        width: 200px;
+        background-size: cover;
+        background-position-y: -10px;
+
+    }
+
+
+
+
+
     //Portadas para todas las Pages (menos Index)//
 @mixin portadas{
     position: relative;

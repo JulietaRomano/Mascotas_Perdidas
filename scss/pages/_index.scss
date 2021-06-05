@@ -1,153 +1,81 @@
 main{
     font-size: 16px;
-    overflow: hidden;
-    //Seccion: ¿Quienes Somos?//
-    .QuienesSomos_Container{
-        padding-top: 7%;
-        padding-bottom: 7%;
-        background-image: url(../Imagenes/Fondos/fondo_animales.png);
-        .QuienesSomos_Texto{
-            .QuienesSomos_P{
-                @include textoThambi (1.125em, 400);
-                color: $texto1;
-                margin-top: 1em;
-                padding: 0 1em 0 1em ;
+
+    .Inicio_Index{
+        margin-top: 5em;
+        font-size:16px;
+
+        .Inicio_Index-Texto{
+            padding: 0 18.75em 2em 18.75em;
+            p{
+                @include textoThambi (1.25em,500);
+                        color: rgb(122, 117, 117);
             }
-            //media queries//
             @include smarthphone{
-            font-size: 12px;
+                font-size:9px;
+                padding: 0 1.5em 2em 1.5em;
             }
         }
-        //Carousel con contenido de la pag//
+        
 
-        .QuienesSomos_Carousel{
-            height: 35em;
-            margin: 0;
-            display: grid;
-            grid-template-rows: 32em .60em;
-            grid-template-columns: 1fr 1.875em 1.875em 1.875em 1fr;
-            align-items: center;
-            justify-items: center;
-            @include smarthphone{
-                height: 30em;
-                    grid-template-rows: 28em .60em;
-            }
+        //Seccion: ¿Quienes Somos?//
+        .Inicio_Index-Container{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            margin:auto;
 
-            input:nth-of-type(1) {
-                grid-column: 2 / 3;
-                grid-row: 2 / 3;
-            }
-            input:nth-of-type(1):checked ~ div#carousel_id {
-                --position: 1;
-            }
-            
-            input:nth-of-type(2) {
-                grid-column: 3 / 4;
-                grid-row: 2 / 3;
-            }
-            input:nth-of-type(2):checked ~ div#carousel_id{
-                --position: 2;
-            }
-            
-            input:nth-of-type(3) {
-                grid-column: 4 /5;
-                grid-row: 2 / 3;
-            }
-            input:nth-of-type(3):checked ~ div#carousel_id {
-                --position: 3;
-            }
-
-            #carousel_id {
-                @include flex;
-                grid-row: 1 / 2;
-                grid-column: 1 / 8;
-                width: 100vw;
-                height: 26.5625em;
-                justify-content: center;
-                overflow: hidden;
-                transform-style: preserve-3d;
-                perspective: 37.5em;
-                --items: 3;
-                --middle: 3;
-                --position: 1;
+            .Inicio_Index-Caja {
+                display: inline-block;
+                width: 240px;
+                text-align: center;
+                transition: 1s;
+                cursor: pointer;
+                &:hover{
+                    transform: translateY(-15px);
+                    .Inicio_Index-Img1 {
+                        background-image: url(../Imagenes/Gif/1.gif);
+                    }
+                    .Inicio_Index-Img2{
+                        background-image: url(../Imagenes//Gif/2.gif);
+                    }
+                    .Inicio_Index-Img3{
+                        background-image: url(../Imagenes/Gif/3.gif);
+                    }
                 }
-            
-                .item1{
-                    position: absolute;
-                    width: 18.75em;
-                    height: 25em;
-                    border-radius: 1.25em;
-                    box-shadow: .1875em .1875em .5em rgb(70, 67, 53);
-                    --r: calc(var(--position) - var(--offset));
-                    --abs: max(calc(var(--r) * -1), var(--r));
-                    transition: all 0.25s linear;
-                    transform: rotateY(calc(-10deg * var(--r)))
-                    translateX(calc(-18.75em * var(--r)));
-                    z-index: calc((var(--position) - var(--abs)));
+                    .Inicio_Index-Img1 {
+                    @include imagenes_animadas;
+                    background-image: url(../Imagenes//Gif/1.jpg);
+                    }
+                    .Inicio_Index-Img2 {
+                    @include imagenes_animadas;
+                    background-image: url(../Imagenes//Gif/2.jpg);
 
-            
-                    &:nth-of-type(1) {
-                        --offset: 1;
-                        background-color: $itemCarousel;
                     }
-                    &:nth-of-type(2) {
-                        --offset: 2;
-                        background-color: $itemCarousel
-                    }
-                    &:nth-of-type(3) {
-                        --offset: 3;
-                        background-color: $itemCarousel;
-                    }
-                    .img1{
-                        position: relative;
-                        height: 13.125em;
-                        border-radius: 1.25em;
-                        background-size: cover;
-                        background-repeat: no-repeat;
-                        padding-top: 11.5625em;
-                        background-image: url(../Imagenes/Index/ayudaEncuentro.png);
-                        .wave{
-                            height: 1.875em; 
-                            overflow: hidden;
-                            svg{
-                                height: 100%; 
-                                width: 100%;
-                                stroke: none; 
-                                fill: $itemCarousel;
-                            }
+                    .Inicio_Index-Img3 {
+                        @include imagenes_animadas;
+                        background-image: url(../Imagenes//Gif/3.jpg);
+
                         }
+                } 
+                .Inicio_Index-Texto {
+                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+                    padding: 120px 20px 20px 20px;
+                    border-radius: 20px;
+                    background: rgb(255, 255, 255);
+                    margin: -120px 0px 0px 0px;
+                    line-height: 19px;
+                    font-size: 14px;
+                    h3 {
+                        margin: 10px 0px 10px 0px;
+                        color: #81818d;
+                        @include tituloRammetto (18px, 400);
                     }
-                    .item1_caja{
-                        .item1_Titulo{
-                            margin-top: .625em;
-                            @include tituloRammetto (1em,800);
-                            color: $textoSub;
-                            
-                        }
-                        
-                        .item1_Texto{
-                            padding: .625em;
-                            @include textoThambi (1em, 400);
-                            color: $texto1;
-                            
-                        }
+                    p{
+                        @include textoThambi (15px,500);
+                        color: rgb(122, 117, 117);
                     }
-                    .img2{
-                        @extend .img1;
-                        background-image: url(../Imagenes/Index/ayudaPerdido.jpeg);
-                        }
-                    }
-                    .img3{
-                        @extend .img1;
-                        background-image: url(../Imagenes/Index/ayudanos.jpg)!important;
-                    }
-                    //media queries//
-                    @include smarthphone{
-                        font-size: 11px;
-                        .item1{
-                            transform: none;
-                        }
-                    }
+                }
             }
         }
     }
@@ -155,7 +83,7 @@ main{
     //Seccion:Sobre Nosotros//
     #SobreNosotros_Container{
         font-size: 16px;
-        background-color: hsl(43, 26%, 95%);
+        background-color: hsl(60, 100%, 100%);
         padding-top: 3.75em;
 
         .SobreNosotros_article {
@@ -327,14 +255,17 @@ main{
     .Funcionamiento{
         font-size: 16px;
         padding-top: 4.375em;
+        background-color: #F6F4EF;
+
         .Funcionamiento_Subtitulo{
             @include SubtitulosIndex;
         }
         .Funcionamiento_Container{
             display: flex;
             justify-content: space-around;
-            padding-top: 4.375em;
+            padding-top: 5.5em;
             padding-bottom: 4.375em;
+
             .Funcionamiento_Imagen{
                 width: 38%;
                 @include flex;
@@ -352,15 +283,15 @@ main{
             }
             .Funcionamiento_Grid{
                 width: 50%;
+                padding-top: 60px;
                 .Funcionamiento_Caja{
                     display: flex;
                     justify-content:center;
-                    margin-bottom: 2.5em;
+                    margin-bottom: 2.9em;
                     .Funcionamiento_Numero{
                         @include flex;
                         justify-content: center;
-                        background-color: $celeste;
-                        border: solid rgba(2, 45, 85, 0.123) 0.1875em;
+                        background-color:#e29e00;
                         border-radius: 6.25em;
                         width: 2.4em;
                         height: 2.4em;
@@ -370,14 +301,14 @@ main{
                     }
                     .Funcionamiento_Texto{
                         width: 25em;
-                        margin-left: 1.875em;
+                        margin-left: 3em;
                         .Funcionamiento_Texto-p{
-                            @include textoThambi(1.2em,400);
-                            color: $texto1;
+                            @include textoThambi(17px,500);
+                            color: rgb(122, 117, 117);
                         }
                         .Funcionamiento_Sub{
-                        @include textoThambi (1.875em,600);
-                        color: $naranjaFuerte;
+                        @include textoThambi (1.7em,800);
+                        color: rgb(122, 117, 117);
                         }
                     }
                 }
