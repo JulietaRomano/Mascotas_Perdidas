@@ -21,67 +21,106 @@
         }
 //Titulos portadas//
     .portada_Titulo{
-        width: 34.375rem;
-        padding: 1.875rem 0.625rem 1.875rem 0.625rem;
+        width: 34.375em;
+        padding: 1.875em 0.625em 1.875em 0.625em;
         background-image: url(../Imagenes/Fondos/fondo_titulos.png);
         position: absolute;
-        border: solid #FFFCF2 0.625rem;
-        left: 28.125rem;
-        top: 23.75rem;
+        border: solid #FFFCF2 0.625em;
+        left: 28.125em;
+        top: 23.75em;
         border-radius: 50%;
         display: inline-block;
         .titulos{
-            @include tituloRammetto (1.7rem, 800);
+            @include tituloRammetto (1.7em, 800);
             color: #ffffff;
+            @include smarthphone{
+                font-size: 9px;
+            }
+        }
+        @include smarthphone{
+            padding: 1em 0.625em 1em 0.625em;
+            width: 22em;
+            font-size: 9px;
+            left: 9em;
+            top: 16em;
         }
     }
 //Subtitulos Portadas//
     main{
         .PagesSub_Conteiner{
-            height: 18.75rem;
+            height: 18.75em;
             width: 100%;
             @include flex;
             background-image: linear-gradient(to bottom, #FFFCF2,rgb(227, 243, 238));
             justify-content: center;
-            margin-top: 5rem;
-            border-bottom: rgb(197, 191, 173) 0.3125rem solid;
+            margin-top: 5em;
+            border-bottom: rgb(197, 191, 173) 0.3125em solid;
+            @include smarthphone{
+                font-size: 9px;
+                height: 13em;
+                margin-top: 1em;
+            }
             .PagesSub_texto{
                 @include textoThambi(19px, 400);
                 color: $texto1;
-                padding: 30px 160px 0 160px;
+                padding: 1.875em 10em 0 10em;
+                @include smarthphone{
+                    font-size: 9px;
+                    padding:0;
+                    text-justify: justify;
+                }
             }
+
             //Registro.html//
             .PagesSub_Registro-Img{
                 img{
-                    width: 20.3125rem;
+                    width: 20.3125em;
+                    @include smarthphone{
+                        display: none;
+                    }
                 }
             }
             //Colabora.html//
             .colabora_Textos{
                 h2{
-                    @include textoThambi(30px, 800);
+                    @include textoThambi(1.875em, 800);
                     color: $texto1;
+                    @include smarthphone{
+                        font-size: 11px;
+                    }
                 }
             }
             .PagesSub_Colabora-Img{
                 img{
-                    width: 15.125rem;
+                    width: 15.125em;
+                    @include smarthphone{
+                       font-size: 6.3px;
+                    }
                 }
             }
+            //tips//
             .PagesSub_Tips-Img{
                 img{
-                    width: 17.1875rem;
+                    width: 17.1875em;
+                    @include smarthphone{
+                        font-size: 6.3px;
+                     }
                 }
             }
+
+            //reencuentro//
             .PagesSub_Reencuentro-Img{
                 img{
-                    width: 20.5rem;
+                    width: 20.5em;
+                    @include smarthphone{
+                        font-size: 6.3px;
+                     }
                 }
             }
 
         }
         .textoResaltado{
-            @include textoThambi(18px, 800);
+            @include textoThambi(1.125em, 800);
         }
     }
     

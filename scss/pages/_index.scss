@@ -4,6 +4,9 @@ main{
     .Inicio_Index{
         margin-top: 5em;
         font-size:16px;
+        @include smarthphone{
+            font-size:6px;
+        }
 
         .Inicio_Index-Texto{
             padding: 0 18.75em 2em 18.75em;
@@ -15,7 +18,7 @@ main{
                 font-size:9px;
                 padding: 0 1.5em 2em 1.5em;
             }
-        }
+        } 
         
 
         //Seccion: ¿Quienes Somos?//
@@ -24,13 +27,20 @@ main{
             display: flex;
             justify-content: space-around;
             margin:auto;
+            @include smarthphone{
+                width: 100%;
+                }
 
             .Inicio_Index-Caja {
                 display: inline-block;
-                width: 240px;
+                width: 15em;
                 text-align: center;
                 transition: 1s;
                 cursor: pointer;
+
+                @include smarthphone{
+                font-size:7px;
+                }
                 &:hover{
                     transform: translateY(-15px);
                     .Inicio_Index-Img1 {
@@ -55,28 +65,49 @@ main{
                     .Inicio_Index-Img3 {
                         @include imagenes_animadas;
                         background-image: url(../Imagenes//Gif/3.jpg);
-
                         }
                 } 
                 .Inicio_Index-Texto {
-                    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
-                    padding: 120px 20px 20px 20px;
-                    border-radius: 20px;
+                    font-size: 16px;
+                    box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+                    padding: 7.5rem 1.5em 1.5em 1.5em;
+                    border-radius: 1.25em;
                     background: rgb(255, 255, 255);
-                    margin: -120px 0px 0px 0px;
-                    line-height: 19px;
-                    font-size: 14px;
+                    margin: -7.5em 0 0 0;
+                    line-height: 1.1875em;
+                    @include smarthphone{
+                        font-size:9px;
+                        padding: 4.5rem 1em 1em 1em;
+                        }
                     h3 {
-                        margin: 10px 0px 10px 0px;
+                        margin: .625em 0px .625em 0px;
                         color: #81818d;
-                        @include tituloRammetto (18px, 400);
+                        @include tituloRammetto (1.125em, 400);
+                        @include smarthphone{
+                            font-size:8px;
+                        }
                     }
                     p{
-                        @include textoThambi (15px,500);
+                        @include textoThambi (.9375em,500);
                         color: rgb(122, 117, 117);
+                    }
                     }
                 }
             }
+            .wave{
+                height: 8em; 
+                overflow: hidden;
+                svg{
+                    height: 100%; 
+                    width: 100%;
+                    path{
+                        stroke: none; 
+                        fill:#F6F4EE;
+                    }
+                }
+                @include smarthphone{
+                    font-size: 7px;
+                }
         }
     }
 
@@ -85,26 +116,50 @@ main{
         font-size: 16px;
         background-color: hsl(60, 100%, 100%);
         padding-top: 3.75em;
+        @include smarthphone{
+            font-size: 9px;
+            }
 
         .SobreNosotros_article {
             padding:2em 0em 1.25em 0em;
             display: flex;
             justify-content: space-around;
             margin-bottom: 1.25em;
+            @include smarthphone{
+                font-size: 9px;
+                padding:1em 0em 1em 0em;
+                margin-bottom: 0;
+                display: block;
+                }
             .SobreNosotros_texto{
                 width: 40.625em;
                 margin-top: 1.875em;
                 text-align: justify;
+                @include smarthphone{
+                    font-size: 9px;
+                    margin-top: 0em;
+                    }
 
                 .SobreNosotros_titulo{
-                    @include textoThambi (26px,900);
+                    @include textoThambi (1.625em,900);
                     color: $textoSub;
+                    @include smarthphone{
+                        font-size: 11px;
+                        padding-left: 2em;
+                    }
                 }
                 .SobreNosotros_p{
-                    line-height: 35px;
-                    @include textoThambi (19px, 400);
-                    margin-top:30px;
+                    line-height: 2.1875em;
+                    @include textoThambi (1.1875em, 400);
+                    margin-top:1.875em;
                     color: $texto1;
+
+                    @include smarthphone{
+                        font-size: 10px;
+                        line-height: 1.7em;
+                        padding: 0 2em 0 2em;
+                        margin-top:1em;
+                        }
                 }
             }
             .SobreNosotros_imagen{
@@ -112,6 +167,9 @@ main{
                 img{
                     width: 26.875em;
                 }
+                @include smarthphone{
+                    display: none;
+                    }
             }
         }
     
@@ -126,6 +184,9 @@ main{
             border-top: solid white 0.625em;
             border-bottom: solid white 0.3125em;
             transform-style: preserve-3d;
+            @include smarthphone{
+                font-size: 5.5px;
+            }
             .tarjetas_Subtitulo{
                 @include SubtitulosIndex;
             }
@@ -189,6 +250,7 @@ main{
                             flex-direction: column;
                             align-items: center;
                             text-align: center;   
+                            
                             p{
                                 color: rgb(100, 92, 92);
                                 font-size: 0.9375em;
@@ -196,12 +258,15 @@ main{
                                 text-align: justify;
                                 padding: 0.625em 0.625em 0rem 0.625em;
                                 font-family: 'Baloo Thambi 2';
+                                @include smarthphone{
+                                    font-size: 6.5px;
+                                    padding: 0em 0.625em 0rem 0.625em;
+                                }
                             } 
                             h2{
-                                color: #108896;
-                                font-size: 1.75em;
+                                color: $celeste;
+                                @include textoThambi (1.75em, 400);
                                 font-weight: 900;
-                                font-family: 'Baloo Thambi 2'();
                             }   
                         } 
                     }
@@ -217,6 +282,12 @@ main{
         background-size: cover;
         display: flex;
         align-items: center;
+        @include smarthphone{
+            font-size: 6.5px;
+            height: 40vh;
+            background-attachment:scroll;
+            background-position-x:-12em;
+        }
         .Boletin_Caja{
             border-radius: 1.875em;
             height: 18.75em;
@@ -230,14 +301,26 @@ main{
                 @include tituloRammetto (1.75em, 800);
                 color: #fdffff;
                 margin-bottom: 1.25em;
+                @include smarthphone{
+                    font-size: 9px;
+                    margin-bottom: .9em;
+                }
             }
             p{
-                @include textoThambi (19px, 400);
+                @include textoThambi (1.1875em, 400);
                 color: rgb(255, 255, 255);
-                margin-bottom: 26px;
+                margin-bottom: 1.625em;
+                @include smarthphone{
+                    font-size: 9px;
+                    margin-bottom: .9em;
+                }
             }
+                
             .Boletin_Input{
                 border: solid #cf840c 0.125em;
+                @include smarthphone{
+                    font-size: 6px;
+                }
             }
             .Boletin_Boton{
                 color: rgb(255, 255, 255);
@@ -256,6 +339,9 @@ main{
         font-size: 16px;
         padding-top: 4.375em;
         background-color: #F6F4EF;
+        @include smarthphone{
+            font-size: 7px;
+        }
 
         .Funcionamiento_Subtitulo{
             @include SubtitulosIndex;
@@ -265,6 +351,9 @@ main{
             justify-content: space-around;
             padding-top: 5.5em;
             padding-bottom: 4.375em;
+            @include smarthphone{
+                padding-top: 2em;
+            }
 
             .Funcionamiento_Imagen{
                 width: 38%;
@@ -273,6 +362,9 @@ main{
                 img{
                     width: 31.25em;
                 }
+                @include smarthphone{
+                    display: none;
+                }
             }
             .sun{
                 height: 9.375em;
@@ -280,35 +372,50 @@ main{
                 img{
                     width:9.375em;
                 }
+                @include smarthphone{
+                    display: none;
+                }
             }
             .Funcionamiento_Grid{
-                width: 50%;
-                padding-top: 60px;
+                padding-top: 3.75em;
+                @include smarthphone{ 
+                    width: 100%;
+                    padding-top: 1em;
+                }
                 .Funcionamiento_Caja{
                     display: flex;
                     justify-content:center;
                     margin-bottom: 2.9em;
+                    @include smarthphone{
+                        margin-bottom: 0em;
+                    }
                     .Funcionamiento_Numero{
                         @include flex;
                         justify-content: center;
-                        background-color:#e29e00;
-                        border-radius: 6.25em;
+                        background-color:rgb(255, 163, 110);
+                        border-radius:100%;
                         width: 2.4em;
                         height: 2.4em;
                         font-size: 1.3em;
-                        color: rgb(246, 248, 255);
+                        color: rgb(236, 233, 233);
                         font-weight: 700;
                     }
                     .Funcionamiento_Texto{
                         width: 25em;
                         margin-left: 3em;
+                        
+                        @include smarthphone{
+                            width: 23em;
+                            font-size: 9px;
+                        }
                         .Funcionamiento_Texto-p{
-                            @include textoThambi(17px,500);
+                            @include textoThambi(1.0625em,500);
                             color: rgb(122, 117, 117);
+                            
                         }
                         .Funcionamiento_Sub{
                         @include textoThambi (1.7em,800);
-                        color: rgb(122, 117, 117);
+                        color: rgb(87, 114, 116);
                         }
                     }
                 }
@@ -325,72 +432,51 @@ main{
         background-position-x: right;
         background-position-y: center;
         background-color: white;
-        .wave_footer{
-            height: 50px; 
-            overflow: hidden;
-            svg{
-                height: 100%; 
-                width: 100%;
-                path{
-                    stroke: none; 
-                    fill: #E6E4E0;
-                }
-            }
+        @include smarthphone{ 
+            font-size: 6px;
+            height: 40vh;
+            background-attachment:scroll;
+            background-position-x:2em;
+            background-size: cover;
         }
         .ContactoIndex_Caja{
             width: 50%;
             padding-left: 1.875em;
+            @include smarthphone{ 
+                font-size: 6px;
+            }
             .ContactoIndex_Subtitulo{
                 @include SubtitulosIndex;
             }
             .ContactoIndex_Form{
-                border: solid #bea844 2px;
-                margin-bottom: 5px;
-            }
-        }
-
-
-
-
-
-
-        .row1-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 130px;
-            .box {
-                border-radius: 5px;
-                box-shadow: 0px 30px 40px -20px var(--grayishBlue);
-                padding: 30px;
-                margin: 40px;  
-                cursor: pointer;
-                transition: 2s;
-                p {
-                    color: var(--grayishBlue);
+                border: solid #bea844 .125em;
+                margin-bottom: .3125em;
+                textarea{
+                    height: 6.25em;
+                    @include smarthphone{ 
+                        height: 1em;
+                    }
                 }
-                h2 {
-                    color: hsl(234, 12%, 34%);
-                    font-weight: 600;
-                }
-                img {
-                    float: right;
+                @include smarthphone{ 
+                    height: 3em;
+                    margin-bottom: 1.6em;
                 }
             }
-            .cyan {
-                border-top: 3px solid hsl(180, 62%, 55%);
-            }
-            .red {
-                border-top: 3px solid hsl(0, 78%, 62%);
-            }
-            .blue {
-                border-top: 3px solid hsl(212, 86%, 64%);
-            }
-            .orange {
-                border-top: 3px solid hsl(34, 97%, 64%);
-            }
         }
 
+    }
+
+       
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -398,61 +484,5 @@ main{
         
         
         
-        .box:hover{
-            transform: translateY(-10px);
-        }
-        
-        
-        @media (max-width: 450px) {
-            .box {
-                height: 200px;
-            }
-        }
-        
-        @media (max-width: 950px) and (min-width: 450px) {
-            .box {
-                text-align: center;
-                height: 180px;
-            }
-        }
-        
-        
-        
-        
-        
-        @media (min-width: 950px) {
-            .row1-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 130px;
-            }
-            
-            .row2-container {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-            .box-down {
-                position: relative;
-                top: 150px;
-            }
-            .box {
-                width: 20%;
-             
-            }
-            .header p {
-                width: 30%;
-            }
-            
-        }
-        
-    
-}
-
-
-
-
-
 
 

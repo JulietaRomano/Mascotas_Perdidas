@@ -5,6 +5,9 @@
   padding: 0px;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
 body {
@@ -38,6 +41,10 @@ a {
     box-shadow: 0em 0.125em 0.1875em #2b2929;
     transition: .6s linear;
     display: inline-block; }
+    @media (max-width: 480px) {
+      a .botones .botones1 {
+        font-size: 9px;
+        margin-top: 2em; } }
     a .botones .botones1 .botonesP {
       color: rgba(253, 253, 253, 0.925);
       font-size: 1.25em;
@@ -67,8 +74,20 @@ a {
     a .item1_botones {
       font-size: 11px; } }
 
+.botonmasc {
+  background-color: #fc7405;
+  color: white;
+  border-radius: 0.625em;
+  padding: 0.4375em 0.625em 0.4375em 0.625em; }
+  @media (max-width: 480px) {
+    .botonmasc {
+      font-size: 8px; } }
+
 header .logo {
   max-width: 50%; }
+
+header .navbar {
+  background: #FFFCF2; }
 
 header .carouselPortada_container-1 {
   height: 75%; }
@@ -82,7 +101,8 @@ header .carouselPortada_container-1 {
     overflow: hidden;
     padding-top: 35px;
     margin-left: 50%;
-    border: white solid; }
+    border: white solid;
+    z-index: 1; }
     header .carouselPortada_container-1 .carouselPortada_caja-1 h2 {
       display: inline-block;
       position: relative;
@@ -113,7 +133,8 @@ header .carouselPortada_container-2 {
     overflow: hidden;
     padding-top: 35px;
     margin-left: 50%;
-    border: white solid; }
+    border: white solid;
+    z-index: 1; }
     header .carouselPortada_container-2 .carouselPortada_caja-2 h2 {
       display: inline-block;
       position: relative;
@@ -139,17 +160,18 @@ header .carouselPortada_container-3 {
     overflow: hidden;
     padding-top: 35px;
     margin-left: 0%;
-    border: white solid; }
+    border: white solid;
+    z-index: 1; }
     header .carouselPortada_container-3 .carouselPortada_caja-3 h2 {
       display: inline-block;
       position: relative;
       font-family: 'Rammetto One';
-      font-size: 1.875rem;
+      font-size: 1.875em;
       font-weight: 400;
       color: #108896; }
     header .carouselPortada_container-3 .carouselPortada_caja-3 p {
       font-family: 'Baloo Thambi 2';
-      font-size: 1.1875rem;
+      font-size: 1.1875em;
       font-weight: 600;
       color: #706666; }
 
@@ -162,7 +184,7 @@ header .portada {
   /*Portada Tips*/ }
   header .portada .portada_Registro {
     position: relative;
-    height: 28em;
+    height: 29em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -170,10 +192,19 @@ header .portada {
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
     background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
-    background-position-y: -15em; }
+    background-position-y: -14em; }
+    @media (max-width: 480px) {
+      header .portada .portada_Registro {
+        font-size: 8px;
+        height: 22em;
+        background-attachment: scroll;
+        background-position: center; } }
+    @media (max-width: 480px) {
+      header .portada .portada_Registro {
+        background-position-y: -1em; } }
   header .portada .portada_Colabora {
     position: relative;
-    height: 28em;
+    height: 29em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -181,10 +212,19 @@ header .portada {
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
     background-image: url(../Imagenes/Portadas/portada_colabora.jpeg);
-    background-position-y: -6.25em; }
+    background-position-y: -5em; }
+    @media (max-width: 480px) {
+      header .portada .portada_Colabora {
+        font-size: 8px;
+        height: 22em;
+        background-attachment: scroll;
+        background-position: center; } }
+    @media (max-width: 480px) {
+      header .portada .portada_Colabora {
+        background-position-y: 1.5em; } }
   header .portada .portada_Reencuentro {
     position: relative;
-    height: 28em;
+    height: 29em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -192,11 +232,20 @@ header .portada {
     background-size: cover;
     border-bottom: solid #FFFCF2 0.625em;
     background-image: url(../Imagenes/Portadas/portada_reencuentro.jpeg);
-    background-position-y: -9.375em;
+    background-position-y: -8em;
     border-bottom: solid #FFFCF2 0.625em; }
+    @media (max-width: 480px) {
+      header .portada .portada_Reencuentro {
+        font-size: 8px;
+        height: 22em;
+        background-attachment: scroll;
+        background-position: center; } }
+    @media (max-width: 480px) {
+      header .portada .portada_Reencuentro {
+        background-position-y: 1.5em; } }
   header .portada .portada_Tips {
     position: relative;
-    height: 28em;
+    height: 29em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
@@ -206,42 +255,67 @@ header .portada {
     background-image: url(../Imagenes/Portadas/portada_tips.jpeg);
     background-position-y: -11.25em;
     border-bottom: solid #FFFCF2 0.625em; }
+    @media (max-width: 480px) {
+      header .portada .portada_Tips {
+        font-size: 8px;
+        height: 22em;
+        background-attachment: scroll;
+        background-position: center; } }
+    @media (max-width: 480px) {
+      header .portada .portada_Tips {
+        background-position-y: 1em; } }
 
-footer {
-  border-bottom: solid #686161; }
-  footer #redes {
-    background-image: url(../Imagenes/Fondos/fondo_footer.png);
-    display: grid;
-    font-size: 16px;
-    grid-template-columns: repeat(2, 53.125em);
-    grid-template-rows: repeat(2, 3.75em);
-    grid-template-areas: "titulo img" "logos img";
-    padding: 1.5625em 0 1.5625em 0; }
-    footer #redes .redes_titulos {
-      font-size: 1.4375em;
-      color: #332f2f;
-      margin: auto;
-      grid-area: titulo;
-      font-family: 'Rammetto One', cursive; }
-    footer #redes .redes_logos {
-      margin: auto;
-      width: 23.75em;
-      display: flex;
-      justify-content: space-around;
-      grid-area: logos; }
-      footer #redes .redes_logos a img {
-        width: 3.125em; }
-    footer #redes .redes_imagen {
-      width: 28.125em;
-      grid-area: img;
-      padding-top: 1.5625em; }
-      footer #redes .redes_imagen img {
-        width: 30.625em; }
-  footer .pieDePagina {
-    padding: 1.13rem 0 1rem 0;
-    font-weight: 600;
-    background-color: #686161;
-    color: white; }
+@media (max-width: 480px) {
+  footer {
+    font-size: 5px; } }
+
+footer #redes {
+  background-image: url(../Imagenes/Fondos/fondo_footer.png);
+  display: grid;
+  font-size: 16px;
+  grid-template-columns: repeat(2, 53.125em);
+  grid-template-rows: repeat(2, 3.75em);
+  grid-template-areas: "titulo img" "logos img";
+  padding: 1.5625em 0 1.5625em 0; }
+  @media (max-width: 480px) {
+    footer #redes {
+      font-size: 5px; } }
+  footer #redes .redes_titulos {
+    font-size: 1.4375em;
+    color: #332f2f;
+    margin: auto;
+    grid-area: titulo;
+    font-family: 'Rammetto One', cursive; }
+  footer #redes .redes_logos {
+    margin: auto;
+    width: 23.75em;
+    display: flex;
+    justify-content: space-around;
+    grid-area: logos; }
+    @media (max-width: 480px) {
+      footer #redes .redes_logos {
+        font-size: 7px;
+        width: 20em; } }
+    footer #redes .redes_logos a img {
+      width: 3.125em; }
+      @media (max-width: 480px) {
+        footer #redes .redes_logos a img {
+          font-size: 7px; } }
+  footer #redes .redes_imagen {
+    width: 28.125em;
+    grid-area: img;
+    padding-top: 1.5625em; }
+    @media (max-width: 480px) {
+      footer #redes .redes_imagen {
+        display: none; } }
+    footer #redes .redes_imagen img {
+      width: 30.625em; }
+
+footer .pieDePagina {
+  padding: 1.13rem 0 1rem 0;
+  font-weight: 600;
+  background-color: #686161;
+  color: white; }
 
 .titulo_celeste {
   display: inline-block;
@@ -263,105 +337,252 @@ footer {
     left: -3em; }
 
 .portada_Titulo {
-  width: 34.375rem;
-  padding: 1.875rem 0.625rem 1.875rem 0.625rem;
+  width: 34.375em;
+  padding: 1.875em 0.625em 1.875em 0.625em;
   background-image: url(../Imagenes/Fondos/fondo_titulos.png);
   position: absolute;
-  border: solid #FFFCF2 0.625rem;
-  left: 28.125rem;
-  top: 23.75rem;
+  border: solid #FFFCF2 0.625em;
+  left: 28.125em;
+  top: 23.75em;
   border-radius: 50%;
   display: inline-block; }
   .portada_Titulo .titulos {
     display: inline-block;
     position: relative;
     font-family: 'Rammetto One';
-    font-size: 1.7rem;
+    font-size: 1.7em;
     font-weight: 800;
     color: #ffffff; }
+    @media (max-width: 480px) {
+      .portada_Titulo .titulos {
+        font-size: 9px; } }
+  @media (max-width: 480px) {
+    .portada_Titulo {
+      padding: 1em 0.625em 1em 0.625em;
+      width: 22em;
+      font-size: 9px;
+      left: 9em;
+      top: 16em; } }
 
 main .PagesSub_Conteiner {
-  height: 18.75rem;
+  height: 18.75em;
   width: 100%;
   display: flex;
   align-items: center;
   align-content: center;
   background-image: linear-gradient(to bottom, #FFFCF2, #e3f3ee);
   justify-content: center;
-  margin-top: 5rem;
-  border-bottom: #c5bfad 0.3125rem solid; }
+  margin-top: 5em;
+  border-bottom: #c5bfad 0.3125em solid; }
+  @media (max-width: 480px) {
+    main .PagesSub_Conteiner {
+      font-size: 9px;
+      height: 13em;
+      margin-top: 1em; } }
   main .PagesSub_Conteiner .PagesSub_texto {
     font-family: 'Baloo Thambi 2';
     font-size: 19px;
     font-weight: 400;
     color: #706666;
-    padding: 30px 160px 0 160px; }
+    padding: 1.875em 10em 0 10em; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .PagesSub_texto {
+        font-size: 9px;
+        padding: 0;
+        text-justify: justify; } }
   main .PagesSub_Conteiner .PagesSub_Registro-Img img {
-    width: 20.3125rem; }
+    width: 20.3125em; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+        display: none; } }
   main .PagesSub_Conteiner .colabora_Textos h2 {
     font-family: 'Baloo Thambi 2';
-    font-size: 30px;
+    font-size: 1.875em;
     font-weight: 800;
     color: #706666; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .colabora_Textos h2 {
+        font-size: 11px; } }
   main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
-    width: 15.125rem; }
+    width: 15.125em; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+        font-size: 6.3px; } }
   main .PagesSub_Conteiner .PagesSub_Tips-Img img {
-    width: 17.1875rem; }
+    width: 17.1875em; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+        font-size: 6.3px; } }
   main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
-    width: 20.5rem; }
+    width: 20.5em; }
+    @media (max-width: 480px) {
+      main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+        font-size: 6.3px; } }
 
 main .textoResaltado {
   font-family: 'Baloo Thambi 2';
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 800; }
 
-.formularios_Section {
-  background-image: url(../Imagenes/Fondos/fondo_animales.png);
+.formularios {
+  height: 90vh;
   display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding: 5rem 0rem 3.75rem 0rem; }
-  .formularios_Section .formularios_Container {
-    width: 35%;
-    border-radius: 1.875rem;
-    background-color: #F9EAD9;
-    padding: 0rem 0.625rem 1.875rem 0.625rem;
-    display: block;
-    box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
-    .formularios_Section .formularios_Container .formularios_Titulo {
-      background-color: #ffd9007a;
-      border-radius: 2.1875rem;
-      width: 18.75rem;
+  align-items: center;
+  justify-content: center;
+  /* STRUCTURE */
+  /* TABS */
+  /* FORM TYPOGRAPHY*/ }
+  @media (max-width: 480px) {
+    .formularios {
+      font-size: 9px;
+      height: 57vh; } }
+  .formularios .flecha img {
+    width: 200px; }
+  @media (max-width: 480px) {
+    .formularios .flecha {
+      display: none; } }
+  .formularios .formulario_cajaTexto {
+    border-radius: 1.5625em;
+    background-color: #f1fdfc;
+    border: #e9e6e6 solid 0.0625em;
+    width: 21.875em;
+    height: 17.5em; }
+    @media (max-width: 480px) {
+      .formularios .formulario_cajaTexto {
+        display: none; } }
+    .formularios .formulario_cajaTexto h3 {
+      display: inline-block;
+      position: relative;
+      font-family: 'Rammetto One';
+      font-size: 1.25em;
+      font-weight: 400;
+      padding-top: 3.125em;
+      color: #108896; }
+    .formularios .formulario_cajaTexto p {
+      font-family: 'Baloo Thambi 2';
+      font-size: 1.0625em;
+      font-weight: 400;
+      padding: 10px 30px 0 1.875em;
+      color: #706666; }
+      .formularios .formulario_cajaTexto p .formulario_enlace {
+        font-family: 'Baloo Thambi 2';
+        font-size: 1.25rm;
+        font-weight: 600;
+        color: #fc7405;
+        text-decoration: underline;
+        cursor: pointer; }
+  .formularios a {
+    color: #92badd;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 400; }
+  .formularios h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 2.5em .5em .625em .5em;
+    color: #cccccc; }
+  .formularios .formulario_box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.25em; }
+  .formularios #formulario_container {
+    -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
+    border-radius: 0.625em 0.625em 0.625em 0.625em;
+    background: #fff;
+    padding: 1.875em;
+    width: 90%;
+    max-width: 28.125em;
+    position: relative;
+    padding: 0em;
+    -webkit-box-shadow: 0 1.875em 3.75em 0 rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1.875em 3.75em 0 rgba(0, 0, 0, 0.3);
+    text-align: center; }
+    @media (max-width: 480px) {
+      .formularios #formulario_container {
+        font-size: 9px; } }
+    .formularios #formulario_container .formulario_logo {
       margin: auto;
-      margin-top: 0.9375rem;
-      margin-bottom: 1.25rem;
-      padding: 0.3125rem;
-      box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
-      .formularios_Section .formularios_Container .formularios_Titulo h2 {
-        display: inline-block;
-        position: relative;
-        font-family: 'Rammetto One';
-        font-size: 1.25rem;
-        font-weight: 400;
-        color: #575454;
-        margin-top: 0.625rem; }
-    .formularios_Section .formularios_Container .formularios_Texto {
-      padding: 0rem 2.5rem 0rem 2.5rem;
-      font-weight: 500;
-      color: #695656;
-      font-size: 1.125rem; }
-    .formularios_Section .formularios_Container .formularios label, .formularios_Section .formularios_Container input {
-      display: block;
-      font-weight: 700;
-      margin: auto;
-      margin-top: 0.3125rem;
-      margin-bottom: 0.3125rem; }
+      width: 12.5em;
+      padding-top: 1.875em; }
+      .formularios #formulario_container .formulario_logo img {
+        height: 6.25em; }
+  .formularios #formulario_footer {
+    background-color: #f6f6f6;
+    border-top: 0.0625em solid #dce8f1;
+    padding: 1.5625em;
+    text-align: center;
+    -webkit-border-radius: 0 0 0.625em 0.625em;
+    border-radius: 0 0 0.625em 0.625em; }
+  .formularios h2.formulario_titulo {
+    color: #504d4d;
+    border-bottom: 0.125em solid #5fbae9; }
+  .formularios input[type=button], .formularios input[type=submit], .formularios input[type=reset] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 0.9375em 5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8125em;
+    -webkit-box-shadow: 0 0.625em 1.875em 0 rgba(95, 186, 233, 0.4);
+    box-shadow: 0 0.625em 1.875em 0 rgba(95, 186, 233, 0.4);
+    -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    margin: 0.3125em 1.25em 2.5em 1.25em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+  .formularios input[type=button]:hover, .formularios input[type=submit]:hover, .formularios input[type=reset]:hover {
+    background-color: #39ace7; }
+  .formularios input[type=text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 0.9375em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.3125em;
+    width: 85%;
+    border: 0.125em solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    border-radius: 0.3125em 0.3125em 0.3125em 0.3125em; }
+  .formularios input[type=text]:focus {
+    background-color: #fff;
+    border-bottom: 0.125em solid #5fbae9; }
+  .formularios input[type=text]:placeholder {
+    color: #cccccc; }
+  .formularios *:focus {
+    outline: none; }
+  .formularios .comentario_caja {
+    height: 8.125em; }
+    @media (max-width: 480px) {
+      .formularios .comentario_caja {
+        height: 5em; } }
 
 main {
   font-size: 16px; }
   main .Inicio_Index {
     margin-top: 5em;
     font-size: 16px; }
+    @media (max-width: 480px) {
+      main .Inicio_Index {
+        font-size: 6px; } }
     main .Inicio_Index .Inicio_Index-Texto {
       padding: 0 18.75em 2em 18.75em; }
       main .Inicio_Index .Inicio_Index-Texto p {
@@ -378,12 +599,18 @@ main {
       display: flex;
       justify-content: space-around;
       margin: auto; }
+      @media (max-width: 480px) {
+        main .Inicio_Index .Inicio_Index-Container {
+          width: 100%; } }
       main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
         display: inline-block;
-        width: 240px;
+        width: 15em;
         text-align: center;
         transition: 1s;
         cursor: pointer; }
+        @media (max-width: 480px) {
+          main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
+            font-size: 7px; } }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover {
           transform: translateY(-15px); }
           main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja:hover .Inicio_Index-Img1 {
@@ -394,82 +621,127 @@ main {
             background-image: url(../Imagenes/Gif/3.gif); }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img1 {
           display: inline-block;
-          border-radius: 20px;
-          margin: 30px 0px 0px 0px;
-          height: 180px;
-          width: 200px;
+          border-radius: 1.25em;
+          margin: 1.875em 0px 0px 0px;
+          height: 11.25em;
+          width: 12.5em;
           background-size: cover;
-          background-position-y: -10px;
+          background-position-y: -0.625em;
           background-image: url(../Imagenes//Gif/1.jpg); }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img2 {
           display: inline-block;
-          border-radius: 20px;
-          margin: 30px 0px 0px 0px;
-          height: 180px;
-          width: 200px;
+          border-radius: 1.25em;
+          margin: 1.875em 0px 0px 0px;
+          height: 11.25em;
+          width: 12.5em;
           background-size: cover;
-          background-position-y: -10px;
+          background-position-y: -0.625em;
           background-image: url(../Imagenes//Gif/2.jpg); }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja .Inicio_Index-Img3 {
           display: inline-block;
-          border-radius: 20px;
-          margin: 30px 0px 0px 0px;
-          height: 180px;
-          width: 200px;
+          border-radius: 1.25em;
+          margin: 1.875em 0px 0px 0px;
+          height: 11.25em;
+          width: 12.5em;
           background-size: cover;
-          background-position-y: -10px;
+          background-position-y: -0.625em;
           background-image: url(../Imagenes//Gif/3.jpg); }
       main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto {
-        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
-        padding: 120px 20px 20px 20px;
-        border-radius: 20px;
+        font-size: 16px;
+        box-shadow: 0px 0px 0.625em 0px rgba(0, 0, 0, 0.2);
+        padding: 7.5rem 1.5em 1.5em 1.5em;
+        border-radius: 1.25em;
         background: white;
-        margin: -120px 0px 0px 0px;
-        line-height: 19px;
-        font-size: 14px; }
+        margin: -7.5em 0 0 0;
+        line-height: 1.1875em; }
+        @media (max-width: 480px) {
+          main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto {
+            font-size: 9px;
+            padding: 4.5rem 1em 1em 1em; } }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
-          margin: 10px 0px 10px 0px;
+          margin: .625em 0px .625em 0px;
           color: #81818d;
           display: inline-block;
           position: relative;
           font-family: 'Rammetto One';
-          font-size: 18px;
+          font-size: 1.125em;
           font-weight: 400; }
+          @media (max-width: 480px) {
+            main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
+              font-size: 8px; } }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto p {
           font-family: 'Baloo Thambi 2';
-          font-size: 15px;
+          font-size: 0.9375em;
           font-weight: 500;
           color: #7a7575; }
+  main .wave {
+    height: 8em;
+    overflow: hidden; }
+    main .wave svg {
+      height: 100%;
+      width: 100%; }
+      main .wave svg path {
+        stroke: none;
+        fill: #F6F4EE; }
+    @media (max-width: 480px) {
+      main .wave {
+        font-size: 7px; } }
 
 #SobreNosotros_Container {
   font-size: 16px;
   background-color: white;
   padding-top: 3.75em; }
+  @media (max-width: 480px) {
+    #SobreNosotros_Container {
+      font-size: 9px; } }
   #SobreNosotros_Container .SobreNosotros_article {
     padding: 2em 0em 1.25em 0em;
     display: flex;
     justify-content: space-around;
     margin-bottom: 1.25em; }
+    @media (max-width: 480px) {
+      #SobreNosotros_Container .SobreNosotros_article {
+        font-size: 9px;
+        padding: 1em 0em 1em 0em;
+        margin-bottom: 0;
+        display: block; } }
     #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto {
       width: 40.625em;
       margin-top: 1.875em;
       text-align: justify; }
+      @media (max-width: 480px) {
+        #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto {
+          font-size: 9px;
+          margin-top: 0em; } }
       #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_titulo {
         font-family: 'Baloo Thambi 2';
-        font-size: 26px;
+        font-size: 1.625em;
         font-weight: 900;
         color: #363225; }
+        @media (max-width: 480px) {
+          #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_titulo {
+            font-size: 11px;
+            padding-left: 2em; } }
       #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
-        line-height: 35px;
+        line-height: 2.1875em;
         font-family: 'Baloo Thambi 2';
-        font-size: 19px;
+        font-size: 1.1875em;
         font-weight: 400;
-        margin-top: 30px;
+        margin-top: 1.875em;
         color: #706666; }
+        @media (max-width: 480px) {
+          #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
+            font-size: 10px;
+            line-height: 1.7em;
+            padding: 0 2em 0 2em;
+            margin-top: 1em; } }
     #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
       width: 25em; }
       #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen img {
         width: 26.875em; }
+      @media (max-width: 480px) {
+        #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
+          display: none; } }
   #SobreNosotros_Container .tarjetas_Container {
     font-size: 16px;
     padding-top: 3.125em;
@@ -480,6 +752,9 @@ main {
     border-top: solid white 0.625em;
     border-bottom: solid white 0.3125em;
     transform-style: preserve-3d; }
+    @media (max-width: 480px) {
+      #SobreNosotros_Container .tarjetas_Container {
+        font-size: 5.5px; } }
     #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
       display: inline-block;
       position: relative;
@@ -553,11 +828,16 @@ main {
               text-align: justify;
               padding: 0.625em 0.625em 0rem 0.625em;
               font-family: 'Baloo Thambi 2'; }
+              @media (max-width: 480px) {
+                #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
+                  font-size: 6.5px;
+                  padding: 0em 0.625em 0rem 0.625em; } }
             #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
               color: #108896;
+              font-family: 'Baloo Thambi 2';
               font-size: 1.75em;
-              font-weight: 900;
-              font-family: "Baloo Thambi 2"; }
+              font-weight: 400;
+              font-weight: 900; }
 
 .Boletin_Imagen {
   font-size: 16px;
@@ -567,6 +847,12 @@ main {
   background-size: cover;
   display: flex;
   align-items: center; }
+  @media (max-width: 480px) {
+    .Boletin_Imagen {
+      font-size: 6.5px;
+      height: 40vh;
+      background-attachment: scroll;
+      background-position-x: -12em; } }
   .Boletin_Imagen .Boletin_Caja {
     border-radius: 1.875em;
     height: 18.75em;
@@ -584,14 +870,25 @@ main {
       font-weight: 800;
       color: #fdffff;
       margin-bottom: 1.25em; }
+      @media (max-width: 480px) {
+        .Boletin_Imagen .Boletin_Caja h3 {
+          font-size: 9px;
+          margin-bottom: .9em; } }
     .Boletin_Imagen .Boletin_Caja p {
       font-family: 'Baloo Thambi 2';
-      font-size: 19px;
+      font-size: 1.1875em;
       font-weight: 400;
       color: white;
-      margin-bottom: 26px; }
+      margin-bottom: 1.625em; }
+      @media (max-width: 480px) {
+        .Boletin_Imagen .Boletin_Caja p {
+          font-size: 9px;
+          margin-bottom: .9em; } }
     .Boletin_Imagen .Boletin_Caja .Boletin_Input {
       border: solid #cf840c 0.125em; }
+      @media (max-width: 480px) {
+        .Boletin_Imagen .Boletin_Caja .Boletin_Input {
+          font-size: 6px; } }
     .Boletin_Imagen .Boletin_Caja .Boletin_Boton {
       color: white;
       font-size: 1.0625em;
@@ -605,6 +902,9 @@ main {
   font-size: 16px;
   padding-top: 4.375em;
   background-color: #F6F4EF; }
+  @media (max-width: 480px) {
+    .Funcionamiento {
+      font-size: 7px; } }
   .Funcionamiento .Funcionamiento_Subtitulo {
     display: inline-block;
     position: relative;
@@ -622,6 +922,9 @@ main {
     justify-content: space-around;
     padding-top: 5.5em;
     padding-bottom: 4.375em; }
+    @media (max-width: 480px) {
+      .Funcionamiento .Funcionamiento_Container {
+        padding-top: 2em; } }
     .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
       width: 38%;
       display: flex;
@@ -630,43 +933,59 @@ main {
       justify-content: center; }
       .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen img {
         width: 31.25em; }
+      @media (max-width: 480px) {
+        .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
+          display: none; } }
     .Funcionamiento .Funcionamiento_Container .sun {
       height: 9.375em;
       position: relative; }
       .Funcionamiento .Funcionamiento_Container .sun img {
         width: 9.375em; }
+      @media (max-width: 480px) {
+        .Funcionamiento .Funcionamiento_Container .sun {
+          display: none; } }
     .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
-      width: 50%;
-      padding-top: 60px; }
+      padding-top: 3.75em; }
+      @media (max-width: 480px) {
+        .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
+          width: 100%;
+          padding-top: 1em; } }
       .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
         display: flex;
         justify-content: center;
         margin-bottom: 2.9em; }
+        @media (max-width: 480px) {
+          .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
+            margin-bottom: 0em; } }
         .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Numero {
           display: flex;
           align-items: center;
           align-content: center;
           justify-content: center;
-          background-color: #e29e00;
-          border-radius: 6.25em;
+          background-color: #ffa36e;
+          border-radius: 100%;
           width: 2.4em;
           height: 2.4em;
           font-size: 1.3em;
-          color: #f6f8ff;
+          color: #ece9e9;
           font-weight: 700; }
         .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto {
           width: 25em;
           margin-left: 3em; }
+          @media (max-width: 480px) {
+            .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto {
+              width: 23em;
+              font-size: 9px; } }
           .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Texto-p {
             font-family: 'Baloo Thambi 2';
-            font-size: 17px;
+            font-size: 1.0625em;
             font-weight: 500;
             color: #7a7575; }
           .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
             font-family: 'Baloo Thambi 2';
             font-size: 1.7em;
             font-weight: 800;
-            color: #7a7575; }
+            color: #577274; }
 
 .ContactoIndex_Container {
   font-size: 16px;
@@ -677,18 +996,19 @@ main {
   background-position-x: right;
   background-position-y: center;
   background-color: white; }
-  .ContactoIndex_Container .wave_footer {
-    height: 50px;
-    overflow: hidden; }
-    .ContactoIndex_Container .wave_footer svg {
-      height: 100%;
-      width: 100%; }
-      .ContactoIndex_Container .wave_footer svg path {
-        stroke: none;
-        fill: #E6E4E0; }
+  @media (max-width: 480px) {
+    .ContactoIndex_Container {
+      font-size: 6px;
+      height: 40vh;
+      background-attachment: scroll;
+      background-position-x: 2em;
+      background-size: cover; } }
   .ContactoIndex_Container .ContactoIndex_Caja {
     width: 50%;
     padding-left: 1.875em; }
+    @media (max-width: 480px) {
+      .ContactoIndex_Container .ContactoIndex_Caja {
+        font-size: 6px; } }
     .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
       display: inline-block;
       position: relative;
@@ -702,108 +1022,107 @@ main {
       padding: 0.4em 1.2em 0.4em 1.2em;
       background-color: #7abeb9; }
     .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
-      border: solid #bea844 2px;
-      margin-bottom: 5px; }
-  .ContactoIndex_Container .row1-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 130px; }
-    .ContactoIndex_Container .row1-container .box {
-      border-radius: 5px;
-      box-shadow: 0px 30px 40px -20px var(--grayishBlue);
-      padding: 30px;
-      margin: 40px;
-      cursor: pointer;
-      transition: 2s; }
-      .ContactoIndex_Container .row1-container .box p {
-        color: var(--grayishBlue); }
-      .ContactoIndex_Container .row1-container .box h2 {
-        color: #4c4e61;
-        font-weight: 600; }
-      .ContactoIndex_Container .row1-container .box img {
-        float: right; }
-    .ContactoIndex_Container .row1-container .cyan {
-      border-top: 3px solid #45d3d3; }
-    .ContactoIndex_Container .row1-container .red {
-      border-top: 3px solid #ea5353; }
-    .ContactoIndex_Container .row1-container .blue {
-      border-top: 3px solid #549ef2; }
-    .ContactoIndex_Container .row1-container .orange {
-      border-top: 3px solid #fcaf4a; }
-  .ContactoIndex_Container .box:hover {
-    transform: translateY(-10px); }
-  @media (max-width: 450px) {
-    .ContactoIndex_Container .box {
-      height: 200px; } }
-  @media (max-width: 950px) and (min-width: 450px) {
-    .ContactoIndex_Container .box {
-      text-align: center;
-      height: 180px; } }
-  @media (min-width: 950px) {
-    .ContactoIndex_Container .row1-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 130px; }
-    .ContactoIndex_Container .row2-container {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-    .ContactoIndex_Container .box-down {
-      position: relative;
-      top: 150px; }
-    .ContactoIndex_Container .box {
-      width: 20%; }
-    .ContactoIndex_Container .header p {
-      width: 30%; } }
+      border: solid #bea844 .125em;
+      margin-bottom: .3125em; }
+      .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form textarea {
+        height: 6.25em; }
+        @media (max-width: 480px) {
+          .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form textarea {
+            height: 1em; } }
+      @media (max-width: 480px) {
+        .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
+          height: 3em;
+          margin-bottom: 1.6em; } }
 
 main .tipsGrid_Container {
   display: grid;
   justify-content: space-around;
-  margin-top: 129.9975px;
-  grid-template-columns: repeat(2, 28.125rem);
-  grid-template-rows: repeat(4, 15.625rem);
+  margin-top: 8.1248em;
+  grid-template-columns: repeat(2, 28.125em);
+  grid-template-rows: repeat(4, 15.625em);
   grid-template-areas: "caja1 img1" "img2 caja2" "caja3 img3" "caja4 caja4";
-  row-gap: 7.5rem; }
+  row-gap: 7.5em; }
+  @media (max-width: 480px) {
+    main .tipsGrid_Container {
+      font-size: 9px;
+      display: flex;
+      flex-direction: column;
+      margin-top: 4em;
+      row-gap: 2em; } }
   main .tipsGrid_Container .tipsGrid_Caja1 {
-    padding: 0rem 1.25rem 0rem 1.25rem;
+    padding: 0em 1.25em 0em 1.25em;
     grid-area: caja1; }
   main .tipsGrid_Container .tipsCaja_Img1 {
-    background-size: 28.125rem;
-    width: 28.125rem;
+    background-size: 28.125em;
+    width: 28.125em;
     background-repeat: no-repeat;
     background-position: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+    border-radius: 1.25em;
+    box-shadow: 0.3125em 0.3125em 0.625em #999;
     background-image: url(../Imagenes/Tips/tipsGridImg1.jpeg);
     grid-area: img1; }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img1 {
+        font-size: 9px;
+        height: 13em;
+        margin: auto; } }
   main .tipsGrid_Container .tipsGrid_Caja2 {
-    padding: 0rem 1.25rem 0rem 1.25rem;
+    padding: 0em 1.25em 0em 1.25em;
     grid-area: caja2; }
   main .tipsGrid_Container .tipsCaja_Img2 {
-    background-size: 28.125rem;
-    width: 28.125rem;
+    background-size: 28.125em;
+    width: 28.125em;
     background-repeat: no-repeat;
     background-position: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+    border-radius: 1.25em;
+    box-shadow: 0.3125em 0.3125em 0.625em #999;
     background-image: url(../Imagenes/Tips/tipsGridImg2.jpeg);
     grid-area: img2; }
-  main .tipsGrid_Container .tipsGrid_Caja3 {
-    padding: 0rem 1.25rem 0rem 1.25rem;
-    grid-area: caja3; }
-  main .tipsGrid_Container .tipsCaja_Img3 {
-    background-size: 28.125rem;
-    width: 28.125rem;
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img2 {
+        font-size: 9px;
+        height: 13em;
+        margin: auto; } }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img2 {
+        display: none; } }
+  main .tipsGrid_Container .tipsCaja_Img2Responsive {
+    background-size: 28.125em;
+    width: 28.125em;
     background-repeat: no-repeat;
     background-position: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+    border-radius: 1.25em;
+    box-shadow: 0.3125em 0.3125em 0.625em #999;
+    background-image: url(../Imagenes/Tips/tipsGridImg2.jpeg);
+    display: none; }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img2Responsive {
+        font-size: 9px;
+        height: 13em;
+        margin: auto; } }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img2Responsive {
+        display: block;
+        margin-top: 2em; } }
+  main .tipsGrid_Container .tipsGrid_Caja3 {
+    padding: 0em 1.25em 0em 1.25em;
+    grid-area: caja3; }
+  main .tipsGrid_Container .tipsCaja_Img3 {
+    background-size: 28.125em;
+    width: 28.125em;
+    background-repeat: no-repeat;
+    background-position: cover;
+    border-radius: 1.25em;
+    box-shadow: 0.3125em 0.3125em 0.625em #999;
     background-image: url(../Imagenes/Tips/tipsGridImg3.jpg);
     grid-area: img3; }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsCaja_Img3 {
+        font-size: 9px;
+        height: 13em;
+        margin: auto; } }
   main .tipsGrid_Container .tipsGrid_Caja4 {
-    padding: 0rem 1.25rem 0rem 1.25rem;
+    padding: 0em 1.25em 0em 1.25em;
     grid-area: caja4; }
   main .tipsGrid_Container .tipsGrid_Texto {
     font-family: 'Baloo Thambi 2';
@@ -813,259 +1132,215 @@ main .tipsGrid_Container {
   main .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;
-    width: 3.125rem;
-    height: 3.125rem;
+    width: 3.125em;
+    height: 3.125em;
     display: block;
     margin: auto;
-    padding: 0.3125rem;
-    margin-bottom: 1.875rem; }
+    padding: 0.3125em;
+    margin-bottom: 1.875em; }
     main .tipsGrid_Container .tipsGrid_Numeros p {
       color: white;
-      font-size: 1.5625rem;
+      font-size: 1.5625em;
       font-weight: 800; }
 
 main .tipsImg_Final {
   width: 100%;
-  height: 21.875rem;
+  height: 21.875em;
   grid-area: img4;
   background-image: url(../Imagenes/Tips/tipsGridImg4.jpeg);
-  background-size: 75rem;
+  background-size: 75em;
   background-size: cover;
   background-position: 50% 45%;
   background-repeat: no-repeat;
   background-attachment: fixed; }
+  @media (max-width: 480px) {
+    main .tipsImg_Final {
+      margin-top: 1em;
+      height: 7em;
+      background-attachment: scroll; } }
 
 main .reencuentro_Container {
   background-color: rgba(233, 210, 210, 0.76);
   display: flex;
-  height: 15.625rem;
-  margin: 6.25rem 2.5rem 0rem 2.5rem;
-  border-radius: 0.9375rem;
-  box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
+  height: 15.625em;
+  margin: 6.25em 2.5em 0em 2.5em;
+  border-radius: 0.9375em;
+  box-shadow: 0.1875em 0.1875em 0.5em #999; }
+  @media (max-width: 480px) {
+    main .reencuentro_Container {
+      font-size: 9px;
+      margin: 3.25em 2.5em 0em 2.5em; } }
   main .reencuentro_Container .cieloImg {
-    width: 43.75rem;
+    width: 43.75em;
     background-image: url(../Imagenes/Reencuentro/cielo.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    border-radius: 0.9375rem; }
+    border-radius: 0.9375em; }
   main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo {
     background-color: #ffd9007a;
-    border-radius: 2.1875rem;
-    width: 18.75rem;
+    border-radius: 2.1875em;
+    width: 18.75em;
     margin: auto;
-    margin-top: 0.9375rem;
-    margin-bottom: 1.25rem;
-    padding: 0.3125rem;
-    box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
+    margin-top: 0.9375em;
+    margin-bottom: 0.9375em;
+    padding: .7em;
+    box-shadow: 0.1875em 0.1875em 0.5em #999; }
     main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo h2 {
       display: inline-block;
       position: relative;
       font-family: 'Rammetto One';
-      font-size: 1.25rem;
+      font-size: 1.25em;
       font-weight: 400;
       color: #575454;
-      margin-top: 0.625rem; }
+      margin: auto; }
+      @media (max-width: 480px) {
+        main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo h2 {
+          font-size: 10px; } }
+    @media (max-width: 480px) {
+      main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Titulo {
+        font-size: 8px; } }
   main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Texto {
     font-family: 'Baloo Thambi 2';
     font-size: 16ox;
     font-weight: 400;
-    padding: 0rem 3.125rem 0rem 3.125rem;
+    padding: 0em 3.125em 0em 3.125em;
     text-align: left; }
+    @media (max-width: 480px) {
+      main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Texto {
+        font-size: 8px; } }
 
 main .reencuentro_pruebas {
   display: flex;
-  margin: 3.125rem;
+  margin: 3.125em;
   justify-content: space-around; }
+  @media (max-width: 480px) {
+    main .reencuentro_pruebas {
+      flex-direction: column;
+      font-size: 9px; } }
+  main .reencuentro_pruebas video {
+    width: 25em;
+    height: 18.75em; }
+    @media (max-width: 480px) {
+      main .reencuentro_pruebas video {
+        font-size: 10px;
+        margin: auto; } }
   main .reencuentro_pruebas .reencuentro_pruebas-imagen {
     background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
     background-size: contain;
-    border-radius: 1.25rem;
-    width: 25rem;
-    box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
+    border-radius: 1.25em;
+    width: 25em;
+    box-shadow: 0.1875em 0.1875em 0.5em #999;
+    border: solid; }
+    @media (max-width: 480px) {
+      main .reencuentro_pruebas .reencuentro_pruebas-imagen {
+        display: none; } }
 
 main {
-  /*listado mascotas perdidas*/
-  /* .MascotasPyE_Listado{
-        padding-top: 5rem;
-        display: grid;
-        grid-template-columns: repeat(3, 25%);
-        grid-template-rows: repeat(3, 23.75rem);
-        justify-content: space-around;
-        padding-bottom: 6.25rem;
-        background-image: url(../Imagenes/Fondos/fondo_huellas.png); 
-        grid-row-gap: 5rem;
-
-        .card{
-            margin-left: 3.75rem;
-            border-radius: 0.625rem;
-            box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
-            img{
-                height: 15rem;
-                border-radius: 0.625rem;
-            }
-            .card-title{
-                font-size: 1.375rem;
-                color: #12a1b1;
-                font-family: 'Rammetto One', cursive;
-            }
-            .btn{
-                margin-top: 10px;
-                background-color: #f1b36c;
-                border: #fb7303;
-            }
-        
-
-
-        .cards {
-            font-size: 16px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin: 4rem 5vw;
-            padding: 0;
-            list-style-type: none;
-
-            .card {
-                position: relative;
-                display: block;
-                height: 100%;  
-                border-radius: 50px;
-                overflow: hidden;
-                text-decoration: none;
-                &:hover .card__overlay {
-                    transform: translateY(0);
-                  }
-                &:hover .card__header {
-                    transform: translateY(0);
-                  }
-                
-                .card__image {      
-                    width: 100%;
-                    height: auto;
-                }
-                .card__overlay {
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                    z-index: 1;
-                    border-radius: 50px;
-                    background-color: rgb(204, 41, 41);      
-                    transform: translateY(100%);
-                    transition: .2s ease-in-out;
-                    
-                    .card__description {
-                        color: #D7BDCA;                        
-                    }
-          
-                    .card__header {
-                        position: relative;
-                        display: flex;
-                        align-items: center;
-                        gap: 2em;
-                        padding: 1em;
-                        border-top-left-radius: 50px;    
-                        background-color: rgb(99, 233, 10);
-                        transform: translateY(-100%);
-                        transition: .2s ease-in-out;
-                        .card__thumb {
-                            width: 50px;
-                            height: 50px;      
-                            border-radius: 50%; 
-                            border: solid rgb(81, 255, 0);     
-                        }
-                        .card__header-text{
-                            .card__title {
-                                font-size: 1em;
-                                margin: 0 0 .3em;
-                                color: #6A515E;
-                            }
-                          .card__status {
-                            font-size: .8em;
-                            color: #D7BDCA;
-                          }
-                        }
-                    } 
-                }
-            }
-        }*/ }
+  /*listado mascotas perdidas*/ }
   main .MascotasPyE_Menu-Container {
     background-image: url(../Imagenes/Fondos/fondo_animales.png);
-    margin-top: 2.5rem;
-    padding-top: 2.5rem;
-    padding-bottom: 6.25rem;
+    margin-top: 2.5em;
+    padding-top: 2.5em;
+    padding-bottom: 6.25em;
     display: grid;
     grid-template-rows: 20% 70%;
     grid-template-columns: 20% 50%;
     grid-template-areas: "tittle tittle" "menu img";
     justify-content: space-evenly;
-    grid-gap: 1.875rem; }
+    grid-gap: 1.875em; }
+    @media (max-width: 480px) {
+      main .MascotasPyE_Menu-Container {
+        font-size: 9px;
+        margin-top: 4em;
+        display: flex;
+        flex-direction: column; } }
     main .MascotasPyE_Menu-Container .MascotasPyE_Titulo {
-      width: 31.25rem;
-      padding-top: 1rem;
-      padding-bottom: 0.5rem;
+      width: 31.25em;
+      padding-top: 1em;
+      padding-bottom: 0.5em;
       grid-area: tittle;
       background-image: url(../Imagenes/Fondos/fondo_titulos.png);
-      border-radius: 1.25rem;
+      border-radius: 1.25em;
       margin: auto;
-      margin-bottom: 3.125rem;
-      box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
+      margin-bottom: 3.125em;
+      box-shadow: 0.1875em 0.1875em 0.5em #999;
       font-family: 'Rammetto One', cursive; }
       main .MascotasPyE_Menu-Container .MascotasPyE_Titulo h1 {
         display: inline-block;
         position: relative;
         font-family: 'Rammetto One';
-        font-size: 1.75rem;
+        font-size: 1.75em;
         font-weight: 600;
         color: #ffffff; }
+      @media (max-width: 480px) {
+        main .MascotasPyE_Menu-Container .MascotasPyE_Titulo {
+          font-size: 9px; } }
     main .MascotasPyE_Menu-Container nav .MascotasPyE_Menu-Titulo {
       background-color: #92b2df;
-      padding: 0.375rem;
+      padding: 0.375em;
       color: white;
       font-family: 'Baloo Thambi 2';
-      font-size: 1.75rem;
+      font-size: 1.75em;
       font-weight: 900;
-      box-shadow: 0.1875rem 0.1875rem 0.5rem #999; }
+      box-shadow: 0.1875em 0.1875em 0.5em #999; }
+      @media (max-width: 480px) {
+        main .MascotasPyE_Menu-Container nav .MascotasPyE_Menu-Titulo {
+          display: none; } }
+    @media (max-width: 480px) {
+      main .MascotasPyE_Menu-Container nav {
+        display: none; } }
   main .MascotasPyE_Separador {
     background-color: rgba(196, 149, 149, 0.534);
-    height: 3.125rem;
+    height: 3.125em;
     color: #2a2925;
-    font-size: 1.5625rem;
+    font-size: 1.5625em;
     font-weight: 800;
     display: flex;
-    padding-left: 5rem;
+    padding-left: 5em;
     align-items: center; }
+    @media (max-width: 480px) {
+      main .MascotasPyE_Separador {
+        font-size: 9px; } }
   main .listadoPerdidas_Container, main .listadoEncontradas_Container {
     display: flex;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
     color: #ffffff; }
+    @media (max-width: 480px) {
+      main .listadoPerdidas_Container, main .listadoEncontradas_Container {
+        font-size: 9px; } }
     main .listadoPerdidas_Container .listadoPerdidas_Caja, main .listadoEncontradas_Container .listadoPerdidas_Caja {
       flex-grow: 1;
       max-width: 80%;
-      margin: 100px auto 100px auto;
-      padding-left: 20px;
-      padding-right: 20px; }
+      margin: 6.25em auto 6.25em auto;
+      padding-left: 1.25em;
+      padding-right: 1.25em; }
       main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-gap: 80px;
+        grid-gap: 5em;
         margin: 0;
         padding: 0;
         list-style: none; }
+        @media (max-width: 480px) {
+          main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container {
+            grid-template-columns: repeat(2, 1fr); } }
         main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item {
-          height: 270px; }
+          height: 16.875em; }
+          @media (max-width: 480px) {
+            main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja-item {
+              height: 12em; } }
         main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 {
-          border-radius: 25px;
+          border-radius: 1.5625em;
           position: relative;
           display: flex;
           align-items: center;
           justify-content: center;
           background-color: #000000;
-          box-shadow: 0.1875rem 0.1875rem 0.5rem #999;
-          border: solid 1px; }
+          box-shadow: 3px 3px 8px #999;
+          border: solid 0.0625em; }
           main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(1), main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(1), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1:nth-child(1), main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2:nth-child(1) {
             background-image: url(../Imagenes/Perdidos/perdido1.png);
             background-size: cover; }
@@ -1095,16 +1370,16 @@ main {
             background-size: cover; }
           main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay {
             position: absolute;
-            bottom: 20px;
-            right: 20px;
+            bottom: 1.25em;
+            right: 1.25em;
             display: flex;
             align-items: center;
             justify-content: center;
-            width: 52px;
-            height: 52px;
+            width: 3.25em;
+            height: 3.25em;
             background-color: #ffffff;
             border-radius: 50%;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0.125em 0.25em rgba(0, 0, 0, 0.2);
             transition: 0.5s;
             cursor: pointer; }
             main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover ~ .listadoPerdidas_Texto {
@@ -1115,7 +1390,7 @@ main {
             main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay::before {
               content: "+";
               color: #77777a;
-              font-size: 20px;
+              font-size: 1.25em;
               text-transform: uppercase;
               font-weight: 500;
               letter-spacing: 0.02em; }
@@ -1127,32 +1402,35 @@ main {
               box-shadow: none;
               border-radius: 0;
               opacity: 0.6;
-              border-radius: 25px; }
+              border-radius: 1.5625em; }
               main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover::before, main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:hover::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Caja1 .listadoPerdidas_overlay:focus::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:hover::before, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoEncontrados_Caja2 .listadoPerdidas_overlay:focus::before {
                 content: none; }
         main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto {
           z-index: 1;
-          padding: 20px;
+          padding: 1.25em;
           line-height: 1.4;
           opacity: 0;
           visibility: hidden;
           box-sizing: border-box;
           pointer-events: none;
           transition: 0s; }
+          @media (max-width: 480px) {
+            main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto {
+              font-size: 9px; } }
           main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto h2, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto h2 {
             margin: 0;
-            margin-bottom: 16px;
+            margin-bottom: 1em;
             display: inline-block;
             position: relative;
             font-family: 'Rammetto One';
-            font-size: 25px;
+            font-size: 1.5625em;
             font-weight: 400; }
           main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto p, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container .listadoPerdidas_Texto p {
             font-family: 'Baloo Thambi 2';
-            font-size: 18px;
+            font-size: 1.125em;
             font-weight: 500;
             color: #363535;
-            margin-bottom: 20px; }
+            margin-bottom: 1.25em; }
   main .listadoEncontrados_Caja2:nth-child(1) {
     background-image: url(../Imagenes/Encontrados/encontrado1.png) !important;
     background-size: cover; }
@@ -1180,8 +1458,3 @@ main {
   main .listadoEncontrados_Caja2:nth-child(9) {
     background-image: url(../Imagenes/Encontrados/encontrado9.png) !important;
     background-size: cover; }
-  main .botonmasc {
-    background-color: #fc7405;
-    color: white;
-    border-radius: 10px;
-    padding: 7px 10px 7px 10px; }

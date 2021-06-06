@@ -3,6 +3,10 @@ header{
     .logo {
     max-width: 50%;
     }
+    .navbar{
+        background:$bg-color;
+    }
+  
     //carousel index//
         //caja1//
     .carouselPortada_container-1{
@@ -45,11 +49,11 @@ header{
         .carouselPortada_caja-3{
             @include carousel_cajas(0%);
             h2{
-                @include tituloRammetto(1.875rem,400);
+                @include tituloRammetto(1.875em,400);
                 color: $celeste;
             }
             p{
-                @include textoThambi (1.1875rem,600);
+                @include textoThambi (1.1875em,600);
                 color: $texto1;
             }
         }
@@ -63,20 +67,29 @@ header{
         .portada_Registro{
             @include portadas;
             background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
-            background-position-y:-15em;
+            background-position-y:-14em;
+            @include smarthphone{
+                background-position-y:-1em;
+            }
         }
         /*Portada Colabora*/
         .portada_Colabora{
             @include portadas;
             background-image: url(../Imagenes/Portadas/portada_colabora.jpeg);
-            background-position-y:-6.25em;
+            background-position-y:-5em;
+            @include smarthphone{
+                background-position-y:1.5em;
+            }
         }
         /*Portada Reencuentro*/
         .portada_Reencuentro{
             @include portadas;
             background-image: url(../Imagenes/Portadas/portada_reencuentro.jpeg);
-            background-position-y:-9.375em;
+            background-position-y:-8em;
             border-bottom:solid #FFFCF2 0.625em;
+            @include smarthphone{
+                background-position-y:1.5em;
+            }
         }
         /*Portada Tips*/
         .portada_Tips{
@@ -84,6 +97,9 @@ header{
             background-image: url(../Imagenes/Portadas/portada_tips.jpeg);
             background-position-y:-11.25em;
             border-bottom:solid #FFFCF2 0.625em;
+            @include smarthphone{
+                background-position-y:1em;
+            }
         }
     }
 }

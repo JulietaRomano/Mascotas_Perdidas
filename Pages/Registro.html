@@ -115,80 +115,74 @@
                 </div>
                 <p class="PagesSub_texto wow animate__animated animate__fadeInUp" data-wow-duration="2s">
                     <span class="textoResaltado">Vamos a ayudarte a viralizar la imagen de tu mascota perdida.<br>¿Como funciona?<br></span>
-                    Si perdiste a tu mascota o encontraste una, registrala completando el siguiente formulario con tus datos. <br>Se publicará como Mascota Perdida o Encontrada y podrás compartir el cartel de "BUSCADO" en otras redes sociales, o pegarla en tu barrio o localidad.
+                    Si perdiste a tu mascota o encontraste a una perdida, registrala completando el siguiente formulario con tus datos. <br>La publicaremos como Mascota Perdida o Encontrada y podrás compartir el cartel de <strong>"BUSCAD@"</strong> en otras redes sociales, o pegarla en tu barrio o localidad.
                 </p>
             </div>
           
             <!--Contenido Formulario-->
-            <section class="formularios_Section">
-                <div class="formularios_Container wow animate__animated animate__fadeInBottomLeft" data-wow-delay="0.3s"  data-wow-duration="2s">
-                    <div class="formularios_Titulo">
-                        <h2>ACCESO A USUARIOS</h2>
-                    </div>
-                    <p class="formularios_Texto">
-                        <span style="font-weight: 800;">¿Ya eres usuario?</span><br> Ingresa con tu usuario y contraseña .Una vez dentro podrás subir información relacionada mascotas encontradas o perdidas.
+            <section class="formularios">
+
+                <div class="formulario_cajaTexto">
+                    <h3>
+                        ¿Ya eres usuario?
+                    </h3> 
+                    <p>
+                        Ingresa con tu usuario y contraseña. Una vez dentro podrás subir información relacionada tus mascotas.<br>
+                        Si todavía no estas registrado, haz click siguiente enlace: <br> <a href="#formulario_registro" class="formulario_enlace">Registro</a>.
                     </p>
-                    <!--formulario-->
-                    <form class="formularios">
-                        <label>Usuario:</label>
-                        <input type="text">
-                        <label>Contraseña:</label>
-                        <input type="password">
-                        <!--Boton-->
-                        <a href="#">
-                            <div class="botones">
-                                <div class="botones1">
-                                    <p class="botonesP">ENVIAR</p>
-                                </div>
-                            </div>
-                        </a>
+                </div>
+
+                <div class="flecha">
+                    <img src="../Imagenes/flecha.gif">
+                </div>
+
+                <div class="formulario_box">
+                    <div id="formulario_container">
+                        <!-- Icon -->
+                      <div class="formulario_logo">
+                        <img src="../Imagenes/Logos/mascotas.png" id="icon" alt="User Icon">
+                      </div>
+                      <!-- Tabs Titles -->
+                      <h2 class="formulario_titulo"> Acceso a usuarios registrados</h2>
+                      
+                      <!-- Login Form -->
+                      <form>
+                        <input type="text" id="login" name="login" placeholder="Usuario">
+                        <input type="text" id="password"  name="login" placeholder="Contraseña">
+                        <input type="submit" class="fadeIn fourth" value="Enviar">
+                      </form>
+                  
+                      <!-- Remind Passowrd -->
+                      <div id="formulario_footer">
+                        <a class="underlineHover" href="#">Olvidaste tu contraseña?</a>
+                      </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="formulario_registro">
+                <div class="formularios">
+                    <div id="formulario_container">
+                        <!-- Icon -->
+                    <div class="formulario_logo">
+                        <img src="../Imagenes/Logos/mascotas.png" id="icon" alt="User Icon">
+                    </div>
+                
+                    <!-- Tabs Titles -->
+                    <h2 class="formulario_titulo"> Registro</h2>
+                    
+                    <!-- Login Form -->
+                    <form>
+                        <input type="text" id="login" name="nombre" placeholder="Nombre">
+                        <input type="text" id="login" name="E-Mail" placeholder="E-Mail">
+                        <input type="text" id="login" name="login" placeholder="Usuario">
+                        <input type="text" id="password" name="login" placeholder="Contraseña">
+                        <input type="text" id="login" name="nombre" placeholder="Localidad">
+                        <input type="submit" value="Enviar">
                     </form>
                 </div>
-                <div class="formularios_Container wow animate__animated animate__fadeInBottomRight" data-wow-delay="0.3s"  data-wow-duration="2s">
-                    <div class="formularios_Titulo">
-                        <h2>REGISTRATE AQUÍ</h2>
-                    </div>
-                    <p class="formularios_Texto">
-                        Antes de iniciar con el registro de una mascota, debes registrarte en nuestro portal. <br> Recuerda ingresar a tu correo para confirmar tu cuenta y acceder al portal.
-                    </p>
-                    <form class="formularios">
-                        <label>
-                            Nombre:
-                        </label>
-                        <input type="text">
-                        <label>
-                            Correo Electrónico:
-                        </label>
-                        <input type="email">
-                        <label>
-                            Contraseña:
-                        </label>
-                        <input type="password">
-                        <label>
-                            Teléfono:
-                        </label>
-                        <input type="tel">
-                        <label>
-                            Localidad:
-                        </label>
-                        <input type="text">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
-                            <label class="form-check-label" for="flexCheckChecked">
-                                ¿Desea recibir nuestra información en su correo?
-                            </label>
-                        </div>
-                        <!--Boton-->
-                        <a href="#">
-                            <div class="botones">
-                                <div class="botones1">
-                                    <p class="botonesP">ENVIAR</p>
-                                </div>
-                            </div>
-                        </a>
-                </form>
             </section>
-        </main>
+    </main>
 
         <!--SECCION: REDES SOCIALES -->
         <footer>
