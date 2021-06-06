@@ -130,46 +130,28 @@
             </div>
 
             <!--Formulario para colaborar-->
-            <section class="formularios_Section wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
-                <div class="formularios_Container"><!--Caja contenedora-->
-                    <div class="formularios_Titulo">
-                        <h2>FORMULARIO</h2>
+            <section class="formularios wow animate__animated animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0.4s">
+               
+                <div class="formularios">
+                    <div id="formulario_container">
+                        <!-- Icon -->
+                    <div class="formulario_logo">
+                        <img src="../Imagenes/Logos/mascotas.png" id="icon" alt="User Icon">
                     </div>
-                    <!--formulario-->
-                    <form class="formularios">
-                        <label>
-                            Nombre:
-                        </label>
-                        <input type="fname" name="nombre">
-                        <label>
-                            Correo Electronico:
-                        </label>
-                        <input type="email" name="correo">
-                        <label>
-                            Teléfono:
-                        </label>
-                        <input type="number" name="telefono">
-                        <label>
-                            Comentario:
-                        </label>
-                        <textarea>
-                        </textarea> 
-                        <label>
-                            <span style="font-size: 12px; float: left; padding-left: 20px;">
-                                ¿DESEA RECIBIR NUESTRA INFORMACIÓN EN SU CORREO?
-                            </span>
-                        </label>
-                        <span style="float: inline-start;"><input type="checkbox" checked></span>
-                        <!--Boton-->
-                        <a href="#">
-                            <div class="botones">
-                                <div class="botones1">
-                                    <p class="botonesP">ENVIAR</p>
-                                </div>
-                            </div>
-                        </a>
+                
+                    <!-- Tabs Titles -->
+                    <h2 class="formulario_titulo"> Comentario</h2>
+                    
+                    <!-- Login Form -->
+                    <form>
+                        <input type="text" id="login" name="nombre" placeholder="Nombre">
+                        <input type="text" id="login" name="E-Mail" placeholder="E-Mail">
+                        <input type="text" id="login" name="Localidad" placeholder="Localidad">
+                        <input type="text" id="login"class="comentario_caja" name="Comentario" placeholder="Comentario">
+
+                        <input type="submit" value="Enviar">
                     </form>
-                </div>        
+                </div>
             </section>    
         </main>
 

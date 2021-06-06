@@ -11,6 +11,10 @@ a{
             box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
             transition: .6s linear;
             display: inline-block;
+            @include smarthphone{
+                font-size: 9px;
+                margin-top: 2em;
+            } 
             .botonesP{
             color: rgba(253, 253, 253, 0.925);
             font-size: 1.25em;
@@ -20,7 +24,7 @@ a{
                 background-color: rgb(17, 146, 135);
                 border-right: solid rgb(157, 219, 214) 0.8125em;
             }
-        }  
+        } 
     }
 }
 //botones Seccion:¿Quienes somos? index//
@@ -51,4 +55,17 @@ a{
         }
 
     }
+}
+
+//Boton mascotas perdidas y encontradas//
+
+.botonmasc{
+    background-color: $naranjaFuerte;
+    color: white;
+    border-radius: 0.625em;
+    padding:0.4375em 0.625em 0.4375em 0.625em;
+    @include smarthphone{
+        font-size: 8px;
+    }
+    
 }

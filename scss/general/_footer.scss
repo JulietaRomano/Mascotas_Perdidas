@@ -1,5 +1,7 @@
 footer{
-    border-bottom: solid rgb(104, 97, 97);
+    @include smarthphone{
+        font-size: 5px;
+    }
     #redes{
         background-image: url(../Imagenes/Fondos/fondo_footer.png);
         display:grid;
@@ -10,6 +12,9 @@ footer{
         "titulo img"
         "logos img";
         padding: 1.5625em 0 1.5625em 0;
+        @include smarthphone{
+            font-size: 5px;
+        }
         .redes_titulos{
             font-size: 1.4375em;
             color: rgb(51, 47, 47);
@@ -23,9 +28,16 @@ footer{
             display: flex;
             justify-content: space-around;
             grid-area: logos;
+            @include smarthphone{
+                font-size: 7px;
+                width: 20em;
+            }
             a{
                 img{
                     width: 3.125em;
+                    @include smarthphone{
+                        font-size: 7px;
+                    }
                 }
             }
         }
@@ -33,6 +45,9 @@ footer{
             width: 28.125em;
             grid-area: img;
             padding-top: 1.5625em;
+            @include smarthphone{
+                display: none;
+            }
             img{
                 width: 30.625em;
             }

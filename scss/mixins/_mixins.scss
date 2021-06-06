@@ -45,44 +45,53 @@
     padding-top: 35px;
     margin-left: $margin;
     border: rgb(255, 255, 255) solid;
+    z-index: 1;
 }
 
     //Index Inicio imagenes animadas//
     @mixin imagenes_animadas{
         display: inline-block;
-        border-radius: 20px;
-        margin: 30px 0px 0px 0px;
-        height: 180px;
-        width: 200px;
+        border-radius: 1.25em;
+        margin: 1.875em 0px 0px 0px;
+        height: 11.25em;
+        width: 12.5em;
         background-size: cover;
-        background-position-y: -10px;
-
+        background-position-y: -0.625em;
     }
-
-
-
 
 
     //Portadas para todas las Pages (menos Index)//
 @mixin portadas{
     position: relative;
-    height: 28em;
+    height: 29em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
     background-attachment: fixed;
     background-size: cover;
     border-bottom:solid #FFFCF2 0.625em;
+   
+    @include smarthphone{
+        font-size: 8px;
+        height: 22em;
+        background-attachment: scroll;
+        background-position:center ;
+    }
 }
 
     //Tips Grid Imagenes//
 @mixin tipsGridImg {
-    background-size: 28.125rem;
-    width: 28.125rem;
+    background-size: 28.125em;
+    width: 28.125em;
     background-repeat: no-repeat;
     background-position: cover;
-    border-radius: 1.25rem;
-    box-shadow: 0.3125rem 0.3125rem 0.625rem #999;
+    border-radius: 1.25em;
+    box-shadow: 0.3125em 0.3125em 0.625em #999;
+    @include smarthphone{
+        font-size: 9px;
+        height: 13em;
+        margin: auto;
+    } 
 }
 
 /*Media Queries*/
