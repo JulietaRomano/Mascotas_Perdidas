@@ -1,23 +1,27 @@
 main{
     font-size: 16px;
+    .responsive{
+        @include smarthphone{
+            display: none;
+        }
+    }
 
     .Inicio_Index{
         margin-top: 5em;
         font-size:16px;
-        @include smarthphone{
-            font-size:12px;
-            margin-top: 3em;
-        }
-
+            @include smarthphone{
+                font-size:10px;
+                margin-top: 3em;
+            }
         .Inicio_Index-Texto{
             padding: 0 18.75em 2em 18.75em;
             p{
-                @include textoThambi (1.25em,500);
+                @include textoThambi (1.4em,500);
                         color: rgb(122, 117, 117);
             }
-            @include smarthphone{
-                padding: 0 .5em 1em 1.5em;
-            }
+                @include smarthphone{
+                    padding: 0 .5em 1em 1.5em;
+                }
         } 
         //Seccion: ¿Quienes Somos?//
         .Inicio_Index-Container{
@@ -25,7 +29,7 @@ main{
             display: flex;
             justify-content: space-around;
             margin:auto;
-            @include smarthphone{
+                @include smarthphone{
                 width: 100%;
                 }
 
@@ -35,10 +39,9 @@ main{
                 text-align: center;
                 transition: 1s;
                 cursor: pointer;
-
-                @include smarthphone{
-                font-size:7px;
-                }
+                    @include smarthphone{
+                    font-size:7px;
+                    }
                 &:hover{
                     transform: translateY(-15px);
                     .Inicio_Index-Img1 {
@@ -81,6 +84,10 @@ main{
                             margin: .625em 0px .625em 0px;
                             color: #81818d;
                             @include tituloRammetto (1.125em, 400);
+                                @include smarthphone{
+                                font-size:11px;
+                                margin: 0;
+                                }
                         }
                         p{
                             @include textoThambi (1.0625em,500);
@@ -115,7 +122,6 @@ main{
             font-size: 12px;
         }
        
-
         .SobreNosotros_article {
             padding:2em 0em 1.25em 0em;
             display: flex;
@@ -149,14 +155,10 @@ main{
                     @include smarthphone{
                         margin-top: 1em;
                         padding: 0 1em 0 1em;
-                        font-size: 14px;
+                        font-size: 15px;
+                        margin-top:.5em;
                     }
 
-                }
-                .responsive{
-                    @include smarthphone{
-                        display: none;
-                    }
                 }
             }
             .SobreNosotros_imagen{
@@ -169,7 +171,6 @@ main{
                 }
             }
         }
-    
         //Seccion:Amigos de las mascotas//
         .tarjetas_Container{
             font-size: 16px;
@@ -281,9 +282,9 @@ main{
         align-items: center;
         @include smarthphone{
             font-size: 6.5px;
-            height: 35vh;
+            height: 25vh;
             background-attachment:scroll;
-            background-position-x:-6em;
+            background-position: center;
         }
         .Boletin_Caja{
             border-radius: 1.875em;
@@ -353,6 +354,7 @@ main{
             padding-bottom: 4.375em;
             @include smarthphone{
                 padding-top: 2em;
+                padding-top: 0em;
             }
 
             .Funcionamiento_Imagen{
@@ -380,7 +382,7 @@ main{
                 padding-top: 3.75em;
                 @include smarthphone{ 
                     width: 100%;
-                    padding-top: .5em;
+                    padding-top: 0em;
                 }
                 .Funcionamiento_Caja{
                     display: flex;
@@ -409,26 +411,25 @@ main{
                         @include smarthphone{
                             margin-left:0;  
                             }
-                        
-                        @include smarthphone{
-                            width: 23em;
-                            font-size: 12px;
-                            flex-direction: column;
-                            margin: auto
-                        }
+                            @include smarthphone{
+                                width: 23em;
+                                font-size: 12px;
+                                flex-direction: column;
+                                margin: auto
+                            }
                         .Funcionamiento_Texto-p{
                             @include textoThambi(1.25em,500);
                             color: rgb(122, 117, 117);
-                            @include smarthphone{
-                                font-size: 13px;                        
-                            }
+                                @include smarthphone{
+                                    font-size: 14px;                        
+                                }
                         }
                         .Funcionamiento_Sub{
                             @include textoThambi (1.7em,800);
                             color: rgb(87, 114, 116);
-                            @include smarthphone{
-                            margin-top: 1em;
-                            }
+                                @include smarthphone{
+                                margin-top: 1em;
+                                }
                         }
                     }
                 }
@@ -438,7 +439,7 @@ main{
     //Seccion Contáctanos//
     .ContactoIndex_Container{
         font-size: 16px;
-        padding-top: 2.5em;
+        padding: 1em 0 1em 0;
         background-image: url(../Imagenes/Img_PNG/imgFinal.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -447,9 +448,8 @@ main{
         background-color: white;
         @include smarthphone{ 
             font-size: 6px;
-            height: 40vh;
             background-attachment:scroll;
-            background-position-x:2em;
+            background-position-y:-7px;
             background-size: cover;
         }
         .ContactoIndex_Caja{

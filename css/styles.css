@@ -43,7 +43,7 @@ a {
     display: inline-block; }
     @media (max-width: 480px) {
       a .botones .botones1 {
-        font-size: 9px;
+        font-size: 8px;
         margin-top: 2em; } }
     a .botones .botones1 .botonesP {
       color: rgba(253, 253, 253, 0.925);
@@ -84,7 +84,7 @@ a {
       font-size: 8px; } }
 
 header .logo {
-  max-width: 50%; }
+  max-width: 58%; }
 
 header .navbar {
   background: #FFFCF2; }
@@ -177,8 +177,10 @@ header .carouselPortada_container-3 {
 
 header .portada {
   position: relative;
-  width: 100vw;
+  width: 100%;
   font-size: 16px;
+  display: flex;
+  justify-content: center;
   /*Portada Colabora*/
   /*Portada Reencuentro*/
   /*Portada Tips*/ }
@@ -265,10 +267,6 @@ header .portada {
       header .portada .portada_Tips {
         background-position-y: 1em; } }
 
-@media (max-width: 480px) {
-  footer {
-    font-size: 5px; } }
-
 footer #redes {
   background-image: url(../Imagenes/Fondos/fondo_footer.png);
   display: grid;
@@ -279,13 +277,19 @@ footer #redes {
   padding: 1.5625em 0 1.5625em 0; }
   @media (max-width: 480px) {
     footer #redes {
-      font-size: 5px; } }
+      font-size: 4.3px; } }
   footer #redes .redes_titulos {
+    display: inline-block;
+    position: relative;
+    font-family: 'Rammetto One';
     font-size: 1.4375em;
+    font-weight: 400;
     color: #332f2f;
     margin: auto;
-    grid-area: titulo;
-    font-family: 'Rammetto One', cursive; }
+    grid-area: titulo; }
+    @media (max-width: 480px) {
+      footer #redes .redes_titulos {
+        font-size: 9px; } }
   footer #redes .redes_logos {
     margin: auto;
     width: 23.75em;
@@ -300,14 +304,11 @@ footer #redes {
       width: 3.125em; }
       @media (max-width: 480px) {
         footer #redes .redes_logos a img {
-          font-size: 7px; } }
+          font-size: 5px; } }
   footer #redes .redes_imagen {
     width: 28.125em;
     grid-area: img;
     padding-top: 1.5625em; }
-    @media (max-width: 480px) {
-      footer #redes .redes_imagen {
-        display: none; } }
     footer #redes .redes_imagen img {
       width: 30.625em; }
 
@@ -316,6 +317,10 @@ footer .pieDePagina {
   font-weight: 600;
   background-color: #686161;
   color: white; }
+  @media (max-width: 480px) {
+    footer .pieDePagina {
+      font-size: 9px;
+      padding: 1em; } }
 
 .titulo_celeste {
   display: inline-block;
@@ -344,14 +349,20 @@ footer .pieDePagina {
 
 .portada_Titulo {
   width: 34.375em;
-  padding: 1.875em 0.625em 1.875em 0.625em;
+  padding: 1.875em 0.625em 1.5em 0.625em;
   background-image: url(../Imagenes/Fondos/fondo_titulos.png);
   position: absolute;
   border: solid #FFFCF2 0.625em;
-  left: 28.125em;
-  top: 23.75em;
+  top: 24.5em;
   border-radius: 50%;
-  display: inline-block; }
+  display: inline-block;
+  text-transform: uppercase; }
+  @media (max-width: 480px) {
+    .portada_Titulo {
+      padding: 1.5em 0.625em .5em 0.625em;
+      width: 26em;
+      font-size: 9px;
+      top: 15.5em; } }
   .portada_Titulo .titulos {
     display: inline-block;
     position: relative;
@@ -361,56 +372,62 @@ footer .pieDePagina {
     color: #ffffff; }
     @media (max-width: 480px) {
       .portada_Titulo .titulos {
-        font-size: 9px; } }
+        font-size: 11px; } }
+
+.MascotasPyE_Titulo {
+  display: inline-block;
+  padding: 1em 1em .5em 1em;
+  grid-area: tittle;
+  background-image: url(../Imagenes/Fondos/fondo_titulos.png);
+  border-radius: 1.25em;
+  margin: auto;
+  box-shadow: 0.1875em 0.1875em 0.5em #999; }
+  .MascotasPyE_Titulo h1 {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    font-family: 'Rammetto One';
+    font-size: 1.75em;
+    font-weight: 600;
+    color: #ffffff; }
   @media (max-width: 480px) {
-    .portada_Titulo {
-      padding: 1em 0.625em 1em 0.625em;
-      width: 22em;
+    .MascotasPyE_Titulo {
       font-size: 9px;
-      left: 9em;
-      top: 16em; } }
+      padding-bottom: 0em; } }
 
 main .PagesSub_Conteiner {
-  height: 18.75em;
+  height: 15em;
   width: 100%;
   display: flex;
   align-items: center;
   align-content: center;
   background-image: linear-gradient(to bottom, #FFFCF2, #e3f3ee);
   justify-content: center;
-  margin-top: 5em;
+  margin-top: 3em;
   border-bottom: #c5bfad 0.3125em solid; }
   @media (max-width: 480px) {
     main .PagesSub_Conteiner {
-      font-size: 9px;
-      height: 13em;
+      font-size: 10.5px;
+      height: 9.3em;
       margin-top: 1em; } }
   main .PagesSub_Conteiner .PagesSub_texto {
     font-family: 'Baloo Thambi 2';
     font-size: 19px;
     font-weight: 400;
     color: #706666;
-    padding: 1.875em 10em 0 10em; }
+    padding: 0 6em 0 6em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_texto {
-        font-size: 9px;
-        padding: 0;
+        font-size: 13px;
+        padding: 0 1em 0 1em;
         text-justify: justify; } }
   main .PagesSub_Conteiner .PagesSub_Registro-Img img {
-    width: 20.3125em; }
+    width: 16.3em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Registro-Img img {
-        display: none; } }
-  main .PagesSub_Conteiner .colabora_Textos h2 {
-    font-family: 'Baloo Thambi 2';
-    font-size: 1.875em;
-    font-weight: 800;
-    color: #706666; }
-    @media (max-width: 480px) {
-      main .PagesSub_Conteiner .colabora_Textos h2 {
-        font-size: 11px; } }
+        font-size: 6.4px; } }
   main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
-    width: 15.125em; }
+    width: 12em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
         font-size: 6.3px; } }
@@ -418,45 +435,44 @@ main .PagesSub_Conteiner {
     width: 17.1875em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Tips-Img img {
-        font-size: 6.3px; } }
+        font-size: 5.2px; } }
   main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
     width: 20.5em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
-        font-size: 6.3px; } }
+        font-size: 5px; } }
 
 main .textoResaltado {
   font-family: 'Baloo Thambi 2';
   font-size: 1.125em;
   font-weight: 800; }
 
-.formularios {
-  height: 90vh;
+main .formularios {
+  padding: 1em 0 1em 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  /* STRUCTURE */
-  /* TABS */
-  /* FORM TYPOGRAPHY*/ }
+  background-image: url(../Imagenes/Fondos/fondo_animales.png);
+  /* Estructura*/
+  /* Input*/ }
   @media (max-width: 480px) {
-    .formularios {
-      font-size: 9px;
-      height: 57vh; } }
-  .formularios .flecha img {
+    main .formularios {
+      font-size: 13px; } }
+  main .formularios .flecha img {
     width: 200px; }
   @media (max-width: 480px) {
-    .formularios .flecha {
+    main .formularios .flecha {
       display: none; } }
-  .formularios .formulario_cajaTexto {
+  main .formularios .formulario_cajaTexto {
     border-radius: 1.5625em;
     background-color: #f1fdfc;
     border: #e9e6e6 solid 0.0625em;
     width: 21.875em;
     height: 17.5em; }
     @media (max-width: 480px) {
-      .formularios .formulario_cajaTexto {
+      main .formularios .formulario_cajaTexto {
         display: none; } }
-    .formularios .formulario_cajaTexto h3 {
+    main .formularios .formulario_cajaTexto h3 {
       display: inline-block;
       position: relative;
       font-family: 'Rammetto One';
@@ -464,70 +480,76 @@ main .textoResaltado {
       font-weight: 400;
       padding-top: 3.125em;
       color: #108896; }
-    .formularios .formulario_cajaTexto p {
+    main .formularios .formulario_cajaTexto p {
       font-family: 'Baloo Thambi 2';
       font-size: 1.0625em;
       font-weight: 400;
       padding: 10px 30px 0 1.875em;
       color: #706666; }
-      .formularios .formulario_cajaTexto p .formulario_enlace {
+      main .formularios .formulario_cajaTexto p .formulario_enlace {
         font-family: 'Baloo Thambi 2';
         font-size: 1.25rm;
         font-weight: 600;
         color: #fc7405;
         text-decoration: underline;
         cursor: pointer; }
-  .formularios a {
+  main .formularios a {
     color: #92badd;
     display: inline-block;
     text-decoration: none;
     font-weight: 400; }
-  .formularios h2 {
+  main .formularios h2 {
     text-align: center;
     font-size: 1em;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
     margin: 2.5em .5em .625em .5em;
-    color: #cccccc; }
-  .formularios .formulario_box {
+    border-bottom: 0.125em solid #5fbae9;
+    color: #6e6363; }
+    @media (max-width: 480px) {
+      main .formularios h2 {
+        font-size: 1.3em;
+        margin-top: 1.5em; } }
+  main .formularios .formulario_box {
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: center;
-    padding: 1.25em; }
-  .formularios #formulario_container {
+    justify-content: center; }
+  main .formularios #formulario_container {
     -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
     border-radius: 0.625em 0.625em 0.625em 0.625em;
     background: #fff;
-    padding: 1.875em;
     width: 90%;
     max-width: 28.125em;
     position: relative;
-    padding: 0em;
     -webkit-box-shadow: 0 1.875em 3.75em 0 rgba(0, 0, 0, 0.3);
     box-shadow: 0 1.875em 3.75em 0 rgba(0, 0, 0, 0.3);
-    text-align: center; }
+    text-align: center;
+    padding-bottom: 1em; }
     @media (max-width: 480px) {
-      .formularios #formulario_container {
+      main .formularios #formulario_container {
         font-size: 9px; } }
-    .formularios #formulario_container .formulario_logo {
+    main .formularios #formulario_container .formulario_logo {
       margin: auto;
       width: 12.5em;
       padding-top: 1.875em; }
-      .formularios #formulario_container .formulario_logo img {
+      main .formularios #formulario_container .formulario_logo img {
         height: 6.25em; }
-  .formularios #formulario_footer {
-    background-color: #f6f6f6;
+      @media (max-width: 480px) {
+        main .formularios #formulario_container .formulario_logo {
+          font-size: 10px; } }
+  main .formularios #formulario_footer {
+    margin-top: 1em;
     border-top: 0.0625em solid #dce8f1;
-    padding: 1.5625em;
+    padding: 1em;
     text-align: center;
     -webkit-border-radius: 0 0 0.625em 0.625em;
     border-radius: 0 0 0.625em 0.625em; }
-  .formularios h2.formulario_titulo {
-    color: #504d4d;
-    border-bottom: 0.125em solid #5fbae9; }
-  .formularios input[type=button], .formularios input[type=submit], .formularios input[type=reset] {
+    @media (max-width: 480px) {
+      main .formularios #formulario_footer .underlineHover {
+        font-size: 13px; } }
+  main .formularios input[type=button], main .formularios input[type=submit], main .formularios input[type=reset] {
     background-color: #56baed;
     border: none;
     color: white;
@@ -541,15 +563,18 @@ main .textoResaltado {
     box-shadow: 0 0.625em 1.875em 0 rgba(95, 186, 233, 0.4);
     -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
     border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
-    margin: 0.3125em 1.25em 2.5em 1.25em;
+    margin-top: 1em;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out; }
-  .formularios input[type=button]:hover, .formularios input[type=submit]:hover, .formularios input[type=reset]:hover {
+    @media (max-width: 480px) {
+      main .formularios input[type=button], main .formularios input[type=submit], main .formularios input[type=reset] {
+        font-size: 1em; } }
+  main .formularios input[type=button]:hover, main .formularios input[type=submit]:hover, main .formularios input[type=reset]:hover {
     background-color: #39ace7; }
-  .formularios input[type=text] {
+  main .formularios input[type=text] {
     background-color: #f6f6f6;
     border: none;
     color: #0d0d0d;
@@ -568,33 +593,40 @@ main .textoResaltado {
     transition: all 0.5s ease-in-out;
     -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
     border-radius: 0.3125em 0.3125em 0.3125em 0.3125em; }
-  .formularios input[type=text]:focus {
+  main .formularios input[type=text]:focus {
     background-color: #fff;
     border-bottom: 0.125em solid #5fbae9; }
-  .formularios input[type=text]:placeholder {
+  main .formularios input[type=text]:placeholder {
     color: #cccccc; }
-  .formularios *:focus {
+  main .formularios *:focus {
     outline: none; }
-  .formularios .comentario_caja {
+  main .formularios .comentario_caja {
     height: 8.125em; }
     @media (max-width: 480px) {
-      .formularios .comentario_caja {
+      main .formularios .comentario_caja {
         height: 5em; } }
+
+@media (max-width: 480px) {
+  main #formulario_registro {
+    display: none; } }
 
 main {
   font-size: 16px; }
+  @media (max-width: 480px) {
+    main .responsive {
+      display: none; } }
   main .Inicio_Index {
     margin-top: 5em;
     font-size: 16px; }
     @media (max-width: 480px) {
       main .Inicio_Index {
-        font-size: 12px;
+        font-size: 10px;
         margin-top: 3em; } }
     main .Inicio_Index .Inicio_Index-Texto {
       padding: 0 18.75em 2em 18.75em; }
       main .Inicio_Index .Inicio_Index-Texto p {
         font-family: 'Baloo Thambi 2';
-        font-size: 1.25em;
+        font-size: 1.4em;
         font-weight: 500;
         color: #7a7575; }
       @media (max-width: 480px) {
@@ -672,6 +704,10 @@ main {
           font-family: 'Rammetto One';
           font-size: 1.125em;
           font-weight: 400; }
+          @media (max-width: 480px) {
+            main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
+              font-size: 11px;
+              margin: 0; } }
         main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto p {
           font-family: 'Baloo Thambi 2';
           font-size: 1.0625em;
@@ -732,10 +768,8 @@ main {
           #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .SobreNosotros_p {
             margin-top: 1em;
             padding: 0 1em 0 1em;
-            font-size: 14px; } }
-      @media (max-width: 480px) {
-        #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_texto .responsive {
-          display: none; } }
+            font-size: 15px;
+            margin-top: .5em; } }
     #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen {
       width: 25em; }
       #SobreNosotros_Container .SobreNosotros_article .SobreNosotros_imagen img {
@@ -768,6 +802,10 @@ main {
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
       background-color: #7abeb9; }
+      @media (max-width: 480px) {
+        #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
+          font-size: 17px;
+          margin-bottom: 1em; } }
     #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex {
       display: flex;
       justify-content: space-around;
@@ -851,9 +889,9 @@ main {
   @media (max-width: 480px) {
     .Boletin_Imagen {
       font-size: 6.5px;
-      height: 35vh;
+      height: 25vh;
       background-attachment: scroll;
-      background-position-x: -6em; } }
+      background-position: center; } }
   .Boletin_Imagen .Boletin_Caja {
     border-radius: 1.875em;
     height: 18.75em;
@@ -918,7 +956,8 @@ main {
     padding-bottom: 4.375em; }
     @media (max-width: 480px) {
       .Funcionamiento .Funcionamiento_Container {
-        padding-top: 2em; } }
+        padding-top: 2em;
+        padding-top: 0em; } }
     .Funcionamiento .Funcionamiento_Container .Funcionamiento_Imagen {
       width: 38%;
       display: flex;
@@ -943,7 +982,7 @@ main {
       @media (max-width: 480px) {
         .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid {
           width: 100%;
-          padding-top: .5em; } }
+          padding-top: 0em; } }
       .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja {
         display: flex;
         justify-content: center;
@@ -985,7 +1024,7 @@ main {
             color: #7a7575; }
             @media (max-width: 480px) {
               .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Texto-p {
-                font-size: 13px; } }
+                font-size: 14px; } }
           .Funcionamiento .Funcionamiento_Container .Funcionamiento_Grid .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
             font-family: 'Baloo Thambi 2';
             font-size: 1.7em;
@@ -997,7 +1036,7 @@ main {
 
 .ContactoIndex_Container {
   font-size: 16px;
-  padding-top: 2.5em;
+  padding: 1em 0 1em 0;
   background-image: url(../Imagenes/Img_PNG/imgFinal.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1007,9 +1046,8 @@ main {
   @media (max-width: 480px) {
     .ContactoIndex_Container {
       font-size: 6px;
-      height: 40vh;
       background-attachment: scroll;
-      background-position-x: 2em;
+      background-position-y: -7px;
       background-size: cover; } }
   .ContactoIndex_Container .ContactoIndex_Caja {
     width: 50%;
@@ -1029,6 +1067,10 @@ main {
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
       background-color: #7abeb9; }
+      @media (max-width: 480px) {
+        .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
+          font-size: 17px;
+          margin-bottom: 1em; } }
     .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
       border: solid #bea844 .125em;
       margin-bottom: .3125em; }
@@ -1136,7 +1178,8 @@ main .tipsGrid_Container {
     font-family: 'Baloo Thambi 2';
     font-size: 1em;
     font-weight: 400;
-    color: #706666; }
+    color: #706666;
+    font-size: 13px; }
   main .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;
@@ -1177,6 +1220,7 @@ main .reencuentro_Container {
   @media (max-width: 480px) {
     main .reencuentro_Container {
       font-size: 9px;
+      height: 18.5em;
       margin: 3.25em 2.5em 0em 2.5em; } }
   main .reencuentro_Container .cieloImg {
     width: 43.75em;
@@ -1212,11 +1256,13 @@ main .reencuentro_Container {
     font-family: 'Baloo Thambi 2';
     font-size: 16ox;
     font-weight: 400;
+    color: #695f5f;
     padding: 0em 3.125em 0em 3.125em;
     text-align: left; }
     @media (max-width: 480px) {
       main .reencuentro_Container .reencuentro_Descripcion .reencuentro_Texto {
-        font-size: 8px; } }
+        font-size: 10px;
+        padding: 0em 1em 0em 1em; } }
 
 main .reencuentro_pruebas {
   display: flex;
@@ -1248,8 +1294,7 @@ main {
   /*listado mascotas perdidas*/ }
   main .MascotasPyE_Menu-Container {
     background-image: url(../Imagenes/Fondos/fondo_animales.png);
-    margin-top: 2.5em;
-    padding-top: 2.5em;
+    padding-top: 5em;
     padding-bottom: 6.25em;
     display: grid;
     grid-template-rows: 20% 70%;
@@ -1260,30 +1305,10 @@ main {
     @media (max-width: 480px) {
       main .MascotasPyE_Menu-Container {
         font-size: 9px;
+        padding-bottom: 3em;
         margin-top: 4em;
         display: flex;
         flex-direction: column; } }
-    main .MascotasPyE_Menu-Container .MascotasPyE_Titulo {
-      width: 31.25em;
-      padding-top: 1em;
-      padding-bottom: 0.5em;
-      grid-area: tittle;
-      background-image: url(../Imagenes/Fondos/fondo_titulos.png);
-      border-radius: 1.25em;
-      margin: auto;
-      margin-bottom: 3.125em;
-      box-shadow: 0.1875em 0.1875em 0.5em #999;
-      font-family: 'Rammetto One', cursive; }
-      main .MascotasPyE_Menu-Container .MascotasPyE_Titulo h1 {
-        display: inline-block;
-        position: relative;
-        font-family: 'Rammetto One';
-        font-size: 1.75em;
-        font-weight: 600;
-        color: #ffffff; }
-      @media (max-width: 480px) {
-        main .MascotasPyE_Menu-Container .MascotasPyE_Titulo {
-          font-size: 9px; } }
     main .MascotasPyE_Menu-Container nav .MascotasPyE_Menu-Titulo {
       background-color: #92b2df;
       padding: 0.375em;
@@ -1309,22 +1334,24 @@ main {
     align-items: center; }
     @media (max-width: 480px) {
       main .MascotasPyE_Separador {
-        font-size: 9px; } }
+        font-size: 12px;
+        padding-left: 2em; } }
   main .listadoPerdidas_Container, main .listadoEncontradas_Container {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
     color: #ffffff; }
     @media (max-width: 480px) {
       main .listadoPerdidas_Container, main .listadoEncontradas_Container {
-        font-size: 9px; } }
+        font-size: 10px; } }
     main .listadoPerdidas_Container .listadoPerdidas_Caja, main .listadoEncontradas_Container .listadoPerdidas_Caja {
       flex-grow: 1;
-      max-width: 80%;
       margin: 6.25em auto 6.25em auto;
       padding-left: 1.25em;
       padding-right: 1.25em; }
+      @media (max-width: 480px) {
+        main .listadoPerdidas_Container .listadoPerdidas_Caja, main .listadoEncontradas_Container .listadoPerdidas_Caja {
+          margin: 2em auto 2em auto; } }
       main .listadoPerdidas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container, main .listadoEncontradas_Container .listadoPerdidas_Caja .listadoPerdidas_Caja-Container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);

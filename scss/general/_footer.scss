@@ -1,7 +1,4 @@
 footer{
-    @include smarthphone{
-        font-size: 5px;
-    }
     #redes{
         background-image: url(../Imagenes/Fondos/fondo_footer.png);
         display:grid;
@@ -13,14 +10,16 @@ footer{
         "logos img";
         padding: 1.5625em 0 1.5625em 0;
         @include smarthphone{
-            font-size: 5px;
+            font-size: 4.3px;
         }
         .redes_titulos{
-            font-size: 1.4375em;
+            @include tituloRammetto (1.4375em,400);
             color: rgb(51, 47, 47);
             margin: auto;
             grid-area: titulo;
-            font-family: 'Rammetto One', cursive;
+            @include smarthphone{
+                font-size: 9px;
+            }
         }
         .redes_logos{
             margin: auto;
@@ -36,7 +35,7 @@ footer{
                 img{
                     width: 3.125em;
                     @include smarthphone{
-                        font-size: 7px;
+                        font-size: 5px;
                     }
                 }
             }
@@ -45,9 +44,6 @@ footer{
             width: 28.125em;
             grid-area: img;
             padding-top: 1.5625em;
-            @include smarthphone{
-                display: none;
-            }
             img{
                 width: 30.625em;
             }
@@ -58,5 +54,9 @@ footer{
         font-weight: 600;
         background-color: rgb(104, 97, 97);
         color: white;
+        @include smarthphone{
+            font-size: 9px;
+            padding: 1em;
+        }
     }
 }
