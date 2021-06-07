@@ -31,6 +31,10 @@
     border-bottom: solid 0.25em $celeste;
     padding: 0.4em 1.2em 0.4em 1.2em;
     background-color:#7abeb9;
+    @include smarthphone{
+        font-size: 17px;
+        margin-bottom: 1em;
+    }
 }
 //Portadas//
     //Index Carousel//

@@ -66,6 +66,7 @@ main{
         .tipsGrid_Texto{
             @include textoThambi (1em,400);
             color:$texto1;
+            font-size: 13px;
         }
         .tipsGrid_Numeros{
             background-color: #118996;
