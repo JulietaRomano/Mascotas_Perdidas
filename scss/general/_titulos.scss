@@ -3,7 +3,7 @@
         .titulo_celeste{
             @include tituloRammetto (2.9em, 800);
             color: $celeste;
-
+            
             &.titulo_celeste::after, &.titulo_celeste::before{
                 content: '';
                 position: absolute;
@@ -11,12 +11,18 @@
                 height: 0.03em;
                 background-color: rgba(41, 177, 182, 0.719);
                 top: 0.5em;
+                @include smarthphone{
+                    display: none;
+                }
             }
             &.titulo_celeste::after{
                 right: -3em;
             }
             &.titulo_celeste::before{
                 left: -3em;
+            }
+            @include smarthphone{
+                font-size:20px;
             }
         }
 //Titulos portadas//
