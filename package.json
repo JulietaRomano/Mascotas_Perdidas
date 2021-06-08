@@ -1,7 +1,7 @@
 {
   "name": "proyecto_coder",
   "version": "1.0.0",
-  "description": "",
+  "description": "Pagina destinada a la busqueda de mascotas perdidas mediante la difusion de sus datos y fotografias.",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/styles.scss css/styles.css",
@@ -12,7 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/JulietaRomano/Proyecto_Final_Coder.git"
   },
-  "author": "",
+  "author": "Julieta Carolina Romano",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JulietaRomano/Proyecto_Final_Coder/issues"
