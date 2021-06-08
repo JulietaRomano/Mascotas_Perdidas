@@ -85,6 +85,9 @@ a {
 
 header .logo {
   max-width: 58%; }
+  header .logo img {
+    width: 100%;
+    max-width: 20em; }
 
 header .navbar {
   background: #FFFCF2; }
@@ -432,15 +435,15 @@ main .PagesSub_Conteiner {
       main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
         font-size: 6.3px; } }
   main .PagesSub_Conteiner .PagesSub_Tips-Img img {
-    width: 17.1875em; }
+    width: 14em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Tips-Img img {
-        font-size: 5.2px; } }
+        font-size: 6.5px; } }
   main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
-    width: 20.5em; }
+    width: 16em; }
     @media (max-width: 480px) {
       main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
-        font-size: 5px; } }
+        font-size: 6.5px; } }
 
 main .textoResaltado {
   font-family: 'Baloo Thambi 2';
@@ -448,7 +451,7 @@ main .textoResaltado {
   font-weight: 800; }
 
 main .formularios {
-  padding: 1em 0 1em 0;
+  padding: 3.5em 0 2.5em 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -606,9 +609,41 @@ main .formularios {
       main .formularios .comentario_caja {
         height: 5em; } }
 
-@media (max-width: 480px) {
-  main #formulario_registro {
-    display: none; } }
+main .formularioNone {
+  display: none; }
+
+main .block {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  main .block .flecha img {
+    width: 200px; }
+  @media (max-width: 480px) {
+    main .block .flecha {
+      display: none; } }
+  main .block .formulario_cajaTexto {
+    border-radius: 1.5625em;
+    background-color: #f1fdfc;
+    border: #e9e6e6 solid 0.0625em;
+    width: 21.875em;
+    height: 17.5em; }
+    @media (max-width: 480px) {
+      main .block .formulario_cajaTexto {
+        display: none; } }
+    main .block .formulario_cajaTexto h3 {
+      display: inline-block;
+      position: relative;
+      font-family: 'Rammetto One';
+      font-size: 1.25em;
+      font-weight: 400;
+      padding-top: 3.125em;
+      color: #108896; }
+    main .block .formulario_cajaTexto p {
+      font-family: 'Baloo Thambi 2';
+      font-size: 1.0625em;
+      font-weight: 400;
+      padding: 10px 30px 0 1.875em;
+      color: #706666; }
 
 main {
   font-size: 16px; }
@@ -1176,10 +1211,9 @@ main .tipsGrid_Container {
     grid-area: caja4; }
   main .tipsGrid_Container .tipsGrid_Texto {
     font-family: 'Baloo Thambi 2';
-    font-size: 1em;
+    font-size: 1.2em;
     font-weight: 400;
-    color: #706666;
-    font-size: 13px; }
+    color: #706666; }
   main .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;

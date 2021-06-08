@@ -116,18 +116,18 @@
             //tips//
             .PagesSub_Tips-Img{
                 img{
-                    width: 17.1875em;
+                    width: 14em;
                     @include smarthphone{
-                        font-size: 5.2px;
+                        font-size: 6.5px;
                      }
                 }
             }
             //reencuentro//
             .PagesSub_Reencuentro-Img{
                 img{
-                    width: 20.5em;
+                    width:16em;
                     @include smarthphone{
-                        font-size: 5px;
+                        font-size: 6.5px;
                      }
                 }
             } 
