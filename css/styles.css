@@ -43,8 +43,7 @@ a {
     display: inline-block; }
     @media (max-width: 480px) {
       a .botones .botones1 {
-        font-size: 8px;
-        margin-top: 2em; } }
+        font-size: 8px; } }
     a .botones .botones1 .botonesP {
       color: rgba(253, 253, 253, 0.925);
       font-size: 1.25em;
@@ -87,7 +86,7 @@ header .logo {
   max-width: 58%; }
   header .logo img {
     width: 100%;
-    max-width: 20em; }
+    max-width: 16em; }
 
 header .navbar {
   background: #FFFCF2; }
@@ -514,11 +513,6 @@ main .formularios {
       main .formularios h2 {
         font-size: 1.3em;
         margin-top: 1.5em; } }
-  main .formularios .formulario_box {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center; }
   main .formularios #formulario_container {
     -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
     border-radius: 0.625em 0.625em 0.625em 0.625em;
@@ -831,12 +825,12 @@ main {
       font-size: 2em;
       color: #fdffff;
       font-weight: 900;
-      margin-bottom: 2em;
       border-radius: 1.5625em;
       border-right: solid 0.1875em #108896;
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
-      background-color: #7abeb9; }
+      background-color: #7abeb9;
+      margin-bottom: 2em; }
       @media (max-width: 480px) {
         #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
           font-size: 17px;
@@ -897,21 +891,26 @@ main {
             text-align: center; }
             #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
               color: #645c5c;
+              font-family: 'Baloo Thambi 2';
               font-size: 0.9375em;
-              font-weight: 400;
+              font-weight: 500;
               text-align: justify;
-              padding: 0.625em 0.625em 0rem 0.625em;
-              font-family: 'Baloo Thambi 2'; }
+              padding: 0.625em 0.625em 0rem 0.625em; }
               @media (max-width: 480px) {
                 #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras p {
-                  font-size: 6.5px;
-                  padding: 0em 0.625em 0rem 0.625em; } }
+                  text-align: center;
+                  font-size: 8px;
+                  padding: 0; } }
             #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
               color: #108896;
               font-family: 'Baloo Thambi 2';
               font-size: 1.75em;
-              font-weight: 400;
               font-weight: 900; }
+              @media (max-width: 480px) {
+                #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
+                  font-size: 9px;
+                  padding: 0em;
+                  margin-bottom: .2em; } }
 
 .Boletin_Imagen {
   font-size: 16px;
@@ -938,9 +937,10 @@ main {
     border-right: solid #9ddbd6 0.8125em; }
     @media (max-width: 480px) {
       .Boletin_Imagen .Boletin_Caja {
-        width: 28em;
+        width: 27em;
         font-size: 7px;
-        height: 18.75em; } }
+        height: 18.75em;
+        padding: 1.5em 1em 0 1em; } }
     .Boletin_Imagen .Boletin_Caja h3 {
       display: inline-block;
       position: relative;
@@ -1071,7 +1071,7 @@ main {
 
 .ContactoIndex_Container {
   font-size: 16px;
-  padding: 1em 0 1em 0;
+  padding: 3em 0 3em 0;
   background-image: url(../Imagenes/Img_PNG/imgFinal.png);
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -1083,41 +1083,41 @@ main {
       font-size: 6px;
       background-attachment: scroll;
       background-position-y: -7px;
-      background-size: cover; } }
+      background-size: cover;
+      padding: .5em 0 .5em 0; } }
   .ContactoIndex_Container .ContactoIndex_Caja {
     width: 50%;
     padding-left: 1.875em; }
-    @media (max-width: 480px) {
-      .ContactoIndex_Container .ContactoIndex_Caja {
-        font-size: 6px; } }
     .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
       display: inline-block;
       position: relative;
       font-size: 2em;
       color: #fdffff;
       font-weight: 900;
-      margin-bottom: 2em;
       border-radius: 1.5625em;
       border-right: solid 0.1875em #108896;
       border-bottom: solid 0.25em #108896;
       padding: 0.4em 1.2em 0.4em 1.2em;
-      background-color: #7abeb9; }
+      background-color: #7abeb9;
+      margin-bottom: 1em; }
       @media (max-width: 480px) {
         .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
           font-size: 17px;
           margin-bottom: 1em; } }
-    .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
-      border: solid #bea844 .125em;
-      margin-bottom: .3125em; }
-      .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form textarea {
-        height: 6.25em; }
-        @media (max-width: 480px) {
-          .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form textarea {
-            height: 1em; } }
       @media (max-width: 480px) {
-        .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Form {
-          height: 3em;
-          margin-bottom: 1.6em; } }
+        .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_Subtitulo {
+          margin-bottom: .3em; } }
+    .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_P {
+      font-family: 'Baloo Thambi 2';
+      font-size: 1.5em;
+      font-weight: 500;
+      margin-bottom: 1em;
+      color: #645c5c; }
+      @media (max-width: 480px) {
+        .ContactoIndex_Container .ContactoIndex_Caja .ContactoIndex_P {
+          margin-bottom: .3em;
+          background-color: rgba(0, 0, 0, 0.418);
+          color: #f0eeee; } }
 
 main .tipsGrid_Container {
   display: grid;
@@ -1132,8 +1132,8 @@ main .tipsGrid_Container {
       font-size: 9px;
       display: flex;
       flex-direction: column;
-      margin-top: 4em;
-      row-gap: 2em; } }
+      margin-top: 3em;
+      row-gap: 3em; } }
   main .tipsGrid_Container .tipsGrid_Caja1 {
     padding: 0em 1.25em 0em 1.25em;
     grid-area: caja1; }
@@ -1214,6 +1214,9 @@ main .tipsGrid_Container {
     font-size: 1.2em;
     font-weight: 400;
     color: #706666; }
+    @media (max-width: 480px) {
+      main .tipsGrid_Container .tipsGrid_Texto {
+        font-size: 1.3em; } }
   main .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;

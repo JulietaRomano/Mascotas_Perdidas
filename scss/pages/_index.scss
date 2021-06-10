@@ -113,7 +113,7 @@ main{
         }
     }
 
-    //Seccion:Sobre Nosotros//
+    //Seccion:Nuestra Historia//
     #SobreNosotros_Container{
         font-size: 16px;
         background-color: hsl(60, 100%, 100%);
@@ -182,11 +182,12 @@ main{
             border-top: solid white 0.625em;
             border-bottom: solid white 0.3125em;
             transform-style: preserve-3d;
-            @include smarthphone{
-                font-size: 5.5px;
-            }
+                @include smarthphone{
+                    font-size: 5.5px;
+                }
             .tarjetas_Subtitulo{
                 @include SubtitulosIndex;
+                margin-bottom: 2em;
             }
             .tarjetas_Flex{
                 display: flex;
@@ -198,9 +199,9 @@ main{
                     margin: 0.625em;
                     perspective: 800;
                     -webkit-perspective: 800;
-                    &:hover .tarjeta{
-                        transform: rotateY(180deg);
-                    }
+                        &:hover .tarjeta{
+                            transform: rotateY(180deg);
+                        }
                     .tarjeta{
                         width: 18.75em;
                         height: 21.875em;
@@ -251,20 +252,26 @@ main{
                             
                             p{
                                 color: rgb(100, 92, 92);
-                                font-size: 0.9375em;
-                                font-weight: 400;
+                                @include textoThambi ( 0.9375em,500);
                                 text-align: justify;
                                 padding: 0.625em 0.625em 0rem 0.625em;
-                                font-family: 'Baloo Thambi 2';
+
                                 @include smarthphone{
-                                    font-size: 6.5px;
-                                    padding: 0em 0.625em 0rem 0.625em;
+                                    text-align: center;
+                                    font-size: 8px;
+                                    padding: 0;
                                 }
                             } 
+                            
                             h2{
                                 color: $celeste;
-                                @include textoThambi (1.75em, 400);
-                                font-weight: 900;
+                                @include textoThambi (1.75em, 900);
+
+                                @include smarthphone{
+                                    font-size: 9px;
+                                    padding: 0em;
+                                    margin-bottom: .2em;
+                                }
                             }   
                         } 
                     }
@@ -296,9 +303,10 @@ main{
             background-color: $celeste;
             border-right: solid rgb(157, 219, 214) 0.8125em;
                 @include smarthphone{
-                    width: 28em;
+                    width: 27em;
                     font-size: 7px;
                     height: 18.75em;
+                    padding:1.5em 1em 0 1em;
                 }
 
             h3{
@@ -439,7 +447,7 @@ main{
     //Seccion Contáctanos//
     .ContactoIndex_Container{
         font-size: 16px;
-        padding: 1em 0 1em 0;
+        padding: 3em 0 3em 0;
         background-image: url(../Imagenes/Img_PNG/imgFinal.png);
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -451,32 +459,30 @@ main{
             background-attachment:scroll;
             background-position-y:-7px;
             background-size: cover;
+            padding: .5em 0 .5em 0;
         }
         .ContactoIndex_Caja{
             width: 50%;
             padding-left: 1.875em;
-            @include smarthphone{ 
-                font-size: 6px;
-            }
+
             .ContactoIndex_Subtitulo{
                 @include SubtitulosIndex;
-            }
-            .ContactoIndex_Form{
-                border: solid #bea844 .125em;
-                margin-bottom: .3125em;
-                textarea{
-                    height: 6.25em;
-                    @include smarthphone{ 
-                        height: 1em;
-                    }
-                }
+                margin-bottom: 1em;
                 @include smarthphone{ 
-                    height: 3em;
-                    margin-bottom: 1.6em;
+                    margin-bottom: .3em;
                 }
             }
+           .ContactoIndex_P{
+            @include textoThambi (1.5em,500);
+            margin-bottom: 1em;
+            color: rgb(100, 92, 92);
+                @include smarthphone{ 
+                    margin-bottom: .3em;
+                    background-color: rgba(0, 0, 0, 0.418);
+                    color: rgb(240, 238, 238);
+                }
+           }
         }
-
     }
 
        
