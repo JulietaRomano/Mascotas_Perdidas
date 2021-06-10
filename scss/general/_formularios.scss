@@ -1,6 +1,6 @@
 
 main{
-    .formularios {
+    .formularios{
       padding:3.5em 0 2.5em 0;
       display: flex;
       align-items: center;
@@ -69,12 +69,6 @@ main{
 
     /* Estructura*/
 
-    .formulario_box {
-      display: flex;
-      align-items: center;
-      flex-direction: column; 
-      justify-content: center;
-    }
 
     #formulario_container {
       -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
