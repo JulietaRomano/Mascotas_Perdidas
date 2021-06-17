@@ -1,62 +1,60 @@
 footer{
-    #redes{
-        background-image: url(../Imagenes/Fondos/fondo_footer.png);
-        display:grid;
-        font-size: 16px;
-        grid-template-columns: repeat(2,53.125em);
-        grid-template-rows: repeat(2,3.75em);
-        grid-template-areas: 
-        "titulo img"
-        "logos img";
-        padding: 1.5625em 0 1.5625em 0;
-        @include smarthphone{
-            font-size: 4.3px;
+    box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+    background-image: url(../Imagenes/Fondos/fondo_footer.png);
+    padding-top: 1em;
+    .redes{
+        display: flex;
+        justify-content: space-between;
+        margin: 0em 1em 0 1em;
+        border-bottom: 1px  solid;
+        p{
+            @include textoThambi (1.3em,500);
+                color: #686767;
         }
-        .redes_titulos{
-            @include tituloRammetto (1.4375em,400);
-            color: rgb(51, 47, 47);
-            margin: auto;
-            grid-area: titulo;
-            @include smarthphone{
-                font-size: 9px;
-            }
-        }
-        .redes_logos{
-            margin: auto;
-            width: 23.75em;
+        .redes-logos{
             display: flex;
             justify-content: space-around;
-            grid-area: logos;
-            @include smarthphone{
-                font-size: 7px;
-                width: 20em;
-            }
-            a{
-                img{
-                    width: 3.125em;
-                    @include smarthphone{
-                        font-size: 5px;
-                    }
-                }
-            }
+            width: 180px;
         }
-        .redes_imagen{
-            width: 28.125em;
-            grid-area: img;
-            padding-top: 1.5625em;
-            img{
-                width: 30.625em;
+    }
+    .mapaDeSitio_conteiner{
+        margin: 1.5em;
+        display: flex;
+        justify-content: space-between;
+        text-align: justify;
+
+        .logo-footer{
+            width: 300px;
+            height: 45px;
+        }
+        h6{
+            @include textoThambi (1.3em,500);
+            color: #686767;
+            text-transform:uppercase;        
+        }
+        p{
+            @include textoThambi (1.3em,400);
+            color: #686767;
+        }
+        .mapaDeSitio-contacto{
+            display: flex;
+            flex-direction: column;
+            p{
+                margin-top: .5em;
+                @include textoThambi (1em,400);
             }
         }
     }
-    .pieDePagina{
-        padding: 1.13rem 0 1rem 0;
-        font-weight: 600;
-        background-color: rgb(104, 97, 97);
-        color: white;
-        @include smarthphone{
-            font-size: 9px;
-            padding: 1em;
+    .copyright{
+        padding: 1em;
+        background-color: rgba(105, 105, 105, 0.589);
+        color: honeydew;
+        box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+        p{
+            @include textoThambi (1.1em,400);
         }
     }
+
+
 }
+   

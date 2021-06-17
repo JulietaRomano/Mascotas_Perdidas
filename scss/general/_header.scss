@@ -8,15 +8,25 @@ header{
     }
     }
     .navbar{
-        background:$bg-color;
+        background:rgba(219, 219, 219, 0);
+        box-shadow: none;
     }
+    .top-nav-collapse{
+        background-color: rgb(255, 255, 255);
+        box-shadow: 3px 3px 8px rgba(138, 137, 136, 0.568);
+      }
   
     //carousel index//
+    .portadaIndexImg{
+        height: 750px;
+        width: 100vw;
+        object-fit: cover;
+    }
         //caja1//
     .carouselPortada_container-1{
-        height: 75%;
+        height: 80%;
         .carouselPortada_caja-1{
-            @include carousel_cajas(50%);
+            @include carousel_cajas(0%);
             //Titulos//
             h2{
                 @include tituloRammetto(1.875rem,400);
@@ -49,7 +59,7 @@ header{
         }
     }
     .carouselPortada_container-3{
-        height: 70%;
+        height: 85%;
         .carouselPortada_caja-3{
             @include carousel_cajas(0%);
             h2{
