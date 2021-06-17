@@ -7,28 +7,32 @@ main{
     }
 
     .Inicio_Index{
-        margin-top: 5em;
+        padding-top: 10em;
         font-size:16px;
+        background-image: linear-gradient(to bottom, #ffffff, white, rgba(207, 204, 171, 0.247));
+
+
             @include smarthphone{
                 font-size:10px;
                 margin-top: 3em;
             }
-        .Inicio_Index-Texto{
-            padding: 0 18.75em 2em 18.75em;
+        .Inicio_Index-Sub{
+            padding: 0 10em 5em 10em;
             p{
-                @include textoThambi (1.4em,500);
-                        color: rgb(122, 117, 117);
+                @include textoThambi (1.3em,500);
+                color: #686767;
             }
                 @include smarthphone{
                     padding: 0 .5em 1em 1.5em;
                 }
         } 
-        //Seccion: ¿Quienes Somos?//
+        //Cajas informativas//
         .Inicio_Index-Container{
             width: 80%;
             display: flex;
             justify-content: space-around;
             margin:auto;
+            margin-bottom: 4em;
                 @include smarthphone{
                 width: 100%;
                 }
@@ -45,27 +49,31 @@ main{
                 &:hover{
                     transform: translateY(-15px);
                     .Inicio_Index-Img1 {
-                        background-image: url(../Imagenes/Gif/1.gif);
+                        background-image: url(../Imagenes/Index/gif.gif);
+                        background-position: center;
                     }
                     .Inicio_Index-Img2{
-                        background-image: url(../Imagenes//Gif/2.gif);
+                        background-image: url(../Imagenes/Index/gif2.gif);
                     }
                     .Inicio_Index-Img3{
-                        background-image: url(../Imagenes/Gif/3.gif);
+                        background-image: url(../Imagenes/Index/gif1.gif);
                     }
                 }
                     .Inicio_Index-Img1 {
                     @include imagenes_animadas;
-                    background-image: url(../Imagenes//Gif/1.jpg);
+                    background-image: url(../Imagenes/Index/registro.png);
+                    background-position: center;
                     }
                     .Inicio_Index-Img2 {
                     @include imagenes_animadas;
-                    background-image: url(../Imagenes//Gif/2.jpg);
+                    background-image: url(../Imagenes/Index/colabora.jpg);
+                    background-position: center;
 
                     }
                     .Inicio_Index-Img3 {
                         @include imagenes_animadas;
-                        background-image: url(../Imagenes//Gif/3.jpg);
+                        background-image: url(../Imagenes/Index/tips.jpg);
+                        background-position: center;
                         }
                 } 
                     .Inicio_Index-Texto {
@@ -82,16 +90,16 @@ main{
                         }
                         h3 {
                             margin: .625em 0px .625em 0px;
-                            color: #81818d;
-                            @include tituloRammetto (1.125em, 400);
-                                @include smarthphone{
-                                font-size:11px;
-                                margin: 0;
-                                }
+                            @include tituloRammetto (1.3em, 400);
+                             color: #466572;
+                            @include smarthphone{
+                            font-size:11px;
+                            margin: 0;
+                            }
                         }
                         p{
-                            @include textoThambi (1.0625em,500);
-                            color: rgb(122, 117, 117);
+                            @include textoThambi (1em,400);
+                            color: #686767;                        
                         }
                     }
                 }
@@ -104,7 +112,11 @@ main{
                     width: 100%;
                     path{
                         stroke: none; 
-                        fill:#F6F4EE;
+                        fill:#FFFCF2;
+                    }
+                    .footer{
+                        stroke: none; 
+                        fill:#F4F4F4;
                     }
                 }
                 @include smarthphone{
@@ -113,44 +125,257 @@ main{
         }
     }
 
+    //Seccion: ¿Como podemos ayudarte?//
+    .funcionamiento{
+        background-image: url(../Imagenes/Fondos/fondo_animales.png);
+        font-size: 16px;
+        padding-top: 6em;
+        @include smarthphone{
+            font-size: 7px;
+        }
+        
+        .Funcionamiento_Container{
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 8em;
+            @include smarthphone{
+                padding-top: 2em;
+                padding-top: 0em;
+            }
+
+            .Funcionamiento_Imagen{
+                width: 45%;
+                border-right: solid 10px #85b1a2;
+                border-bottom: solid 10px #85b1a2;
+                @include flex;
+                justify-content: center;
+                padding: 2.5em 0 2.5em 0;
+                margin-top: 7em;
+                border-top-right-radius: 25px;
+                border-bottom-right-radius: 25px;
+                background-color: rgb(250, 249, 242);
+                height:31.25em;
+                box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
+
+                img{
+                    width: 40em;
+                }
+                @include smarthphone{
+                    display: none;
+                }
+            }
+            
+            .Funcionamiento_Grid{
+                background-color: white;
+                width: 45%;
+                margin-top: 13em;
+                padding: 2.5em 0 2.5em 0;
+                border-top-left-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border-bottom: solid 10px #85b1a2;
+                box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
+                @include smarthphone{ 
+                    width: 100%;
+                    padding-top: 0em;
+                }
+                .Funcionamiento_Caja{
+                    display: flex;
+                    margin-top: 1em;
+                    @include smarthphone{
+                        margin-bottom: 0em;
+                    }
+                    .Funcionamiento_Numero{
+                        @include flex;
+                        margin-left: 2em;
+                        justify-content: center;
+                        background-color:#a1aedb;
+                        border-radius:100%;
+                        width: 2.2em;
+                        height: 2.2em;
+                        font-size: 1.3em;
+                        color: rgb(236, 233, 233);
+                        font-weight: 700;
+                        @include smarthphone{
+                            display: none;
+                        }
+                    }
+                    .Funcionamiento_Texto{
+                        width: 25em;
+                        margin-left: 1.5em;
+                        text-align: justify;
+                        
+                        @include smarthphone{
+                            width: 23em;
+                            font-size: 12px;
+                            flex-direction: column;
+                            margin: auto;
+                            margin-left:0;  
+                        }
+                        .Funcionamiento_Texto-p{
+                            @include textoThambi (1em,400);
+                            color: #686767;
+                                @include smarthphone{
+                                    font-size: 14px;                        
+                                }
+                        }
+                        .Funcionamiento_Sub{
+                            @include textoThambi (1.7em,800);
+                            color: #466572;
+                            @include smarthphone{
+                            margin-top: 1em;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //Seccion: Mascotas aun perdidas//
+    .mascotasExtraviadas_container{
+        background-image: linear-gradient(to top, #ffffff, white, #FFFCF2);
+        padding: 2em 0 8em 0;
+        h3{
+            @include textoThambi (2em,800);
+            padding: 0 7em 2.5em 7em;
+            color: #686767; 
+        }
+        .mascotasExtraviadas_cajaConteiner{
+            margin: auto;
+            width: 85%;
+            display: flex;
+            justify-content: space-around;
+            .mascotasExtraviadas_caja{
+                box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
+                width: 14.375em;
+                padding: 1.5em;
+                border-radius: 25px;
+                background-color: white;
+                .mascotasExtraviadas_caja-img{
+                    border: solid #a1aedb .30em;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 100%;
+                    margin: auto;
+                }
+                .img1{
+                    background-image: url(../Imagenes/Perdidos/perdido2.png);
+                    background-size: cover;
+                }
+                .img2{
+                    background-image: url(../Imagenes/Perdidos/perdido1.png);
+                    background-size: cover;
+                }
+                .img3{
+                    background-image: url(../Imagenes/Perdidos/perdido6.png);
+                    background-size: cover;
+                }
+                .img4{
+                    background-image: url(../Imagenes/Perdidos/perdido3.png);
+                    background-size: cover;
+                }
+                .mascotasExtraviadas_caja-texto{
+                    h5{//mismo codigo que las cajas de .Inicio_Index-Texto//
+                        margin: 1em 0px .625em 0px;
+                        @include tituloRammetto (1.3em, 400);
+                         color: #466572; 
+                    }
+                    p{
+                        @include textoThambi (1em,400);
+                        color: #686767;                        
+                    }
+                }
+            }
+        }
+    }
+    //Boletin de mascotas perdidas//
+
+    .Boletin_Imagen{
+        font-size: 16px;
+        height: 60vh;
+        background-image: url(../Imagenes/Index/perrita.jpg);
+        background-attachment:fixed;
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        @include smarthphone{
+            font-size: 6.5px;
+            height: 25vh;
+            background-attachment:scroll;
+            background-position: center;
+        }
+        .Boletin_Caja{
+            border-radius: 1.875em;
+            height: 18.75em;
+            width: 31.25em;
+            margin-left: auto;
+            margin-right: 1.875em;
+            padding:1.875em 2.5em 0 2.5em;
+            background-color: rgb(255, 250, 233);
+            border-right: solid #a1aedb 0.8125em;
+            border-bottom: solid #a1aedb 0.8125em;
+                @include smarthphone{
+                    width: 27em;
+                    font-size: 7px;
+                    height: 18.75em;
+                    padding:1.5em 1em 0 1em;
+                }
+
+            h3{
+                @include tituloRammetto (1.75em, 800);
+                color: #466572;
+                margin-bottom: 1.25em;
+                @include smarthphone{
+                    font-size: 11px;
+                    margin-bottom: .9em;
+                }
+            }
+            p{
+                @include textoThambi (1em,400);
+                        color: #686767;  
+                margin-bottom: 1.625em;
+                @include smarthphone{
+                    font-size: 11px;
+                    margin-bottom: .4em;
+                }
+            }
+            .md-form{
+                text-align: justify;
+                display: flex;
+                .btn{
+                    background-color: rgb(252, 164, 0);
+                }
+            }
+        }
+    }
+
     //Seccion:Nuestra Historia//
     #SobreNosotros_Container{
         font-size: 16px;
         background-color: hsl(60, 100%, 100%);
-        padding-top: 3.75em;
+        padding-top: 8em;
         @include smarthphone{
             font-size: 12px;
         }
        
         .SobreNosotros_article {
-            padding:2em 0em 1.25em 0em;
             display: flex;
-            justify-content: space-around;
-            margin-bottom: 1.25em;
+            justify-content: center;
+            margin: 4em 0 4em 0;
             @include smarthphone{
                 padding:0em 0em .5em 0em;
             }
            
             .SobreNosotros_texto{
                 width: 40.625em;
-                margin-top: 1.875em;
                 text-align: justify;
                 @include smarthphone{
                     margin-top: 1em;
                 }
                
-                .SobreNosotros_titulo{
-                    @include textoThambi (1.625em,900);
-                    color: $textoSub;
-                    @include smarthphone{
-                        margin-left: 1em;
-                        font-size: 14px;
-                    }
-                }
                 .SobreNosotros_p{
                     @include textoThambi (1.25em, 400);
                     line-height: 1.7em;
-                    margin-top:1.875em;
                     color: $texto1;
                     @include smarthphone{
                         margin-top: 1em;
@@ -179,7 +404,7 @@ main{
             background-color: #d8d7d485;
             border-top-left-radius: 30%;
             border-top-right-radius: 30%;
-            border-top: solid white 0.625em;
+            border-top: solid rgb(235, 234, 234) 0.625em;
             border-bottom: solid white 0.3125em;
             transform-style: preserve-3d;
                 @include smarthphone{
@@ -205,7 +430,7 @@ main{
                     .tarjeta{
                         width: 18.75em;
                         height: 21.875em;
-                        background-color: #FFFCF2;
+                        background-color: #ffffff;
                         position: relative;
                         transform-style: preserve-3d;
                         -webkit-transition: .9s ease;
@@ -279,213 +504,147 @@ main{
             }    
         }
     }
-    .Boletin_Imagen{
-        font-size: 16px;
-        height: 60vh;
-        background-image: url(../Imagenes/Index/perrita.jpg);
-        background-attachment:fixed;
-        background-size: cover;
-        display: flex;
-        align-items: center;
-        @include smarthphone{
-            font-size: 6.5px;
-            height: 25vh;
-            background-attachment:scroll;
-            background-position: center;
-        }
-        .Boletin_Caja{
-            border-radius: 1.875em;
-            height: 18.75em;
-            width: 31.25em;
-            margin-left: auto;
-            margin-right: 1.875em;
-            padding:1.875em 2.5em 0 2.5em;
-            background-color: $celeste;
-            border-right: solid rgb(157, 219, 214) 0.8125em;
-                @include smarthphone{
-                    width: 27em;
-                    font-size: 7px;
-                    height: 18.75em;
-                    padding:1.5em 1em 0 1em;
-                }
 
-            h3{
-                @include tituloRammetto (1.75em, 800);
-                color: #fdffff;
-                margin-bottom: 1.25em;
-                @include smarthphone{
-                    font-size: 11px;
-                    margin-bottom: .9em;
-                }
-            }
-            p{
-                @include textoThambi (1.1875em, 400);
-                color: rgb(255, 255, 255);
-                margin-bottom: 1.625em;
-                @include smarthphone{
-                    font-size: 11px;
-                    margin-bottom: .4em;
-                }
-            }
-                
-            .Boletin_Input{
-                border: solid #cf840c 0.125em;
-                @include smarthphone{
-                    font-size: 6px;
-                }
-            }
-            .Boletin_Boton{
-                color: rgb(255, 255, 255);
-                font-size: 1.0625em;
-                font-weight: 900;
-                background-color: #ff953d;
-                &:hover {
-                    background-color: #fc7405;
-                    border: solid 0.1875em #fc7405;
-                }
-            }
+
+    /*Seccion anuncios*/
+    .anuncios{
+        padding: 1em 1em 0em 1em;
+        background-color: #F4F4F4;
+        h3{ //mismo que en mascotas extraviadas//
+            @include textoThambi (1.7em,800);
+            color: #686767; 
         }
-    }
-    //Seccion: Funcionamiento de la pag//
-    .Funcionamiento{
-        font-size: 16px;
-        padding-top: 4.375em;
-        background-color: #F6F4EF;
-        @include smarthphone{
-            font-size: 7px;
-        }
-        
-        .Funcionamiento_Container{
+            
+        .contenedor-principal {
             display: flex;
-            justify-content: space-around;
-            padding-top: 5.5em;
-            padding-bottom: 4.375em;
-            @include smarthphone{
-                padding-top: 2em;
-                padding-top: 0em;
+            align-items: center;
+            position: relative;
+        
+            .flecha-izquierda , .flecha-derecha {
+                position: absolute;
+                border: none;
+                background: rgba(0,0,0,0.3);
+                font-size: 40px;
+                height: 50%;
+                top: calc(50% - 25%);
+                line-height: 40px;
+                width: 50px;
+                color: #fff;
+                cursor: pointer;
+                z-index: 500;
+                transition: .2s ease all;
             }
-
-            .Funcionamiento_Imagen{
-                width: 38%;
-                @include flex;
-                justify-content: center;
-                img{
-                    width: 31.25em;
-                }
-                @include smarthphone{
-                    display: none;
-                }
+            
+            .flecha-izquierda {
+                left: 0;
             }
-            .sun{
-                height: 9.375em;
-                position: relative;
-                img{
-                    width:9.375em;
-                }
-                @include smarthphone{
-                    display: none;
-                }
+            
+            .flecha-derecha {
+                right: 0;
             }
-            .Funcionamiento_Grid{
-                padding-top: 3.75em;
-                @include smarthphone{ 
-                    width: 100%;
-                    padding-top: 0em;
-                }
-                .Funcionamiento_Caja{
+            .flecha-izquierda:hover, .flecha-derecha:hover {
+                background: rgba(0,0,0, .9);
+            }
+            
+            /* ---- ----- ----- Carousel ----- ----- ----- */
+            .contenedor-carousel {
+                width: 100%;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                background-color: #F4F4F4;
+                margin-bottom: .6em;
+                .carousel {
                     display: flex;
-                    justify-content:center;
-                    margin-bottom: 2.9em;
-                    @include smarthphone{
-                        margin-bottom: 0em;
-                    }
-                    .Funcionamiento_Numero{
-                        @include flex;
-                        justify-content: center;
-                        background-color:rgb(255, 163, 110);
-                        border-radius:100%;
-                        width: 2.4em;
-                        height: 2.4em;
-                        font-size: 1.3em;
-                        color: rgb(236, 233, 233);
-                        font-weight: 700;
-                        @include smarthphone{
-                            display: none;
+                    flex-wrap: nowrap;
+            
+                    .pelicula {
+                        min-width: 20%;
+                        display: flex;
+                        align-items: center;
+                        margin-left: 2em;
+                        margin-right: 2em;
+                        transition: .3s ease all;
+                        img {
+                            width: 80%;
+                            vertical-align: top;
                         }
-                    }
-                    .Funcionamiento_Texto{
-                        width: 25em;
-                        margin-left: 3em;
-                        @include smarthphone{
-                            margin-left:0;  
-                            }
-                            @include smarthphone{
-                                width: 23em;
-                                font-size: 12px;
-                                flex-direction: column;
-                                margin: auto
-                            }
-                        .Funcionamiento_Texto-p{
-                            @include textoThambi(1.25em,500);
-                            color: rgb(122, 117, 117);
-                                @include smarthphone{
-                                    font-size: 14px;                        
-                                }
-                        }
-                        .Funcionamiento_Sub{
-                            @include textoThambi (1.7em,800);
-                            color: rgb(87, 114, 116);
-                                @include smarthphone{
-                                margin-top: 1em;
-                                }
+                        &:hover {
+                            transform: scale(1.2);
+                            transform-origin: center;
                         }
                     }
                 }
             }
         }
     }
-    //Seccion Contáctanos//
-    .ContactoIndex_Container{
-        font-size: 16px;
-        padding: 3em 0 3em 0;
-        background-image: url(../Imagenes/Img_PNG/imgFinal.png);
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-position-x: right;
-        background-position-y: center;
-        background-color: white;
-        @include smarthphone{ 
-            font-size: 6px;
-            background-attachment:scroll;
-            background-position-y:-7px;
-            background-size: cover;
-            padding: .5em 0 .5em 0;
+    
+    /* ---- ----- ----- Media Queries ----- ----- ----- */
+    @media screen and (max-width: 800px) {
+        header .logotipo {
+            margin-bottom: 10px;
+            font-size: 30px;
         }
-        .ContactoIndex_Caja{
-            width: 50%;
-            padding-left: 1.875em;
-
-            .ContactoIndex_Subtitulo{
-                @include SubtitulosIndex;
-                margin-bottom: 1em;
-                @include smarthphone{ 
-                    margin-bottom: .3em;
-                }
-            }
-           .ContactoIndex_P{
-            @include textoThambi (1.5em,500);
-            margin-bottom: 1em;
-            color: rgb(100, 92, 92);
-                @include smarthphone{ 
-                    margin-bottom: .3em;
-                    background-color: rgba(0, 0, 0, 0.418);
-                    color: rgb(240, 238, 238);
-                }
-           }
+    
+        header .contenedor {
+            flex-direction: column;
+            text-align: center;
+        }
+    
+        .pelicula-principal {
+            font-size: 14px;
+        }
+    
+        .pelicula-principal .descripcion {
+            max-width: 100%;
+        }
+    
+        .peliculas-recomendadas .contenedor-carousel {
+            overflow: visible;
+        }
+    
+        .peliculas-recomendadas .contenedor-carousel .carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+    
+        .peliculas-recomendadas .indicadores,
+        .peliculas-recomendadas .flecha-izquierda,
+        .peliculas-recomendadas .flecha-derecha {
+            display: none;
         }
     }
+    
+.blog{
+    font-size: 16px;
+    padding: 5em 3em 5em 3em;
+    p{
+        @include textoThambi (1.7em,600);
+        margin-bottom: .8em;
+        color: #686767; 
+    }
+    .card-deck{
+        margin-top: 5em;
+        .card-body{
+            text-align: justify;
+        }
+    }
+}
 
-       
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
