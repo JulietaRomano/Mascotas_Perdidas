@@ -1,0 +1,118 @@
+/*Microchips*/
+.microchips_section{
+    padding:3em 2em 5em 2em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+        font-size: 12px;  
+    }
+
+    .microchips_container{
+        text-align: justify;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            text-align: center
+        }
+
+        h3{
+            @include tituloRammetto (1.5em);
+            margin: 2em 0 0 15em;
+            color:rgb(83, 76, 76);
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                margin: 2em 0 1em 0em;
+            }
+        }
+        .microchips_caja{
+            border-bottom: solid rgb(194, 185, 168);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                flex-direction: column
+            }
+
+            p{
+                font-size: 1.1em;
+                max-width: 56.25em;
+                color:$texto1;
+
+            }
+            .img1{
+                width: 13em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    width: 11em;
+                }
+
+            }
+            img{
+                width: 20em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    margin-top: .8em;
+                    width: 16em;
+                }
+            }
+        }
+    }
+    .microchips_article{
+        padding:4em 2em 0em 2em;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            padding:4em 0em 0em 0em;
+        }
+
+        h2{
+            @include tituloRammetto (1.7em);
+            color:rgb(5, 124, 145);
+        }
+        p{
+            @include textoThambi (1.2em, 600);
+            color:$texto1;
+            margin: 2em;
+        }
+        .micro_p{
+            @include textoThambi (1.5em, 600);
+            color:$texto1;
+            margin: 2em;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                margin: 1em;
+            }
+        }
+        .list{
+            text-align: justify;
+            padding: 2em;
+            background: #a1aedb8f;
+            border-radius: 15px;
+            li{
+                font-size: 1.2em;
+                color:$texto1;
+                background: #faf7fc;
+                padding: 1.25em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    padding: .8em;
+                }
+            }
+        }
+    }
+    img{
+        width: 45em;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            width: 25em;
+        }
+    }
+}

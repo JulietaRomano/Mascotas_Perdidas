@@ -1,7 +1,14 @@
+/*Pie de pagina*/
 footer{
     box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
     background-image: url(../Imagenes/Fondos/fondo_footer.png);
     padding-top: 1em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+    font-size: 10px;
+    }
+
     .redes{
         display: flex;
         justify-content: space-between;
@@ -9,14 +16,15 @@ footer{
         border-bottom: 1px  solid;
         p{
             @include textoThambi (1.3em,500);
-                color: #686767;
+            color: #686767;
         }
         .redes-logos{
             display: flex;
             justify-content: space-around;
-            width: 180px;
+            width: 11.25em;
         }
     }
+    
     .mapaDeSitio_conteiner{
         margin: 1.5em;
         display: flex;
@@ -24,24 +32,34 @@ footer{
         text-align: justify;
 
         .logo-footer{
-            width: 300px;
-            height: 45px;
+            width: 18.75em;
+            height: 2.8125em;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                display: none;
+            }
         }
         h6{
-            @include textoThambi (1.3em,500);
+            @include textoThambi (1.3em,600);
             color: #686767;
             text-transform:uppercase;        
         }
         p{
-            @include textoThambi (1.3em,400);
+            font-size: 1.3em;
             color: #686767;
+
+            //MEDIA QUERIES//
+            a{
+                font-size: .8em;
+            }
         }
         .mapaDeSitio-contacto{
             display: flex;
             flex-direction: column;
             p{
                 margin-top: .5em;
-                @include textoThambi (1em,400);
+                font-size: 1em;
             }
         }
     }
@@ -51,10 +69,8 @@ footer{
         color: honeydew;
         box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
         p{
-            @include textoThambi (1.1em,400);
+            font-size: 1.1em;
         }
     }
-
-
 }
    

@@ -7,10 +7,16 @@
         <title>
             Busqueda de mascotas | Perdidas
         </title>
-        <link rel="shortcut icon" href="../Imagenes/Logos/mascotas_perdidas.png">
-        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
+        <!--Logo Icon-->
+        <link rel="shortcut icon" href="../Imagenes/Logos/mascotas.png">
         <!--Bootstrap-->
-        <link rel="stylesheet" href="../css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!-- Bootstrap MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
         <!--Animate-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <!--Wow-->
@@ -25,7 +31,7 @@
     <body>
         <header>
             <!--NAVBAR-->
-            <nav class="navbar navbar-expand-lg navbar-light fixed-top menu">
+            <nav class="navbar navbar-expand-lg navbar-light fixed-top scrolling-navbar navbarColor" id="navbar">
                 <div class="container-fluid">
                     <!--Logo-->
                     <a class="navbar-brand logo" href="../index.html">
@@ -36,15 +42,15 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!--MENU-->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <!--Menu Items-->
                             <li class="nav-item"> <!--Item Lista Principal-->
                                 <a class="nav-link" aria-current="page" href="../index.html">
-                                    Sobre Nosotros 
+                                    Sobre Nosotros
                                 </a>
                             </li>
-                            
+                        
                             <li class="nav-item dropdown"><!--Item Lista Principal-->
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Busqueda Activa 
@@ -71,7 +77,7 @@
 
                             <li class="nav-item dropdown"><!--Item Lista Principal-->
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Finales Felices
+                                    Blog
                                 </a>
                                 <!--Submenu-->
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -85,6 +91,12 @@
                                             Tips para la busqueda de mascotas
                                         </a>
                                     </li>
+                                    <li>
+                                        <a class="dropdown-item" href="../Pages/Microchips.html">
+                                            Microchip o GPS
+                                        </a>
+                                    </li>
+
                                 </ul>
                             </li>
 
@@ -98,8 +110,8 @@
                 </div>
             </nav>
         </header>
-        <main>
-            <section class="MascotasPyE_Menu-Container">
+
+        <main class="mascotasPerdidas">
                 <!--Titulo-->
                 <div class="MascotasPyE_Titulo">
                     <h1>
@@ -107,236 +119,407 @@
                     </h1>
                 </div>
                 <!--Menu-->
-                <nav>
-                    <div class="MascotasPyE_Menu-Titulo">
-                        Filtro
-                    </div>
-                    <div class="accordion accordion-flush listPrincipalMenuPyE" id="accordionFlushExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingOne">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                    Especie
-                                </button>
-                            </h2>
-                            <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                <li><a class="dropdown-item" href="#">Gato</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Perro</a></li>
+                <div class="row">
+                    <div class="col-3">
+                        <div class="nav flex-column nav-pills menus1" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                            <div class="filtro">
+                                Filtro
                             </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                    Sexo
-                                </button>
-                            </h2>
-                            <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                <li><a class="dropdown-item" href="#">Hembra</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Macho</a></li>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Tamaño
-                            </button>
-                        </h2>
-                        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <li><a class="dropdown-item" href="#">Grande</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Mediano</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Chico</a></li>                        
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="flush-headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                Zona
-                            </button>
-                            </h2>
-                            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                <li><a class="dropdown-item" href="#">CABA</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Zona Oeste</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Zona Sur</a></li>
-                                <li><hr class="dropdown-divider"></li>
-                                <li><a class="dropdown-item" href="#">Zona Norte</a></li>                           
-                            </div>
-                        </div>
-                    </div>
-                </nav>
+                            <a class="nav-link active item " id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Inicio</a>
 
-                <!--CAROUSEL-->
+                            <div class="separador">
+                                Especie
+                            </div>
+                            
+                            <a class="nav-link item" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Perro</a>
+                            <a class="nav-link item" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Gato</a>
+                            <div class="separador">
+                                Sexo
+                            </div>
+                            <a class="nav-link item" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Macho</a>
+                            <a class="nav-link item" id="v-pills-settings-tab" data-toggle="pill" href="#hola" role="tab" aria-controls="v-pills-settings" aria-selected="false">Hembra</a>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <!--General-->
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <section class="listadoPerdidas_Container">
+                                <div class="listadoPerdidas_Caja">
+                                    <ul class="listadoPerdidas_Caja-Container">
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro1">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Anakin</h2>
+                                                <p>Perdido el dia 23/02/2021.<br>Zona Oeste (Moreno).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato1">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Manteca</h2>
+                                                <p>Perdida el dia 13/12/2020. <br> Zona Sur (Lanús).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro2">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Plumita</h2>
+                                                <p>Perdida el dia 06/03/2021. <br>Zona Norte (Tigre).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro3">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Soledad</h2>
+                                                <p>Perdida el dia 10/11/2020.<br>Zona Oeste (Caseros).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato2">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Carla</h2>
+                                                <p>Perdida el dia 17/10/2020.<br>CABA (Almagro).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro4">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Petuña</h2>
+                                                <p>Perdida el dia 12/01/2021.<br>Zona Sur (Quilmes).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro5">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Toto</h2>
+                                                <p>Perdido el dia 12/02/2021.<br>CABA (Palermo).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro6">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Burrito</h2>
+                                                <p>Perdido el dia 16/04/2021.<br>Zona Oeste (Castelar).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro7">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Vicente</h2>
+                                                <p>Perdido el dia 19/05/2021.<br>CABA (Once).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <!--Perros-->
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <section class="listadoPerdidas_Container">
+                            <div class="listadoPerdidas_Caja">
+                                <ul class="listadoPerdidas_Caja-Container">
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro1">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Anakin</h2>
+                                            <p>Perdido el dia 23/02/2021.<br>Zona Oeste (Moreno).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+            
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro2">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Plumita</h2>
+                                            <p>Perdida el dia 06/03/2021. <br>Zona Norte (Tigre).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+            
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro3">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Soledad</h2>
+                                            <p>Perdida el dia 10/11/2020.<br>Zona Oeste (Caseros).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+                        
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro4">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Petuña</h2>
+                                            <p>Perdida el dia 12/01/2021.<br>Zona Sur (Quilmes).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+            
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro5">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Toto</h2>
+                                            <p>Perdido el dia 12/02/2021.<br>CABA (Palermo).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+            
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro6">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Burrito</h2>
+                                            <p>Perdido el dia 16/04/2021.<br>Zona Oeste (Castelar).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+                                    
+                                    <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro7">
+                                        <div class="listadoPerdidas_overlay"></div>
+                                        <div class="listadoPerdidas_Texto">
+                                            <h2>Vicente</h2>
+                                            <p>Perdido el dia 19/05/2021.<br>CABA (Once).</p>
+                                            <a href="" class="botonmasc">Contacto</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div> 
+                        </section>
+                        </div>
+                        <!--Gatos-->
+                        <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <section class="listadoPerdidas_Container">
+                                <div class="listadoPerdidas_Caja">
+                                    <ul class="listadoPerdidas_Caja-Container">
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato1">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Manteca</h2>
+                                                <p>Perdida el dia 13/12/2020. <br> Zona Sur (Lanús).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato2">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Carla</h2>
+                                                <p>Perdida el dia 17/10/2020.<br>CABA (Almagro).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div> 
+                            </section>
+                        </div>
+                        <!--Macho-->
+                        <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <section class="listadoPerdidas_Container">
+                                <div class="listadoPerdidas_Caja">
+                                    <ul class="listadoPerdidas_Caja-Container">
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro1">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Anakin</h2>
+                                                <p>Perdido el dia 23/02/2021.<br>Zona Oeste (Moreno).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro5">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Toto</h2>
+                                                <p>Perdido el dia 12/02/2021.<br>CABA (Palermo).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro6">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Burrito</h2>
+                                                <p>Perdido el dia 16/04/2021.<br>Zona Oeste (Castelar).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro7">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Vicente</h2>
+                                                <p>Perdido el dia 19/05/2021.<br>CABA (Once).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        
+                                    </ul>
+                                </div>
+                            </section>
+                        </div>
+                        <!--Hembra-->
+                        <div class="tab-pane fade" id="hola" role="tabpanel" aria-labelledby="v-pills-settings-tab">
+                            <section class="listadoPerdidas_Container">
+                                <div class="listadoPerdidas_Caja">
+                                    <ul class="listadoPerdidas_Caja-Container">
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato1">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Manteca</h2>
+                                                <p>Perdida el dia 13/12/2020. <br> Zona Sur (Lanús).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro2">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Plumita</h2>
+                                                <p>Perdida el dia 06/03/2021. <br>Zona Norte (Tigre).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro3">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Soledad</h2>
+                                                <p>Perdida el dia 10/11/2020.<br>Zona Oeste (Caseros).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+                            
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item perro4">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Petuña</h2>
+                                                <p>Perdida el dia 12/01/2021.<br>Zona Sur (Quilmes).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
+    
+                                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item gato2">
+                                            <div class="listadoPerdidas_overlay"></div>
+                                            <div class="listadoPerdidas_Texto">
+                                                <h2>Carla</h2>
+                                                <p>Perdida el dia 17/10/2020.<br>CABA (Almagro).</p>
+                                                <a href="" class="botonmasc">Contacto</a>
+                                            </div>
+                                        </li>
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-indicators">
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    </ul>
+                                </div> 
+                            </section>
+                        </div>
+
                     </div>
-                    <div class="carousel-inner">
-                        <!--Imagen 1 Carrousel-->
-                        <div class="carousel-item active">
-                            <img src="../Imagenes/Perdidos/carousel_1.png" class="d-block w-100 portadaIndexImg" alt="alerta mascotas perdidas">
-                        </div>
-                        <!--Imagen 2 Carrousel-->
-                        <div class="carousel-item">
-                            <img src="../Imagenes/Perdidos/carousel_2.png" class="d-block w-100" alt="egistro de mascotas">
-                        </div>
-                        <!--Imagen 3 Carrousel-->
-                        <div class="carousel-item">
-                            <img src="../Imagenes/Perdidos/carousel_3.png" class="d-block w-100" alt="mascota perdida">
-                        </div>
                     </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
                 </div>
             </section>
-            <!--separador-->
-            <div class="MascotasPyE_Separador">
-                Listado
-            </div>
-
-            <!--Listado-->
-            <section class="listadoPerdidas_Container">
-
-                <div class="listadoPerdidas_Caja">
-                    <ul class="listadoPerdidas_Caja-Container">
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Anakin</h2>
-                                <p>Perdido el dia 23/02/2021.<br>Zona Oeste (Moreno).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Manteca</h2>
-                                <p>Perdida el dia 13/12/2020. <br> Zona Sur (Lanús).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Plumita</h2>
-                                <p>Perdida el dia 06/03/2021. <br>Zona Norte (Tigre).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Soledad</h2>
-                                <p>Perdida el dia 10/11/2020.<br>Zona Oeste (Caseros).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Carla</h2>
-                                <p>Perdida el dia 17/10/2020.<br>CABA (Almagro).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Petuña</h2>
-                                <p>Perdida el dia 12/01/2021.<br>Zona Sur (Quilmes).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Toto</h2>
-                                <p>Perdido el dia 12/02/2021.<br>CABA (Palermo).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Burrito</h2>
-                                <p>Perdido el dia 16/04/2021.<br>Zona Oeste (Castelar).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-                        
-                        <li class="listadoPerdidas_Caja1 listadoPerdidas_Caja-item">
-                            <div class="listadoPerdidas_overlay"></div>
-                            <div class="listadoPerdidas_Texto">
-                                <h2>Vicente</h2>
-                                <p>Perdido el dia 19/05/2021.<br>CABA (Once).</p>
-                                <a href="" class="botonmasc">Contacto</a>
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </section>
+            
         </main>
 
-        <!--SECCION: REDES SOCIALES -->
-        <footer>
-            <section id=redes>
-                <div class="redes_titulos"><!--Titulo-->
-                    <p class=" wow animate__animated animate__zoomIn">
-                        Síguenos en nuestras Redes sociales:
-                    </p>
-                </div>
-                <div class="redes_logos"><!--Logos-->
-                    <a href="http:www.instagram.com">
-                        <img src="../Imagenes/Iconos/instaIcon.png" alt="logo instagram">
+        <footer class="pieDePag">
+            <section class="redes">
+                    <p> Síguenos en nuestras redes sociales:</p>
+                <div class="redes-logos">
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-facebook-f"></i>
                     </a>
-                    <a href="http:www.facebook.com">
-                        <img src="../Imagenes/Iconos/fcIcon.png" alt="logo facebook">
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-twitter"></i>
                     </a>
-                    <a href="http:www.twitter.com">
-                        <img src="../Imagenes/Iconos/twicon.png" alt="logo twitter">
+                    <a href="" class="me-4 text-reset">
+                      <i class="fab fa-instagram"></i>
                     </a>
-                </div>
-                <div class="redes_imagen"><!--Imagen-->
-                    <img src="../Imagenes/Img_PNG/footer.png" alt="pie de pagina imagenes de perros y gatos">
                 </div>
             </section>
-            <!--PIE DE PAGINA-->
-            <div class="pieDePagina"> 
-                <p>
-                    Derechos Reservados - Mascotas Perdidas®
-                </p>
+            <section class="mapaDeSitio_conteiner">
+                <img src="/Imagenes/Logos/logo.png" class="logo-footer" alt="logo de la pagina">
+                <div class="mapaDeSitio-map">
+                    <h6 >Mapa del sitio</h6>
+                    <p>
+                        <a href="../index.html" class="text-reset">Inicio</a>
+                    </p>
+                    <p>
+                        <a href="../Pages/Registro.html"class="text-reset" >Registro</a>
+                    </p>
+                    <p>
+                        <a href="../Pages/Mascotas_Perdidas.html" class="text-reset">Mascotas Perdidas</a>
+                    </p>
+                    <p>
+                        <a href="../Pages/Mascotas_Encontradas.html" class="text-reset">Mascotas Encontradas</a>
+                    </p>
+                    <p>
+                        <a href="../Pages/Colabora.html" class="text-reset">Colabora</a>
+                    </p>
+
+                </div>
+                <div class="mapaDeSitio-blog">
+                    <h6>
+                        Blog
+                    </h6>
+                    <p>
+                        <a href="../Pages/Tips.html" class="text-reset">Tips</a>
+                    </p>
+                    <p>
+                        <a href="../Pages/Reencuentro.html" class="text-reset">Reencuentros</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Microchip o GPS</a>
+                    </p>
+                </div>
+                <div class="mapaDeSitio-contacto">
+                    <h6 >
+                        Contactanos
+                    </h6>
+                    <p><i class="fas fa-home me-3"></i> Buenos Aires, Argentina</p>
+                    <p>
+                    <i class="fas fa-envelope me-3"></i>
+                        mascotas@gmail.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                </div>
+            </section>
+                <!-- Copyright -->
+            <div class="copyright">
+                <p>© 2021 Copyright:
+                Mascotas Perdidas</p>
             </div>
         </footer>
 
         <!--SCRIPTS-->
             <!--Bootstrap-->
-            <script src="../js/bootstrap.bundle.min.js"></script>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+            <!-- JQuery -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
             <!--Woow-->
             <script src="../js/wow.min.js"></script>
             <script>
                 new WOW().init();
             </script>
             <!-- JS Main -->
-            <script src="js/main.js"></script>  
+            <script src="../js/main.js"></script>  
     </body>
 </html>

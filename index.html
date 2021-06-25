@@ -4,27 +4,21 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         <title>
             Mascotas Perdidas | Busqueda de Mascotas
         </title>
+        <!--Logo Icon-->
         <link rel="shortcut icon" href="/Imagenes/Logos/mascotas.png">
-        <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1">
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-
-      
-
-        <!-- Font Awesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-<!-- Google Fonts -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
-<!-- Bootstrap core CSS -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
-<!-- Material Design Bootstrap -->
-<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
-
-
-
+        <!-- Bootstrap MDB -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Material Design Bootstrap -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" rel="stylesheet">
+        <!-- Iconos -->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
 
         <!--Animate-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -59,13 +53,13 @@
                     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto">
                             <!--Menu Items-->
-                            <li class="nav-item"> <!--Item Lista Principal-->
+                            <li class="nav-item"> 
                                 <a class="nav-link" aria-current="page" href="#SobreNosotros_Container">
                                     Sobre Nosotros
                                 </a>
                             </li>
                         
-                            <li class="nav-item dropdown"><!--Item Lista Principal-->
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Busqueda Activa 
                                 </a>
@@ -89,9 +83,9 @@
                                 </ul>
                             </li>
 
-                            <li class="nav-item dropdown"><!--Item Lista Principal-->
+                            <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Finales Felices
+                                    Blog
                                 </a>
                                 <!--Submenu-->
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -103,6 +97,11 @@
                                     <li>
                                         <a class="dropdown-item" href="./Pages/Tips.html">
                                             Tips para la busqueda de mascotas
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a class="dropdown-item" href="./Pages/Microchips.html">
+                                            Microchip o GPS
                                         </a>
                                     </li>
                                 </ul>
@@ -127,21 +126,26 @@
                   <li data-target="#carouselExampleCaptions" data-slide-to="2"></li>
                 </ol>
 
-
                 <div class="carousel-inner">
                   <!--Imagen 1 Carrousel-->
                     <div class="carousel-item active">
                         <img src="/Imagenes/Carousel/carousel_img1.jpg" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
                         <div class="carousel-caption d-none d-md-block carouselPortada_container-1">
                             <!--Caja dentro del carrousel 1-->
-                            <div class="carouselPortada_caja-1 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
-                                <h2>¿PERDISTE A TU MASCOTA?</h2>
-                                <p>Estas son las mascotas que han sido rescatadas.<br>Búscala en nuestro listado:</p>
+                            <div class="carouselPortada_caja carouselPortada_caja-1 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
+                                <h2>
+                                    ¿PERDISTE A TU MASCOTA?
+                                </h2>
+                                <p class="carouselPortada_texto">
+                                    Estas son las mascotas que han sido rescatadas.<br>Búscala en nuestro listado:
+                                </p>
                                 <div class="carouselPortada_botones">
                                     <a href="./Pages/Mascotas_Perdidas.html">
                                         <div class="botones">
                                             <div class="botones1">
-                                                <p class="botonesP">Mascotas perdidas</p>
+                                                <p class="botonesP">
+                                                    Mascotas perdidas
+                                                </p>
                                             </div>
                                         </div>
                                     </a>
@@ -149,7 +153,9 @@
                                     <a href="./Pages/Mascotas_Encontradas.html">
                                         <div class="botones">
                                             <div class="botones1">
-                                                <p class="botonesP">Mascotas encontradas</p>
+                                                <p class="botonesP">
+                                                    Mascotas encontradas
+                                                </p>
                                             </div>
                                         </div>
                                     </a>
@@ -162,14 +168,20 @@
                         <img src="./Imagenes/Carousel/carousel_img2.jpg" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
                         <div class="carousel-caption d-none d-md-block carouselPortada_container-2">
                             <!--Caja dentro del carrousel 2-->
-                            <div class="carouselPortada_caja-2 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
-                                <h2> REGISTRA A TU AMIG@</h2>
-                                <p> Si perdiste o encontraste una mascota, registrala para comenzar su búsqueda.</p>
+                            <div class="carouselPortada_caja carouselPortada_caja-2 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
+                                <h2> 
+                                    REGISTRA A TU AMIG@
+                                </h2>
+                                <p class="carouselPortada_texto"> 
+                                    Si perdiste o encontraste una mascota, registrala para comenzar su búsqueda.
+                                </p>
                                 <!--Botones-->
                                 <a href="./Pages/Registro.html">
                                     <div class="botones">
                                         <div class="botones1">
-                                            <p class="botonesP">Registrar una mascota</p>
+                                            <p class="botonesP">
+                                                Registrar una mascota
+                                            </p>
                                         </div>
                                     </div>
                                 </a>
@@ -181,9 +193,11 @@
                         <img src="./Imagenes/Carousel/carousel_img3.jpg" class="d-block w-100 portadaIndexImg" alt="imagen-mascotas-carousel">
                         <div class="carousel-caption d-none d-md-block carouselPortada_container-3">
                             <!--Caja dentro del carrousel 3-->
-                            <div class="carouselPortada_caja-3 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
+                            <div class="carouselPortada_caja carouselPortada_caja-3 wow animate__animated animate__fadeInDown"data-wow-duration="2s">
                                 <h2> FINALES FELICES</h2>
-                                <p>Entre tod@s podemos hacer un mundo mejor para los animales.</p>
+                                <p class="carouselPortada_texto">
+                                    Entre tod@s podemos hacer un mundo mejor para los animales. Mirá nuestras historias de reencuentro.
+                                </p>
                                 <!--Botones-->
                                 <a href="./Pages/Reencuentro.html">
                                     <div class="botones">
@@ -207,29 +221,30 @@
                 </a>
             </div>
 
-        
         </header>
 
+
         <main>
+            <!--SECCION Inicial (cajas)-->
             <section class="Inicio_Index">
                 <!--Texto-->
                 <div class="Inicio_Index-Sub">
                     <p class="QuienesSomos_P">
-                        Sabemos lo duro que es perder una mascota y lo dificil que puede llegar a ser su reencuentro. Por eso, cuando este tipo de hechos sucede, no hay tiempo que perder ¡Tenemos que actuar rápidamente!
+                        Sabemos lo duro que es perder una mascota y lo dificil que puede llegar a ser su reencuentro. 
+                        Por eso, cuando este tipo de hechos sucede, no hay tiempo que perder ¡Tenemos que actuar rápidamente!
                     </p>
                 </div>
                 <!--Cajas-->
-                        
                 <div class="Inicio_Index-Container">
                     <a href="/Pages/Colabora.html" class="Inicio_Index-Caja">
                         <div class="Inicio_Index-ImgConteiner">
-                            <div class="Inicio_Index-Img1"></div>
+                            <div class="Inicio_Index-Imagen Inicio_Index-Img1"></div>
                         </div>
                         <div class="Inicio_Index-Texto">
                             <h3>
                                Registro
                             </h3>
-                            <p class="responsive">
+                            <p class="responsive textoChico">
                                 Registra a tu mascota para comenzar su búsqueda.                            
                             </p>
                         </div>
@@ -237,32 +252,33 @@
 
                     <a href="Pages/Registro.html" class="Inicio_Index-Caja">
                         <div class="Inicio_Index-ImgConteiner">
-                            <div class="Inicio_Index-Img2"></div>
+                            <div class="Inicio_Index-Imagen Inicio_Index-Img2"></div>
                         </div>
                         <div class="Inicio_Index-Texto">
                             <h3>
                                 Colaborá
                             </h3>
-                            <p class="responsive">
+                            <p class="responsive textoChico">
                                 Anunciate en nuestra página.
                             </p>
                         </div>
                     </a>
 
-                    <a href="/Pages/Tips.html" class="Inicio_Index-Caja">
+                    <a href="#blog" class="Inicio_Index-Caja">
                         <div class="Inicio_Index-ImgConteiner">
-                            <div class="Inicio_Index-Img3"></div>
+                            <div class="Inicio_Index-Imagen Inicio_Index-Img3"></div>
                         </div>
                         <div class="Inicio_Index-Texto">
                             <h3>
-                                Tips
+                                Blog
                             </h3>
-                            <p class="responsive">
-                                Tips para que puedas seguir si extraviaste a tu mascota.
+                            <p class="responsive textoChico">
+                                Te brindamos información sobre tus mascotas.
                             </p>
                         </div>
                     </a>
                 </div>
+                <!--Ola-->
                 <div class="wave">
                     <svg viewBox="0 0 500 150" preserveAspectRatio="none">
                         <path d="M0.00,49.98 C260.15,273.84 349.20,-49.98 560.38,120.88 L500.00,150.00 L0.00,150.00 Z"></path>
@@ -271,20 +287,21 @@
             </section>
 
 
-            <!--SECCIÓN " ¿Cómo podemos ayudarte?"-->
+            <!--SECCIÓN: "¿Cómo podemos ayudarte?"-->
             <section class="funcionamiento">
                 <!--Titulo-->
                 <h2 class="titulo_celeste wow animate__animated animate__pulse"> 
                     ¿Cómo podemos ayudarte?
                 </h2>
                 <!--Contenido-->
-                <article class="Funcionamiento_Container"><!--Imagen-->
+                <article class="Funcionamiento_Container">
+                    <!--Imagen-->
                     <div class="Funcionamiento_Imagen wow animate__animated animate__fadeInLeft">
                         <img src="/Imagenes/Index/ayudarte.png" alt="mujer abrazando a un perro y gato">
                     </div>
                    
                     <!--Cajas numeros y texto-->
-                    <div class="Funcionamiento_Grid wow animate__animated animate__fadeInRight">
+                    <div class="Funcionamiento_Cajas wow animate__animated animate__fadeInRight">
                         <div class="Funcionamiento_Caja">
                             <div class="Funcionamiento_Numero">
                                 1
@@ -293,8 +310,9 @@
                                 <h3 class="Funcionamiento_Sub">
                                     Creamos un Alerta
                                 </h3>
-                                <p class="Funcionamiento_Texto-p">
-                                    Creamos un anuncio en nuestra página que iniciará la búsqueda para que pueda ser difundido hacia muchas personas.
+                                <p class="textoChico">
+                                    Creamos un anuncio en nuestra página que iniciará la búsqueda para que pueda ser difundido hacia 
+                                    muchas personas.
                                 </p>
                             </div> 
                         </div>
@@ -306,7 +324,7 @@
                                 <h3 class="Funcionamiento_Sub">
                                     Viralizamos
                                 </h3>
-                                <p class="Funcionamiento_Texto-p">
+                                <p class="textoChico">
                                     Mostramos el anuncio en varios kilómetros a la redonda de la zona donde se extravió.
                                 </p>
                             </div>
@@ -319,8 +337,10 @@
                                 <h3 class="Funcionamiento_Sub">
                                     Encontramos
                                 </h3>
-                                <p class="Funcionamiento_Texto-p">
-                                    En poco tiempo te contactarán las personas que hayan visto a tu mascota. <strong>¡No estás solo, somos miles!</strong> <span class="responsive">Y nosotros somos el medio que te ayuda a reencontrarte con tu mejor amigo.</span> 
+                                <p class="textoChico">
+                                    En poco tiempo te contactarán las personas que hayan visto a tu mascota. <strong>
+                                    ¡No estás solo, somos miles!</strong> <span class="responsive">
+                                    Y nosotros somos el medio que te ayuda a reencontrarte con tu mejor amigo.</span> 
                                 </p>
                             </div>
                         </div>
@@ -328,40 +348,49 @@
                 </article>
             </section>
             
-            <!--Seccion Mascotas Extraviadas-->
+            <!--SECCION: "Mascotas Extraviadas"-->
             <section class="mascotasExtraviadas_container">
-                <h3>Estas mascotas aún no encontraron a sus dueños. ¡Ayudanos a que suceda!</h3>
+                <h3>
+                    Estas mascotas aún no encontraron a sus dueños. ¡Ayudanos a que suceda!
+                </h3>
                 <div class="mascotasExtraviadas_cajaConteiner">
-                    <li class="mascotasExtraviadas_caja">
+                    <div class="mascotasExtraviadas_caja">
                         <div class="mascotasExtraviadas_caja-img img1">
                         </div>
                         <div class="mascotasExtraviadas_caja-texto">
-                            <h5>Luna</h5>
-                            <p>Sexo: Hembra<br>
+                            <h5>
+                                Luna
+                            </h5>
+                            <p>
+                                Sexo: Hembra<br>
                                 Raza: Mestizo<br>
                                 Edad: 3 años 2 meses
                             </p>
                         </div>
-                    </li>
+                    </div>
 
-                    <li  class="mascotasExtraviadas_caja">
-                        <div  class="mascotasExtraviadas_caja-img img2">
-                            
-                        </div>
+                    <div  class="mascotasExtraviadas_caja">
+                        <div  class="mascotasExtraviadas_caja-img img2"></div>
                         <div class="mascotasExtraviadas_caja-texto">
-                            <h5>Tadeo</h5>
-                            <p>Sexo: Macho<br>
+                            <h5>
+                                Tadeo
+                            </h5>
+                            <p>
+                                Sexo: Macho<br>
                                 Raza: Mestizo<br>
                                 Edad: 3 años 2 meses
                             </p>
                         </div>
-                    </li>
+                    </div>
 
                     <div  class="mascotasExtraviadas_caja">
                         <div  class="mascotasExtraviadas_caja-img img3"></div>
                         <div class="mascotasExtraviadas_caja-texto">
-                            <h5>Lola</h5>
-                            <p>Sexo: Hembra<br>
+                            <h5>
+                                Lola
+                            </h5>
+                            <p>
+                                Sexo: Hembra<br>
                                 Raza: Mestizo<br>
                                 Edad: 3 años 2 meses
                             </p>
@@ -372,8 +401,11 @@
                         <div  class="mascotasExtraviadas_caja-img img4">
                         </div>                
                         <div class="mascotasExtraviadas_caja-texto">
-                            <h5>Inés</h5>
-                            <p>Sexo: Hembra<br>
+                            <h5>
+                                Inés
+                            </h5>
+                            <p>
+                                Sexo: Hembra<br>
                                 Raza: Mestizo<br>
                                 Edad: 3 años 2 meses
                             </p>
@@ -382,52 +414,50 @@
                 </div>
             </section>
 
-
-
-
-
             
-            <!--BOLETIN DE MASCOTAS EXTRAVIADAS-->
+            <!-- SECCION:"Boletin de Mascotas Extraviadas"-->
             <aside class="Boletin_Imagen">
                 <div class="Boletin_Caja">
                     <h3>Boletín de Mascotas Extraviadas</h3>
                     <p>Suscríbete a nuestro boletín y recibe en tu correo las novedades del portal.</p>
-                    <div class="md-form">
-                        <i class="fas fa-envelope prefix"></i>
-                        <input type="text" id="inputIconEx1" class="form-control">
-                        <label for="inputIconEx1">E-mail address</label>
-                        <div class="col-auto">
-                            <button type="submit" class="btn mb-0">Enviar</button>
+                    <input type="text" id="login" name="E-Mail" placeholder="E-Mail">
+                    <!--Botones-->
+                    <a href="./Pages/Reencuentro.html">
+                        <div class="item1_botones">
+                            <div class="item1_botones1">
+                                Enviar
+                            </div>
                         </div>
-                    </div>                
+                    </a>
                 </div>
             </aside>
 
-            <!--SECCION "NUESTRA HISTORIA"-->
+            <!--SECCION: "Nuestra Historia"-->
             <section id="SobreNosotros_Container">
-                <h1 class="titulo_celeste"><!--Titulo principal-->
+                <!--Titulo principal-->
+                <h1 class="titulo_celeste">
                     Nuestra Historia
                 </h1> 
                 <!--Subtitulo/Texto/Img-->
                 <article class="SobreNosotros_article conteiner">
                     <div class="SobreNosotros_texto wow animate__animated animate__fadeIn" data-wow-duration="2s" data-wow-delay="0.1s">
-                        
                         <p class="SobreNosotros_p">
                             Mascotas Perdidas nació para dar información exacta en el momento preciso.
-                            Mediante la difusión de las fotografias de tu mascota perdida o mascota encontrada y sus datos en nuestra red, pretendemos llegar a la mayor cantidad de personas posibles para ampliar su búsqueda y poder lograr el tan ansiado reencuentro.<br>
-                            <span class="responsive">Con el paso del tiempo coleccionamos historias de reencuentro con el fin de motivar y alentar la búsqueda activa de una mascota perdida, generando concientización sobre el enfoque que tenemos a la hora de enterarnos de un extravío y de no mirar para el costado cuando esto sucede, o cuando encontramos un animal perdido.</span>
+                            Mediante la difusión de las fotografias de tu mascota perdida o mascota encontrada y sus datos en nuestra red, 
+                            pretendemos llegar a la mayor cantidad de personas posibles para ampliar su búsqueda y poder lograr el tan ansiado reencuentro.<br>
+                            <span class="responsive">Con el paso del tiempo coleccionamos historias de reencuentro con el fin de motivar y  alentar la búsqueda activa de una mascota perdida, generando concientización sobre el enfoque que tenemos a la hora de enterarnos de un extravío y 
+                            de no mirar para el costado cuando esto sucede, o cuando encontramos un animal perdido.</span>
                         </p>
                     </div>
                   
                 </article>    
-                <!--SECCION "AMIGOS DE LAS MASCOTAS"-->
+                <!--SECCION: "Amigos de las Mascotas"-->
                 <article class="tarjetas_Container">
 
                     <!--Titulo Caja-->
                     <h2 class="tarjetas_Subtitulo wow animate__animated animate__pulse"> 
                         Amigos de las Mascotas
                     </h2>
-
                     <!--Tarjetas-->
                     <div class="tarjetas_Flex">
                         <!--Tarjeta 1-->
@@ -439,7 +469,10 @@
                                         ¿Quiénes Somos?
                                     </h2>
                                     <p>
-                                        Somos una página dedicada a recibir reportes de mascotas que se han perdido o a los que alguien ha encontrado, para poder vincular a estas personas entre sí.<br> <span class="responsive"> Nos dedicamos a facilitar la búsqueda de mascotas con la esperanza de que puedan retornar a su hogar.</span>
+                                        Somos una página dedicada a recibir reportes de mascotas que se han perdido o a los que alguien ha 
+                                        encontrado, para poder vincular a estas personas entre sí.<br> 
+                                        <span class="responsive"> Nos dedicamos a facilitar la búsqueda de mascotas con la esperanza de que puedan 
+                                        retornar a su hogar.</span>
                                     </p>
                                 </div>
                             </div>
@@ -453,7 +486,8 @@
                                         Nuestro Propósito
                                     </h2>
                                     <p>
-                                        <span class="responsive"> Mascotas Perdidas tenemos un solo propósito, el cual es "Ayudarnos a Encontrarnos".</span> Nos interesa el bienestar de las mascotas y por ello creemos que la concientización es la mejor manera de abordar la problematica de los extravios.
+                                        <span class="responsive"> Mascotas Perdidas tenemos un solo propósito, el cual es "Ayudarnos a Encontrarnos".</span> 
+                                        Nos interesa el bienestar de las mascotas y por ello creemos que la concientización es la mejor manera de abordar la problematica de los extravios.
                                     </p>
                                 </div>
                             </div>
@@ -463,9 +497,12 @@
                             <div class="tarjeta">
                                 <div class="adelante card3"></div>
                                 <div class="atras">
-                                    <h2>¿Por qué existimos?</h2>
+                                    <h2>
+                                        ¿Por qué existimos?
+                                    </h2>
                                     <p>
-                                        Somos una herramienta virtual para que las asociaciones de rescate animal y personas particulares tengan un lugar donde compartir su búsqueda. <span class="responsive">ello integramos un directorio en constante actualización sobre las alertas de mascotas perdidas o encontradas.</span> 
+                                        Somos una herramienta virtual para que las asociaciones de rescate animal y personas particulares tengan un lugar donde compartir su búsqueda.
+                                         <span class="responsive">ello integramos un directorio en constante actualización sobre las alertas de mascotas perdidas o encontradas.</span> 
                                     </p>
                                 </div>
                             </div>
@@ -474,132 +511,154 @@
                 </article>
             </section>
 
-        <!--Seccion Blog-->
-        <section class="blog">
-            <p>Blog</p>
-            <h2 class="titulo_celeste">
-                Noticias, artículos y más...
-            </h2>
-            <div class="card-deck">
-                <div class="card">
-                  <img src="/Imagenes/Index/tips.jpeg" class="card-img-top" alt="gato">
-                  <div class="card-body">
-                    <h5 class="card-title">Tips para la búsqueda de tu mascota</h5>
-                    <p class="card-text">
-                        Sabemos que extraviar a una mascota puede ser una experiencia traumática y desesperante, trata de mantener la calma, te acercamos los siguientes tips para que te ayuden en su búsqueda .              
-                    </p>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">
-                        Saber más
-                    </button>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
+            <!--SECCION: "Blog"-->
+            <section id="blog">
+                <h3>
+                    Blog
+                </h3>
+                <h2 class="titulo_celeste">
+                    Noticias, artículos y más...
+                </h2>
+                <div class="card-deck">
+                    <div class="card">
+                        <img src="/Imagenes/Index/tips.jpeg" class="card-img-top" alt="gato">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Tips para la búsqueda de tu mascota
+                            </h5>
+                            <p class="card-text">
+                                Sabemos que extraviar a una mascota puede ser una experiencia traumática y desesperante, trata de mantener la calma, 
+                                te acercamos los siguientes tips para que te ayuden en su búsqueda .              
+                            </p>
+                        </div>
 
-                <div class="card">
-                  <img src="/Imagenes/Index/microchip.jpeg" class="card-img-top" alt="perro con microchip">
-                  <div class="card-body">
-                    <h5 class="card-title">Microchip para perros y localizador GPS: ¿cuál es la diferencia?</h5>
-                    <p class="card-text">
-                        Te explicamos las principales diferencias entre un microchip y un localizador GPS para perros. Así te ayudaremos a mantener a tu perro sano y salvo.                    </p>
-                  </div>
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">
-                        Saber más
-                    </button>
-                  </div>
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-
-                <div class="card">
-                  <img src="/Imagenes/Index/reencuentro.jpeg" class="card-img-top" alt="perro y humano">
-                  <div class="card-body">
-                    <h5 class="card-title">Historias de reencuentro</h5>
-                    <p class="card-text">
-                        Les acercamos algunas de las experiencias de mascotas que se pudieron reencontrar con sus amig@s humanos.
-                    </p>
-                  </div>
-
-                  <div class="card-body">
-                    <button type="button" class="btn btn-outline-info btn-rounded" data-mdb-ripple-color="dark">
-                        Saber más
-                    </button>
-                  </div>
-
-                  <div class="card-footer">
-                    <small class="text-muted">Last updated 3 mins ago</small>
-                  </div>
-                </div>
-              </div>
-
-
-        </section>
-
-
-
-        <!--SECCION:"MARCAS"-->    
-        <div class="wave">
-            <svg viewBox="0 0 500 150" preserveAspectRatio="none">
-                <path class="footer" d="M0.00,49.98 C260.15,273.84 349.20,-49.98 560.38,120.88 L500.00,150.00 L0.00,150.00 Z"></path>
-            </svg>
-        </div>
-        <aside class="anuncios">
-        <h3>Apoyan a Mascotas Perdidas:</h3>
-        <div class="contenedor-principal">
-            <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
-
-            <div class="contenedor-carousel">
-                <div class="carousel">
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca1.png" alt="logo royal-canin"></a>
+                        <!--Botones-->
+                        <a href="./Pages/Reencuentro.html">
+                            <div class="item1_botones">
+                                <div class="item1_botones1">
+                                    Saber más
+                                </div>
+                            </div>
+                        </a>
+                        
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                22 de junio de 2021
+                            </small>
+                        </div>
                     </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca2.png" alt="logo Eukanuba"></a>
+
+                    <div class="card">
+                        <img src="/Imagenes/Index/microchip.jpeg" class="card-img-top" alt="perro con microchip">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                Microchip para perros y localizador GPS: ¿cuál es la diferencia?
+                            </h5>
+                            <p class="card-text">
+                                Te explicamos las principales diferencias entre un microchip y un localizador GPS para perros. Así te ayudaremos a 
+                                mantener a tu perro sano y salvo.                    
+                            </p>
+                        </div>
+
+                        <!--Botones-->
+                        <a href="./Pages/Reencuentro.html">
+                            <div class="item1_botones">
+                                <div class="item1_botones1">
+                                    Saber más
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="card-footer">
+                            <small class="text-muted">
+                                22 de junio de 2021
+                            </small>
+                        </div>
                     </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca3.png" alt="logo Pedigree"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca4.png" alt="logo Pet Circle"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca5.png" alt="logo Trato Cao"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca6.png" alt="logo Unique Pets"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca7.png" alt="logo Unleashed"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca8.png" alt="logo Pet Shop"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca9.png" alt="logo Molly's Pet Shop"></a>
-                    </div>
-                    <div class="pelicula">
-                        <a href="#"><img src="/Imagenes/Marcas/marca10.png" alt="logo Cat Bio Box"></a>
+
+                    <div class="card">
+                        <img src="/Imagenes/Index/reencuentro.jpeg" class="card-img-top" alt="perro y humano">
+                        <div class="card-body">
+                            <h5 class="card-title">Historias de reencuentro</h5>
+                            <p class="card-text">
+                                Les acercamos algunas de las experiencias de mascotas que se pudieron reencontrar con sus amig@s humanos.
+                            </p>
+                        </div>
+
+                        <!--Botones-->
+                        <a href="./Pages/Reencuentro.html">
+                            <div class="item1_botones">
+                                <div class="item1_botones1">
+                                    Saber más
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class="card-footer">
+                            <small class="text-muted">22 de junio de 2021</small>
+                        </div>
                     </div>
                 </div>
+            </section>
+            
+            <!--Ola--> 
+            <div class="wave">
+                <svg viewBox="0 0 500 150" preserveAspectRatio="none">
+                    <path class="footer" d="M0.00,49.98 C260.15,273.84 349.20,-49.98 560.38,120.88 L500.00,150.00 L0.00,150.00 Z"></path>
+                </svg>
             </div>
 
-            <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
-        </div>
-    </div>
-        </aside>
+            <!--SECCION:"Marcas"-->  
+            <aside class="anuncios">
+                <h3>Apoyan a Mascotas Perdidas:</h3>
+                <div class="contenedor-principal">
+                    <button role="button" id="flecha-izquierda" class="flecha-izquierda"><i class="fas fa-angle-left"></i></button>
+                    <div class="contenedor-carousel">
+                        <div class="carousel">
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca1.png" alt="logo royal-canin"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca2.png" alt="logo Eukanuba"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca3.png" alt="logo Pedigree"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca4.png" alt="logo Pet Circle"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca5.png" alt="logo Trato Cao"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca6.png" alt="logo Unique Pets"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca7.png" alt="logo Unleashed"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca8.png" alt="logo Pet Shop"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca9.png" alt="logo Molly's Pet Shop"></a>
+                            </div>
+                            <div class="pelicula">
+                                <a href="#"><img src="/Imagenes/Marcas/marca10.png" alt="logo Cat Bio Box"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <button role="button" id="flecha-derecha" class="flecha-derecha"><i class="fas fa-angle-right"></i></button>
+                </div>
+            </aside>
 
-            
         </main>
 
-
+        <!--PIE DE PAGINA-->
         <footer class="pieDePag">
             <section class="redes">
-                    <p> Síguenos en nuestras redes sociales:</p>
+                    <p> 
+                        Síguenos en nuestras redes sociales:
+                    </p>
                 <div class="redes-logos">
                     <a href="" class="me-4 text-reset">
                       <i class="fab fa-facebook-f"></i>
@@ -615,7 +674,9 @@
             <section class="mapaDeSitio_conteiner">
                 <img src="/Imagenes/Logos/logo.png" class="logo-footer" alt="logo de la pagina">
                 <div class="mapaDeSitio-map">
-                    <h6 >Mapa del sitio</h6>
+                    <h6 >
+                        Mapa del sitio
+                    </h6>
                     <p>
                         <a href="index.html" class="text-reset">Inicio</a>
                     </p>
@@ -644,7 +705,7 @@
                         <a href="/Pages/Reencuentro.html" class="text-reset">Reencuentros</a>
                     </p>
                     <p>
-                        <a href="#!" class="text-reset">Identificaciones</a>
+                        <a href="#!" class="text-reset">Microchip o GPS</a>
                     </p>
                 </div>
                 <div class="mapaDeSitio-contacto">
@@ -654,65 +715,36 @@
                     <p><i class="fas fa-home me-3"></i> Buenos Aires, Argentina</p>
                     <p>
                     <i class="fas fa-envelope me-3"></i>
-                        mascotasperdidas@gmail.com
+                        mascotas@gmail.com
                     </p>
                     <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
                 </div>
             </section>
                 <!-- Copyright -->
             <div class="copyright">
-                <p>© 2021 Copyright:
-                Mascotas Perdidas</p>
+                <p>
+                    © 2021 Copyright: Mascotas Perdidas
+                </p>
             </div>
         </footer>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
         <!--SCRIPTS-->
             <!--Bootstrap-->
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
-
-<!-- JQuery -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<!-- Bootstrap tooltips -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-<!-- Bootstrap core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
-<!-- MDB core JavaScript -->
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
-
+            <!-- JQuery -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <!-- Bootstrap tooltips -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+            <!-- Bootstrap core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+            <!-- MDB core JavaScript -->
+            <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/js/mdb.min.js"></script>
 
 
-
-<script src="js/wow.min.js"></script>
-            <script>
-                new WOW().init();
-            </script>
+            <!--WoW-->
+            <script src="js/wow.min.js"></script>
+            <script> new WOW().init();</script>
             <!-- JS Main -->
             <script src="js/main.js"></script>    
     </body>

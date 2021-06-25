@@ -1,167 +1,184 @@
+/*Formularios*/
 
-main{
-    .formularios{
-      padding:3.5em 0 2.5em 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background-image: url(../Imagenes/Fondos/fondo_animales.png);
-        @include smarthphone{
-          font-size: 13px;
-        }
+.formularios{
+  padding:8em 0 6em 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../Imagenes/Fondos/fondo_animales.png);
 
-      .flecha{
-        img{
-          width: 200px;
-        }
-        @include smarthphone{
-            display: none;
-        }
-      }
-      .formulario_cajaTexto{
-        border-radius: 1.5625em;
-        background-color:rgb(241, 253, 252);
-        border: rgb(233, 230, 230) solid .0625em;
-        width: 21.875em;
-        height: 17.5em;
-        @include smarthphone{
-            display: none;
-        }
-        h3{
-          @include tituloRammetto(1.25em, 400);
-          padding-top: 3.125em;
-          color: $celeste;
-        }
-        p{
-          @include textoThambi (1.0625em, 400);
-          padding: 10px 30px 0 1.875em;
-          color: $texto1;
+  //MEDIA QUERIES//
+  @include smarthphone{
+    font-size: 10px;
+    padding:2em 0 2em 0;
+    flex-direction: column;
+  }
 
-            .formulario_enlace{
-              @include textoThambi (1.25rm, 600);
-              color: $naranjaFuerte;
-              text-decoration: underline;
-              cursor: pointer;
-            }
-        }
-      }
-      a {
-        color: #92badd;
-        display:inline-block;
-        text-decoration: none;
-        font-weight: 400;
-      }
-      //titulo//
-      h2 {
-        text-align: center;
-        font-size: 1em;
-        font-weight: 600;
-        text-transform: uppercase;
-        display:inline-block;
-        margin: 2.5em .5em .625em .5em; 
-        border-bottom: 0.125em solid #5fbae9;
-        color: #6e6363;
-        @include smarthphone{
-          font-size: 1.3em;
-          margin-top: 1.5em;
-        }
+  .flecha{
+    img{
+      width: 12.5em;
+    }
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+      display: none;
+    }
+  }
+
+  .formulario_cajaTexto{
+    border-radius: 1.5625em;
+    background-color:rgb(241, 253, 252);
+    border: rgb(233, 230, 230) solid .0625em;
+    padding: 2em 0 1em 0;
+    width: 21.875em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+      margin-bottom: 2em;
+    }
+    h3{
+      @include tituloRammetto(1.25em);
+      color: $celeste;
+    }
+    p{
+      font-size: 1.0625em;
+      padding: .625em 1.875em 0 1.875em;
+      color: $texto1;
+
+      .formulario_enlace{
+        @include textoThambi (1.1em, 600);
+        color: $naranjaFuerte;
+        text-decoration: underline;
+        cursor: pointer;
       }
 
-    /* Estructura*/
-
-
-    #formulario_container {
-      -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
-      border-radius: 0.625em 0.625em 0.625em 0.625em;
-      background: #fff;
-      width: 90%;
-      max-width: 28.125em;
-      position: relative;
-      -webkit-box-shadow: 0 1.875em 3.75em 0 rgba(0,0,0,0.3);
-      box-shadow: 0 1.875em 3.75em 0 rgba(0,0,0,0.3);
-      text-align: center;
-      padding-bottom: 1em;
+      //MEDIA QUERIES//
       @include smarthphone{
-        font-size: 9px;
-      }
-      .formulario_logo{ 
-        margin:auto;
-        width: 12.5em;
-        padding-top: 1.875em;
-        img{
-          height:6.25em; 
-        }
-        @include smarthphone{
-          font-size: 10px;
-        }
+        padding: 0;
       }
     }
-    //olvidaste tu contraseña//
-    #formulario_footer {
-      margin-top: 1em;
-      border-top: 0.0625em solid #dce8f1;
-      padding: 1em;
-      text-align: center;
-      -webkit-border-radius: 0 0 0.625em 0.625em;
-      border-radius: 0 0 0.625em 0.625em;
-      .underlineHover{
-        @include smarthphone{
-          font-size: 13px;
-        }
-      }
-    }
+  }
 
-    /* Input*/
-    //boton enviar//
-    input[type=button], input[type=submit], input[type=reset] {
-      background-color: #56baed;
-      border: none;
-      color: white;
-      padding: 0.9375em 5em;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      text-transform: uppercase;
-      font-size: 0.8125em;
-      -webkit-box-shadow: 0 0.625em 1.875em 0 rgba(95,186,233,0.4);
-      box-shadow: 0 0.625em 1.875em 0 rgba(95,186,233,0.4);
-      -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
-      border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
-      margin-top:1em;
-      -webkit-transition: all 0.3s ease-in-out;
-      -moz-transition: all 0.3s ease-in-out;
-      -ms-transition: all 0.3s ease-in-out;
-      -o-transition: all 0.3s ease-in-out;
-      transition: all 0.3s ease-in-out;
+  //titulo//
+  h2 {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    display:inline-block;
+    margin: 2.5em .5em .625em .5em; 
+    border-bottom: 0.125em solid $celeste;
+    color: #6e6363;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+      font-size: 1.3em;
+      margin-top: 1.5em;
+    }
+  }
+
+  // Estructura //
+
+
+  #formulario_container {
+    -webkit-border-radius: 0.625em 0.625em 0.625em 0.625em;
+    border-radius: 0.625em 0.625em 0.625em 0.625em;
+    background: #fff;
+    width: 90%;
+    max-width: 28.125em;
+    position: relative;
+    -webkit-box-shadow: 0 1.875em 3.75em 0 rgba(0,0,0,0.3);
+    box-shadow: 0 1.875em 3.75em 0 rgba(0,0,0,0.3);
+    text-align: center;
+    padding-bottom: 1em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+      font-size: 9px;
+    }
+    .formulario_logo{ 
+      margin:auto;
+      width: 12.5em;
+      padding-top: 1.875em;
+      img{
+        height:6.25em; 
+      }
+
+      //MEDIA QUERIES//
       @include smarthphone{
-        font-size: 1em;
+        font-size: 10px;
       }
     }
-
-    input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
-      background-color: #39ace7;
+  }
+  //Olvidaste tu contraseña//
+  #formulario_footer {
+    margin-top: 1em;
+    border-top: 0.0625em solid #dce8f1;
+    padding: 1em;
+    text-align: center;
+    -webkit-border-radius: 0 0 0.625em 0.625em;
+    border-radius: 0 0 0.625em 0.625em;
+    .underlineHover{
+      //MEDIA QUERIES//
+      @include smarthphone{
+        font-size: 13px;
+      }
     }
+  }
 
-    input[type=text] {
-      background-color: #f6f6f6;
-      border: none;
-      color: #0d0d0d;
-      padding: 0.9375em 2em;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
+  // Input //
+  //boton enviar//
+  input[type=button], input[type=submit], input[type=reset] {
+    background-color: #56baed;
+    border: none;
+    color: white;
+    padding: 0.9375em 5em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 0.8125em;
+    -webkit-box-shadow: 0 0.625em 1.875em 0 rgba(95,186,233,0.4);
+    box-shadow: 0 0.625em 1.875em 0 rgba(95,186,233,0.4);
+    -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    margin-top:1em;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
       font-size: 1em;
-      margin: 0.3125em;
-      width: 85%;
-      border: 0.125em solid #f6f6f6;
-      -webkit-transition: all 0.5s ease-in-out;
-      -moz-transition: all 0.5s ease-in-out;
-      -ms-transition: all 0.5s ease-in-out;
-      -o-transition: all 0.5s ease-in-out;
-      transition: all 0.5s ease-in-out;
-      -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
-      border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
     }
+  }
+
+  input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover  {
+    background-color: #39ace7;
+  }
+
+  input[type=text] {
+    background-color: #f6f6f6;
+    border: none;
+    color: #0d0d0d;
+    padding: 0.9375em 2em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: 0.3125em;
+    width: 85%;
+    border: 0.125em solid #f6f6f6;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+    border-radius: 0.3125em 0.3125em 0.3125em 0.3125em;
+  }
 
     input[type=text]:focus {
       background-color: #fff;
@@ -177,45 +194,50 @@ main{
     } 
     .comentario_caja{
       height: 8.125em;
+
+      //MEDIA QUERIES//
       @include smarthphone{
         height: 5em;
       }
     }
   }
   .formularioNone{
-    display: none;
+  display: none;
+  background-image: url(../Imagenes/Fondos/fondo_animales.png);
+  padding-bottom: 1em;
   }
   .block{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .flecha{
-      img{
-        width: 200px;
-      }
-      @include smarthphone{
-          display: none;
-      }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .flecha{
+    img{
+      width: 200px;
     }
-    .formulario_cajaTexto{
-      border-radius: 1.5625em;
-      background-color:rgb(241, 253, 252);
-      border: rgb(233, 230, 230) solid .0625em;
-      width: 21.875em;
-      height: 17.5em;
-      @include smarthphone{
-          display: none;
-      }
-      h3{
-        @include tituloRammetto(1.25em, 400);
-        padding-top: 3.125em;
-        color: $celeste;
-      }
-      p{
-        @include textoThambi (1.0625em, 400);
-        padding: 10px 30px 0 1.875em;
-        color: $texto1;
-      }
+    //MEDIA QUERIES//
+    @include smarthphone{
+      display: none;
+    }
+  }
+  .formulario_cajaTexto{
+    border-radius: 1.5625em;
+    background-color:rgb(241, 253, 252);
+    border: rgb(233, 230, 230) solid .0625em;
+    width: 21.875em;
+    padding: 2em 0 1em 0;
+    @include smarthphone{
+        display: none;
+    }
+    h3{
+      @include tituloRammetto(1.25em);
+      color: $celeste;
+    }
+    p{
+      font-size: 1.0625em;
+      padding: 10px 30px 0 1.875em;
+      color: $texto1;
     }
   }
 }
+
+

@@ -7,15 +7,13 @@
 }
 
 //Tipografia//
-@mixin tituloRammetto ($fontsize,$weight){
+@mixin tituloRammetto ($fontsize){
     display: inline-block;
     position: relative;
     font-family: 'Rammetto One';
     font-size: $fontsize;
-    font-weight: $weight;
 }
-@mixin textoThambi ($fontsize,$weight) {
-    font-family: 'Baloo Thambi 2';
+@mixin textoThambi ($fontsize, $weight) {
     font-size: $fontsize;
     font-weight: $weight;
 }
@@ -30,6 +28,8 @@
     border-bottom: solid 0.25em $celeste;
     padding: 0.4em 1.2em 0.4em 1.2em;
     background-color:#7abeb9;
+
+    //MEDIA QUERIES//
     @include smarthphone{
         font-size: 17px;
         margin-bottom: 1em;
@@ -37,7 +37,7 @@
 }
 //Portadas//
     //Index Carousel//
-@mixin carousel_cajas ($margin){
+@mixin carousel_cajas {
     background-color: #a7a7a421;
     border-radius:40px;
     padding: 20px 0px 20px 0px;
@@ -46,7 +46,6 @@
     transition: 1s linear;
     overflow: hidden;
     padding-top: 35px;
-    margin-left: $margin;
     border: rgb(255, 255, 255) solid;
     z-index: 1;
 }
@@ -66,14 +65,15 @@
     //Portadas para todas las Pages (menos Index)//
 @mixin portadas{
     position: relative;
-    height: 29em;
+    height: 25em;
     width: 100%;
     border-bottom-left-radius: 35%;
     border-bottom-right-radius: 35%;
     background-attachment: fixed;
     background-size: cover;
     border-bottom:solid #FFFCF2 0.625em;
-   
+
+   //MEDIA QUERIES//
     @include smarthphone{
         font-size: 8px;
         height: 22em;
@@ -82,7 +82,8 @@
     }
 }
 
-    //Tips Grid Imagenes//
+ //Tips Grid Imagenes//
+
 @mixin tipsGridImg {
     background-size: 28.125em;
     width: 28.125em;
@@ -90,6 +91,8 @@
     background-position: cover;
     border-radius: 1.25em;
     box-shadow: 0.3125em 0.3125em 0.625em #999;
+
+    //MEDIA QUERIES//
     @include smarthphone{
         font-size: 9px;
         height: 13em;
@@ -100,6 +103,7 @@
 /*Media Queries*/
 
 @mixin smarthphone {
+
     @media (max-width:480px){
         @content;
     }

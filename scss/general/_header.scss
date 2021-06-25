@@ -1,5 +1,9 @@
-//Imagen Logo//
+
+/*Portadas*/
 header{
+    background-color: $bg-color;
+
+    //--------MENU--------//
     .logo {
     max-width: 58%;
     img{
@@ -10,109 +14,126 @@ header{
     .navbar{
         background:rgba(219, 219, 219, 0);
         box-shadow: none;
+        //MEDIA QUERIES//
+        @include smarthphone{
+            background-color: rgb(255, 255, 255);
+        }
     }
     .top-nav-collapse{
         background-color: rgb(255, 255, 255);
         box-shadow: 3px 3px 8px rgba(138, 137, 136, 0.568);
-      }
+    }
   
-    //carousel index//
+    //--------CAROUSEL PORTADA INDEX-------//
+
+    //Imagenes//
     .portadaIndexImg{
-        height: 750px;
+        height:100vh;
         width: 100vw;
         object-fit: cover;
-    }
-        //caja1//
-    .carouselPortada_container-1{
-        height: 80%;
-        .carouselPortada_caja-1{
-            @include carousel_cajas(0%);
-            //Titulos//
-            h2{
-                @include tituloRammetto(1.875rem,400);
-                color: $celeste;
-            }
-            p{
-                @include textoThambi (1.1875rem,600);
-                color: $texto1;
-            }
-            .carouselPortada_botones{
-                @include flex;
-                justify-content: space-around;
-            }
-        }
-    }
-    //Caja 2 y 3//
-    .carouselPortada_container-2{
-        height: 70%;
-        .carouselPortada_caja-2{
-            @include carousel_cajas(50%);
 
-            h2{
-                @include tituloRammetto(1.875rem,400);
-                color: $celeste;
-            }
-            p{
-                @include textoThambi (1.1875rem,600);
-                color: $texto1;
-            }
+        //MEDIA QUERIES//
+        @include smarthphone{
+            height:45vh;
         }
     }
-    .carouselPortada_container-3{
-        height: 85%;
-        .carouselPortada_caja-3{
-            @include carousel_cajas(0%);
-            h2{
-                @include tituloRammetto(1.875em,400);
-                color: $celeste;
-            }
-            p{
-                @include textoThambi (1.1875em,600);
-                color: $texto1;
+
+    //Textos//
+    h2{
+    @include tituloRammetto(1.875rem);
+    color: $celeste;
+    }
+    .carouselPortada_texto{
+        @include textoThambi (1.1875rem,600);
+        color: $texto1;
+        margin: .5em 0 .5em 0;
+    }
+ 
+    //Cajas//
+    .carouselPortada_caja{
+        @include carousel_cajas;
+    }
+        //Caja 1//
+        .carouselPortada_container-1{
+            height: 80%;
+            .carouselPortada_caja-1{
+                margin-left: 0%;
             }
         }
-    }
-    //Portadas para todas las Pages (menos Index)//
-    .portada{
+        .carouselPortada_botones{
+            display: flex;
+            justify-content: space-around;
+        }
+        //Caja 2 y 3//
+        .carouselPortada_container-2{
+            height: 70%;
+            .carouselPortada_caja-2{
+                margin-left: 50%;
+            }
+        }
+        .carouselPortada_container-3{
+            height: 85%;
+            .carouselPortada_caja-3{
+                margin-left: 50%;
+            }
+        }
+
+    //--------PORTADAS TODAS LAS PAGINAS (menos Index)--------//
+    .portada_Container{
         position: relative;
         width: 100%;
-        font-size: 16px;
         display: flex;
         justify-content: center;
-        //Portada Registro.html//
-        .portada_Registro{
+        .portada_Caja{
             @include portadas;
+        }
+
+        //Portada Registro//
+        .portada_Imagen-Registro{
             background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
-            background-position-y:-14em;
+            background-position-y:-10em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                background-position-y:-1em;
+                background-position-y:1.2em;
             }
         }
-        /*Portada Colabora*/
-        .portada_Colabora{
-            @include portadas;
+        //Portada Colabora//
+        .portada_Imagen-Colabora{
             background-image: url(../Imagenes/Portadas/portada_colabora.jpeg);
-            background-position-y:-5em;
+            background-position-y:-13em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                background-position-y:1.5em;
+                background-position-y:1em;
             }
         }
-        /*Portada Reencuentro*/
-        .portada_Reencuentro{
-            @include portadas;
+        //Portada Reencuentro//
+        .portada_Imagen-Reencuentro{
             background-image: url(../Imagenes/Portadas/portada_reencuentro.jpeg);
-            background-position-y:-8em;
-            border-bottom:solid #FFFCF2 0.625em;
+            background-position-y:-5em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                background-position-y:1.5em;
+                background-position-y:3em;
             }
         }
-        /*Portada Tips*/
-        .portada_Tips{
-            @include portadas;
+        //Portada Tips//
+        .portada_Imagen-Tips{
             background-image: url(../Imagenes/Portadas/portada_tips.jpeg);
-            background-position-y:-11.25em;
-            border-bottom:solid #FFFCF2 0.625em;
+            background-position:center;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                background-position-y:6em;
+            }
+        }
+        //Portada Microchip//
+        .portada_Imagen-Microchip{
+            background-image: url(../Imagenes/Portadas/portada_microchip.jpeg);
+            background-position-y:-8em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
                 background-position-y:1em;
             }
