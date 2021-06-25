@@ -1,3 +1,17 @@
+// ? ----- ----- LOADER ----- -----
+
+window.onload = function (){
+	$('#onload').fadeOut();
+	$('body').removeClass('hidden');
+	document.getElementById("navbar").classList.add ("fixed-top");
+
+}
+
+
+
+
+// ? ----- ----- CAROUSEL DE MARCAS ----- -----
+
 
 const fila = document.querySelector('.contenedor-carousel');
 const peliculas = document.querySelectorAll('.pelicula');
@@ -59,6 +73,8 @@ peliculas.forEach((pelicula) => {
 fila.addEventListener('mouseleave', () => {
 	peliculas.forEach(pelicula => pelicula.classList.remove('hover'));
 });
+
+
 
 
 

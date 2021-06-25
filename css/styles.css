@@ -30,6 +30,57 @@ body {
     margin-block-end: 0em;
     margin: 0; }
 
+.hidden {
+  overflow: hidden; }
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loader .lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px; }
+    .loader .lds-heart div {
+      top: 32px;
+      left: 32px;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: #fdd;
+      animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1); }
+      .loader .lds-heart div:after, .loader .lds-heart div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: #fdd; }
+      .loader .lds-heart div:before {
+        left: -24px;
+        border-radius: 50% 0 0 50%; }
+      .loader .lds-heart div:after {
+        top: -24px;
+        border-radius: 50% 50% 0 0; }
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95); }
+  5% {
+    transform: scale(1.1); }
+  39% {
+    transform: scale(0.85); }
+  45% {
+    transform: scale(1); }
+  60% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(0.9); } }
+
 /*Portadas*/
 header {
   background-color: #FFFCF2; }
@@ -225,12 +276,12 @@ a {
   a .item1_botones .item1_botones1 {
     background-color: rgba(226, 138, 5, 0.856);
     border-radius: .20em;
-    padding: .5em;
+    padding: .1em .5em .1em .5em;
     box-shadow: 0em 0.125em 0.1875em #2b2929;
     transition: .6s linear;
     display: inline-block;
     color: rgba(253, 253, 253, 0.925);
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 1em; }
     a .item1_botones .item1_botones1:hover {
@@ -238,7 +289,7 @@ a {
       background-color: #ffa600; }
   @media (max-width: 480px) {
     a .item1_botones {
-      font-size: 10px; } }
+      font-size: 9px; } }
 
 .botonmasc {
   background-color: #fc7405;
@@ -320,7 +371,7 @@ a {
       font-size: 9px;
       padding-bottom: 0em; } }
 
-main .PagesSub_Conteiner {
+.PagesSub_Conteiner {
   width: 100%;
   display: flex;
   align-items: center;
@@ -330,45 +381,50 @@ main .PagesSub_Conteiner {
   padding-top: 4em;
   border-bottom: #c5bfad 0.3125em solid; }
   @media (max-width: 480px) {
-    main .PagesSub_Conteiner {
+    .PagesSub_Conteiner {
       font-size: 9px;
       height: 11.8em;
       padding-top: 1em; } }
-  main .PagesSub_Conteiner .PagesSub_texto {
+  .PagesSub_Conteiner .PagesSub_texto {
     font-size: 1.1875em;
     color: #706666;
     padding: 0 6em 0 6em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_texto {
+      .PagesSub_Conteiner .PagesSub_texto {
         font-size: 13px;
         padding: 0 1em 0 1em;
         text-justify: justify; } }
-  main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+  .PagesSub_Conteiner .PagesSub_Registro-Img img {
     width: 16.3em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+      .PagesSub_Conteiner .PagesSub_Registro-Img img {
         font-size: 6.4px; } }
-  main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+  .PagesSub_Conteiner .PagesSub_Colabora-Img img {
     width: 12em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+      .PagesSub_Conteiner .PagesSub_Colabora-Img img {
         font-size: 6.3px; } }
-  main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+  .PagesSub_Conteiner .PagesSub_Tips-Img img {
     width: 14em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+      .PagesSub_Conteiner .PagesSub_Tips-Img img {
         font-size: 6.5px; } }
-  main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+  .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
     width: 16em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+      .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
         font-size: 6.5px; } }
+  .PagesSub_Conteiner .PagesSub_Microchips-Img img {
+    width: 14em; }
+  @media (max-width: 480px) {
+    .PagesSub_Conteiner .PagesSub_Microchips-Img {
+      font-size: 6.9px; } }
 
-main .textoResaltado {
+.textoResaltado {
   font-size: 1.125em;
   font-weight: 800; }
 
-main .textoChico {
+.textoChico {
   font-size: 1em;
   color: #706666; }
 
@@ -744,15 +800,13 @@ main {
               width: 23em;
               font-size: 12px;
               flex-direction: column;
-              margin-left: 0;
-              text-align: center; } }
+              margin: 1em 0 .5em 0;
+              text-align: center;
+              font-weight: 500; } }
           .funcionamiento .Funcionamiento_Container .Funcionamiento_Cajas .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
             font-size: 1.7em;
             font-weight: 800;
             color: #466572; }
-            @media (max-width: 480px) {
-              .funcionamiento .Funcionamiento_Container .Funcionamiento_Cajas .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
-                margin-top: 1em; } }
 
 .mascotasExtraviadas_container {
   background-image: linear-gradient(to top, #ffffff, white, #FFFCF2);
@@ -776,7 +830,7 @@ main {
     justify-content: space-around; }
     @media (max-width: 480px) {
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner {
-        width: 100%;
+        width: 93%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -850,6 +904,8 @@ main {
         font-size: 7px;
         height: 18.75em;
         padding: 1.5em 1em 0 1em; } }
+    .Boletin_Imagen .Boletin_Caja input {
+      margin-right: 1.5em; }
     .Boletin_Imagen .Boletin_Caja h3 {
       display: inline-block;
       position: relative;
@@ -1080,7 +1136,6 @@ main {
             transform-origin: center; }
 
 #blog {
-  font-size: 16px;
   padding: 5em 3em 5em 3em; }
   @media (max-width: 480px) {
     #blog {
@@ -1105,7 +1160,7 @@ main {
         margin: auto; } }
     @media (max-width: 480px) {
       #blog .card-deck .card {
-        max-height: 40em;
+        max-height: 41em;
         margin-top: 2em; } }
     #blog .card-deck .card .card-body {
       text-align: justify; }
@@ -1581,3 +1636,38 @@ main {
     @media (max-width: 480px) {
       .microchips_section img {
         width: 25em; } }
+
+.notfound {
+  background-image: url(../Imagenes/notfound.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; }
+  .notfound .notfound_logo {
+    width: 65%;
+    margin-left: auto; }
+    .notfound .notfound_logo img {
+      max-width: 50%;
+      margin-top: 2%;
+      margin-left: 35%; }
+  .notfound .notfound_Caja {
+    margin-top: 9%;
+    margin-left: 50%;
+    font-size: 16px;
+    width: 600px;
+    background-color: #a7a7a421;
+    border-radius: 2.5rem;
+    box-shadow: 0.1875rem 0.1875rem 0.5rem #464335;
+    border: white solid;
+    padding: 1em; }
+    .notfound .notfound_Caja h1 {
+      display: inline-block;
+      position: relative;
+      font-family: 'Rammetto One';
+      font-size: 3.5em;
+      color: #108896; }
+    .notfound .notfound_Caja p {
+      font-size: 1.3em; }
+  .notfound .notfound_botones {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em; }
