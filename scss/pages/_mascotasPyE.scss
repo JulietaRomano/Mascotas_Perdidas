@@ -1,90 +1,93 @@
-main{
-    .MascotasPyE_Menu-Container{
-    background-image: url(../Imagenes/Fondos/fondo_animales.png);
-    padding-top:5em;
-    padding-bottom: 6.25em;
-    display: grid; 
-    grid-template-rows: 20% 70%;
-    grid-template-columns: 20% 50%;
-    grid-template-areas: 
-    "tittle tittle"
-    "menu img";
-    justify-content: space-evenly;
-    grid-gap: 1.875em;
+/*MASCOTAS PERDIDAS Y ENCONTRADAS*/
+.mascotasPerdidas{
 
+    padding-top: 8em;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+        font-size: 10px;
+    }
+    //Listado mascotas perdidas//
+    .row{
+        padding: 6em 0em 1.5em 0em;
+
+        //MEDIA QUERIES//
         @include smarthphone{
-            font-size: 9px;
-            padding-bottom: 3em;
-            margin-top: 4em;
-            display: flex;
-            flex-direction: column;
+            padding: 2.5em 0em 2.5em 0em;
+            margin: auto;
         }
-        nav{
-            .MascotasPyE_Menu-Titulo{
-                background-color: #92b2df;
-                padding: 0.375em;
+
+        .menus1{
+            border: rgba(150, 150, 150, 0.678) solid .0625em;
+            border-radius: .3125em;
+            margin-left: 1em;
+            box-shadow: .1875em .1875em .5em #999;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                margin-left: 0em;
+            }
+            .filtro{
+                border-bottom: 1px solid;
+                background: rgb(134, 107, 150);
+                padding: .5em;
+                @include tituloRammetto (1.3em);
                 color: white;
-                font-family: 'Baloo Thambi 2';
-                font-size: 1.75em;
-                font-weight: 900;
-                box-shadow: 0.1875em 0.1875em 0.5em #999;
-                @include smarthphone{
-                    display: none;
+            }
+            .separador{
+                background-color: rgb(192, 182, 201);
+                padding: .3em;
+                @include textoThambi (1.3em,500);
+                color: rgb(255, 255, 255);
+
+            }
+            .item{
+                border-bottom: .0625em solid rgb(150, 150, 150);
+                border-radius: 0px;
+                color: black;
+                background: rgb(255, 255, 255);
+                font-size: 1.1em;
+
+                &:hover{
+                    background: rgb(220, 242, 243);
                 }
             }
-            @include smarthphone{
-                display: none;
-            }
         }
-    }
-    .MascotasPyE_Separador{
-        background-color: rgba(196, 149, 149, 0.534);
-        height: 3.125em;
-        color: rgb(42, 41, 37);
-        font-size: 1.5625em;
-        font-weight: 800;
-        display: flex;
-        padding-left: 5em;
-        align-items: center;
-        @include smarthphone{
-            font-size: 12px;
-            padding-left: 2em;
-        }
-    }
 
-    /*listado mascotas perdidas*/
-
-    .listadoPerdidas_Container , .listadoEncontradas_Container{
+        .listadoPerdidas_Container{
         display: flex;
         align-items: center;
         justify-content: center;
         color: #ffffff;
-        @include smarthphone{
-            font-size: 10px;
-        }
+
         .listadoPerdidas_Caja {
             flex-grow: 1;
-            margin: 6.25em auto 6.25em auto;
+            margin: 0em auto 6em auto;
             padding-left: 1.25em;
             padding-right: 1.25em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                margin: 2em auto 2em auto;
+                padding: 0em;
+                margin: 0;
             }
-
-
             .listadoPerdidas_Caja-Container {
                 display: grid;
                 grid-template-columns: repeat(3, 1fr);
                 grid-gap: 5em;
                 margin: 0;
                 padding: 0;
-                list-style: none;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     grid-template-columns: repeat(2, 1fr);
+                    grid-gap: 2em;
                 }
                 
                 .listadoPerdidas_Caja-item {
                     height: 16.875em;
+
+                    //MEDIA QUERIES//
                     @include smarthphone{
                         height: 12em;
                     }
@@ -96,47 +99,8 @@ main{
                     align-items: center;
                     justify-content: center;
                     background-color: #000000;
-                    box-shadow: 3px 3px 8px #999;
+                    box-shadow: .1875em .1875em .5em #999;
                     border:solid 0.0625em;
-                    
-                    &:nth-child(1) {
-                    background-image: url(../Imagenes/Perdidos/perdido1.png);
-                    background-size: cover;
-                    }
-                    
-                    &:nth-child(2) {
-                    background-image: url(../Imagenes/Perdidos/perdido2.png);
-                    background-size: cover;
-                    }
-                    &:nth-child(3) {
-                    background-image: url(../Imagenes/Perdidos/perdido3.png);
-                    background-size: cover;
-                    }
-                    &:nth-child(4) {
-                    background-image: url(../Imagenes/Perdidos/perdido4.png);
-                    background-size: cover;
-                    }
-                    &:nth-child(5) {
-                    background-image: url(../Imagenes/Perdidos/perdido5.png);
-                    background-size: cover;
-                    }
-                    
-                    &:nth-child(6) {
-                    background-image: url(../Imagenes/Perdidos/perdido6.png);
-                    background-size: cover;
-                    }
-                    &:nth-child(7) {
-                    background-image: url(../Imagenes/Perdidos/perdido7.jpeg);
-                    background-size: cover;
-                    }
-                    &:nth-child(8) {
-                    background-image: url(../Imagenes/Perdidos/perdido8.png);
-                    background-size: cover;
-                    }
-                    &:nth-child(9) {
-                    background-image: url(../Imagenes/Perdidos/perdido9.jpeg);
-                    background-size: cover;
-                    }
                 
                     .listadoPerdidas_overlay{
                         position: absolute;
@@ -160,7 +124,7 @@ main{
                         }
                         &::before {
                             content: "+";
-                            color: rgb(119, 119, 122);
+                            color: $texto1;
                             font-size: 1.25em;
                             text-transform: uppercase;
                             font-weight: 500;
@@ -173,7 +137,6 @@ main{
                             width: 100%;
                             height: 100%;
                             box-shadow: none;
-                            border-radius: 0;
                             opacity: 0.6; 
                             border-radius: 1.5625em;
                             &::before {
@@ -182,6 +145,45 @@ main{
                         }
                     }
                 }
+                //Listado Imagenes Mascotas Perdidas//
+                .perro1{
+                    background-image: url(../Imagenes/Perdidos/perdido1.png);
+                    background-size: cover;
+                    background-position:center;
+                }
+                .perro2{
+                    background-image: url(../Imagenes/Perdidos/perdido3.png);
+                    background-size: cover;
+                }
+                .perro3{
+                    background-image: url(../Imagenes/Perdidos/perdido4.png);
+                    background-size: cover;
+                }
+                .perro4{
+                        background-image: url(../Imagenes/Perdidos/perdido6.png);
+                        background-size: cover;
+                }
+                .perro5{
+                    background-image: url(../Imagenes/Perdidos/perdido7.jpeg);
+                    background-size: cover;
+                }
+                .perro6{
+                    background-image: url(../Imagenes/Perdidos/perdido8.png);
+                    background-size: cover;
+                }
+                .perro7 {
+                    background-image: url(../Imagenes/Perdidos/perdido9.jpeg);
+                    background-size: cover;
+                    }
+                .gato1{
+                    background-image: url(../Imagenes/Perdidos/perdido2.png);
+                    background-size: cover;
+                }
+                .gato2{
+                    background-image: url(../Imagenes/Perdidos/perdido5.png);
+                    background-size: cover;
+                }
+
                 .listadoPerdidas_Texto {
                     z-index: 1;
                     padding: 1.25em;
@@ -191,6 +193,8 @@ main{
                     box-sizing: border-box;
                     pointer-events: none;
                     transition: 0s;
+
+                    //MEDIA QUERIES//
                     @include smarthphone{
                         font-size: 9px;
                     }
@@ -198,7 +202,7 @@ main{
                     h2 {
                         margin: 0;
                         margin-bottom: 1em;
-                        @include tituloRammetto(1.5625em,400);
+                        @include tituloRammetto(1.5625em);
                     }
                     p{
                         @include textoThambi (1.125em,500);
@@ -206,55 +210,56 @@ main{
                         margin-bottom: 1.25em;
                     }
                 }  
-
             }       
         }
     }
-        .listadoEncontrados_Caja2{
-            &:nth-child(1) {
-            background-image: url(../Imagenes/Encontrados/encontrado1.png)!important;
-            background-size: cover;
-            }
-            
-            &:nth-child(2) {
-            background-image: url(../Imagenes/Encontrados/encontrado2.jpeg)!important;
-            background-size: cover;
-            }
-            &:nth-child(3) {
-            background-image: url(../Imagenes/Encontrados/encontrado3.png)!important;
-            background-size: cover;
-            }
-            &:nth-child(4) {
-            background-image: url(../Imagenes/Encontrados/encontrado4.jpeg)!important;
-            background-size: cover;
-            }
-            &:nth-child(5) {
-            background-image: url(../Imagenes/Encontrados/encontrado5.jpeg)!important;
-            background-size: cover;
-            }
-            
-            &:nth-child(6) {
-            background-image: url(../Imagenes/Encontrados/encontrado6.png)!important;
-            background-size: cover;
-            }
-            &:nth-child(7) {
-            background-image: url(../Imagenes/Encontrados/encontrado7.jpeg)!important;
-            background-size: cover;
-            }
-            &:nth-child(8) {
-            background-image: url(../Imagenes/Encontrados/encontrado8.png)!important;
-            background-size: cover;
-            }
-            &:nth-child(9) {
-            background-image: url(../Imagenes/Encontrados/encontrado9.png)!important;
-            background-size: cover;
-            }
+
+    //Listado Imagenes Mascotas Perdidas//
+
+        .perro8 {
+        background-image: url(../Imagenes/Encontrados/encontrado1.png);
+        background-size: cover;
+        }
+        
+        .gata {
+        background-image: url(../Imagenes/Encontrados/encontrado2.jpeg);
+        background-size: cover;
         }
 
+        .perro9{
+        background-image: url(../Imagenes/Encontrados/encontrado3.png);
+        background-size: cover;
+        }
+        .perro10 {
+        background-image: url(../Imagenes/Encontrados/encontrado4.jpeg);
+        background-size: cover;
+        background-position:center;
+        }
+        .perro11{
+        background-image: url(../Imagenes/Encontrados/encontrado5.jpeg);
+        background-size: cover;
+        }
+        
+        .perro12 {
+        background-image: url(../Imagenes/Encontrados/encontrado6.png);
+        background-size: cover;
+        }
+        .perro13{
+        background-image: url(../Imagenes/Encontrados/encontrado7.jpeg);
+        background-size: cover;
+        }
+        .perro14 {
+        background-image: url(../Imagenes/Encontrados/encontrado8.png);
+        background-size: cover;
+        }
+        .perro15 {
+        background-image: url(../Imagenes/Encontrados/encontrado9.png);
+        background-size: cover;
+        }
+    }
 }
+        
 
-        
-        
 
 
 

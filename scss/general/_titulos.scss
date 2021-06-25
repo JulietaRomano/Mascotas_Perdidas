@@ -1,56 +1,70 @@
-//Titulos h1//
-    //Index//
-        .titulo_celeste{
-            @include tituloRammetto (2.3em, 800);
-            color: $celeste;
-            
-            &.titulo_celeste::after, &.titulo_celeste::before{
-                content: '';
-                position: absolute;
-                width: 2.5em;
-                height: 0.03em;
-                background-color: rgba(41, 177, 182, 0.719);
-                top: 0.5em;
-                @include smarthphone{
-                    display: none;
-                }
-            }
-            &.titulo_celeste::after{
-                right: -3em;
-            }
-            &.titulo_celeste::before{
-                left: -3em;
-            }
+/*Titulos*/
+
+//---------Index titulo h1---------//
+
+    .titulo_celeste{
+        @include tituloRammetto (2.3em);
+        color: $celeste;
+        
+        &.titulo_celeste::after, &.titulo_celeste::before{
+            content: '';
+            position: absolute;
+            width: 2.5em;
+            height: 0.03em;
+            background-color: rgba(41, 177, 182, 0.719);
+            top: 0.5em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                font-size:20px;
+                display: none;
             }
         }
-//Titulos portadas//
+        &.titulo_celeste::after{
+            right: -3em;
+        }
+        &.titulo_celeste::before{
+            left: -3em;
+        }
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size:20px;
+        }
+    }
+
+//---------Titulos portadas---------//
+
     .portada_Titulo{
         width: 34.375em;
         padding: 1.875em 0.625em 1.5em 0.625em;
         background-image: url(../Imagenes/Fondos/fondo_titulos.png);
         position: absolute;
         border: solid #FFFCF2 0.625em;
-        top: 24.5em;
+        top: 21em;
         border-radius: 50%;
         display: inline-block;
         text-transform: uppercase;
+
+            //MEDIA QUERIES//
             @include smarthphone{
             padding: 1.5em 0.625em .5em 0.625em;
             width: 26em;
-            font-size: 9px;
+            font-size:9px;
             top: 15.5em;
             }
         .titulos{
-            @include tituloRammetto (1.7em, 800);
+            @include tituloRammetto (1.7em);
             color: #ffffff;
+
+            //MEDIA QUERIES//
             @include smarthphone{
                 font-size: 11px;
             }
         }
     }
-    //Titulo Mascotas Perdidas y encontrdas//
+
+//----------Titulo Mascotas Perdidas y encontradas----------//
+
     .MascotasPyE_Titulo{
         display: inline-block;
         padding:1em 1em .5em 1em;
@@ -61,81 +75,91 @@
         box-shadow: 0.1875em 0.1875em 0.5em #999;
         h1{
             text-transform: uppercase;
-            @include tituloRammetto (1.75em,600);
+            @include tituloRammetto (1.75em);
             color: #ffffff;
         }
+
+        //MEDIA QUERIES//
         @include smarthphone{
             font-size: 9px;
             padding-bottom:0em;
         }
     }
 
-    //Subtitulos Portadas//
-    main{
-        .PagesSub_Conteiner{
-            height: 15em;
-            width: 100%;
-            @include flex;
-            background-image: linear-gradient(to bottom, #FFFCF2,rgb(227, 243, 238));
-            justify-content: center;
-            margin-top: 3em;
-            border-bottom: rgb(197, 191, 173) 0.3125em solid;
+//-------------Subtitulos Portadas-----------------//
+main{
+    .PagesSub_Conteiner{
+        width: 100%;
+        @include flex;
+        background-image: linear-gradient(to bottom, #FFFCF2,rgb(227, 243, 238));
+        justify-content: center;
+        padding-top: 4em;
+        border-bottom: rgb(197, 191, 173) 0.3125em solid;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size: 9px;
+            height: 11.8em;
+            padding-top: 1em;
+        }
+        .PagesSub_texto{
+            font-size: 1.1875em;
+            color: $texto1;
+            padding: 0 6em 0 6em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                font-size: 10.5px;
-                height: 9.3em;
-                margin-top: 1em;
+                font-size: 13px;
+                padding: 0 1em 0 1em;
+                text-justify: justify;
             }
-            .PagesSub_texto{
-                @include textoThambi(19px, 400);
-                color: $texto1;
-                padding: 0 6em 0 6em;
+        }
+        //Registro.html//
+        .PagesSub_Registro-Img{
+            img{
+                width: 16.3em;
                 @include smarthphone{
-                    font-size: 13px;
-                    padding: 0 1em 0 1em;
-                    text-justify: justify;
+                    font-size: 6.4px;
                 }
             }
-            //Registro.html//
-            .PagesSub_Registro-Img{
-                img{
-                    width: 16.3em;
-                    @include smarthphone{
-                        font-size: 6.4px;
-                    }
-                }
-            }
-            //Colabora.html//
-            .PagesSub_Colabora-Img{
-                img{
-                    width: 12em;
-                    @include smarthphone{
-                       font-size: 6.3px;
-                    }
-                }
-            }
-            //tips//
-            .PagesSub_Tips-Img{
-                img{
-                    width: 14em;
-                    @include smarthphone{
-                        font-size: 6.5px;
-                     }
-                }
-            }
-            //reencuentro//
-            .PagesSub_Reencuentro-Img{
-                img{
-                    width:16em;
-                    @include smarthphone{
-                        font-size: 6.5px;
-                     }
-                }
-            } 
         }
-        .textoResaltado{
-            @include textoThambi(1.125em, 800);
+        //Colabora.html//
+        .PagesSub_Colabora-Img{
+            img{
+                width: 12em;
+                @include smarthphone{
+                    font-size: 6.3px;
+                }
+            }
         }
+        //tips//
+        .PagesSub_Tips-Img{
+            img{
+                width: 14em;
+                @include smarthphone{
+                    font-size: 6.5px;
+                }
+            }
+        }
+        //reencuentro//
+        .PagesSub_Reencuentro-Img{
+            img{
+                width:16em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    font-size: 6.5px;
+                }
+            }
+        } 
     }
-    
-    
- 
+    .textoResaltado{
+        @include textoThambi(1.125em, 800);
+    }
+
+    .textoChico{
+        font-size: 1em;
+        color: $texto1;                        
+
+    }
+}

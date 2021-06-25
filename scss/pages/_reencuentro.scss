@@ -1,86 +1,96 @@
-main{
-    .reencuentro_Container{
-        background-color: rgba(233, 210, 210, 0.76);
-        display: flex;
-        height: 15.625em;
-        margin: 6.25em 2.5em 0em 2.5em;
+/*REENCUENTRO*/
+.reencuentro_Container{
+    background-color: rgba(233, 210, 210, 0.76);
+    display: flex;
+    height: 15.625em;
+    margin: 6.25em 2.5em 0em 2.5em;
+    border-radius: 0.9375em;
+    box-shadow: 0.1875em 0.1875em 0.5em #999;
+
+    //MEDIA QUERIES//
+    @include smarthphone{
+        font-size: 9px;
+        height: 18.5em;
+        margin: 3.25em 2.5em 0em 2.5em;
+    }
+    .cieloImg{
+        width: 43.75em;
+        background-image: url(../Imagenes/Reencuentro/cielo.png);
+        background-position: center;
+        background-size:cover;
+        background-repeat: no-repeat;
         border-radius: 0.9375em;
-        box-shadow: 0.1875em 0.1875em 0.5em #999;
-        @include smarthphone{
-            font-size: 9px;
-            height: 18.5em;
-            margin: 3.25em 2.5em 0em 2.5em;
-        }
-        .cieloImg{
-            width: 43.75em;
-            background-image: url(../Imagenes/Reencuentro/cielo.png);
-            background-position: center;
-            background-size:cover;
-            background-repeat: no-repeat;
-            border-radius: 0.9375em;
-        }
-        .reencuentro_Descripcion{
-            .reencuentro_Titulo{//mismo titulo que el de los formularios, arreglar codigo//
-                background-color: #ffd9007a;
-                border-radius: 2.1875em;
-                width: 18.75em;
+    }
+    .reencuentro_Descripcion{
+        .reencuentro_Titulo{
+            background-color: #ffd9007a;
+            border-radius: 2.1875em;
+            width: 18.75em;
+            margin: auto;
+            margin-top: 0.9375em;
+            margin-bottom: 0.9375em;
+            padding: .7em;
+            box-shadow: 0.1875em 0.1875em 0.5em #999;
+            h2{
+                @include tituloRammetto (1.25em);
+                color: rgb(87, 84, 84);
                 margin: auto;
-                margin-top: 0.9375em;
-                margin-bottom: 0.9375em;
-                padding: .7em;
-                box-shadow: 0.1875em 0.1875em 0.5em #999;
-                h2{
-                    @include tituloRammetto (1.25em,400);
-                    color: rgb(87, 84, 84);
-                    margin: auto;
-                    @include smarthphone{
-                        font-size: 10px;
-                    }
-                }
-                @include smarthphone{
-                    font-size: 8px;
-                }
-            }
-            .reencuentro_Texto{
-                @include textoThambi(16ox, 400);
-                color: rgb(105, 95, 95);
-                padding: 0em 3.125em 0em 3.125em;
-                text-align: left;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     font-size: 10px;
-                    padding: 0em 1em 0em 1em;
                 }
             }
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                font-size: 8px;
+            }
         }
-    }
-    .reencuentro_pruebas{
-        display: flex;
-        margin: 3.125em;
-        justify-content: space-around;
-        @include smarthphone{
-            flex-direction: column;
-            font-size: 9px;
-        }
-        video{
-            width:25em; 
-            height:18.75em;
+        .reencuentro_Texto{
+            @include textoThambi(16ox, 400);
+            color: rgb(105, 95, 95);
+            padding: 0em 3.125em 0em 3.125em;
+            text-align: left;
+
+            //MEDIA QUERIES//
             @include smarthphone{
                 font-size: 10px;
-                margin: auto;
-            }
-        }
-        .reencuentro_pruebas-imagen{
-            background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
-            background-size: contain;
-            border-radius: 1.25em;
-            width: 25em;
-            box-shadow: 0.1875em 0.1875em 0.5em #999;
-            border: solid;
-            @include smarthphone{
-               display: none;
+                padding: 0em 1em 0em 1em;
             }
         }
     }
+}
+.reencuentro_pruebas{
+    display: flex;
+    margin: 3.125em;
+    justify-content: space-around;
 
+    //MEDIA QUERIES//
+    @include smarthphone{
+        flex-direction: column;
+        font-size: 9px;
+    }
+    video{
+        width:25em; 
+        height:18.75em;
 
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size: 10px;
+            margin: auto;
+        }
+    }
+    .reencuentro_pruebas-imagen{
+        background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
+        background-size: contain;
+        border-radius: 1.25em;
+        width: 25em;
+        box-shadow: 0.1875em 0.1875em 0.5em #999;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            display: none;
+        }
+    }
 }

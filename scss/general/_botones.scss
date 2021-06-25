@@ -1,6 +1,6 @@
-//botones generales//
+/* Botones */
 a{
-    font-size: 16px;
+    //Botones Carousel//
     .botones {
         .botones1{
             background-color: rgb(250, 130, 17);
@@ -11,38 +11,36 @@ a{
             box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
             transition: .6s linear;
             display: inline-block;
-            @include smarthphone{
-                font-size: 8px;
-            } 
+
             .botonesP{
             color: rgba(253, 253, 253, 0.925);
             font-size: 1.25em;
             font-weight: 600;
             }
             &:hover{
-                background-color: rgb(17, 146, 135);
-                border-right: solid rgb(157, 219, 214) 0.8125em;
+                transform: scale(1.05);
             }
+             //media queries//
+             @include smarthphone{
+                font-size: 8px;
+            } 
         } 
     }
-}
-//botones Seccion:¿Quienes somos? index//
-a{
-    font-size: 16px;
+
+    //Botones Naranjas//
     .item1_botones{
         .item1_botones1{
-            background-color: rgb(250, 130, 17);
-            border-radius: .75em;
-            border-right: solid rgb(248, 225, 92) .5em;
+            background-color: rgba(226, 138, 5, 0.856);
+            border-radius: .20em;
             padding: .5em;
             box-shadow: 0em 0.125em 0.1875em rgb(43, 41, 41);
             transition: .6s linear;
             display: inline-block;
-            .item1_botonesP{
-                color: rgba(253, 253, 253, 0.925);
-                font-size: 1em;
-                font-weight: 600;
-            }
+            color: rgba(253, 253, 253, 0.925);
+            font-size: 1em;
+            font-weight: 600;
+            margin-bottom: 1em;
+
             &:hover{
                 transform: scale(1.05);
                 background-color: rgb(255, 166, 0);
@@ -50,21 +48,26 @@ a{
         }
         //media queries//
         @include smarthphone{
-            font-size: 11px;
+            font-size: 10px;
         }
-
     }
+    //Botones Formularios//
+    color: #92badd;
+    display:inline-block;
+    text-decoration: none;
+    font-weight: 400;
 }
-
-//Boton mascotas perdidas y encontradas//
-
+//Boton Mascotas Perdidas y Encontradas//
 .botonmasc{
     background-color: $naranjaFuerte;
     color: white;
     border-radius: 0.625em;
     padding:0.4375em 0.625em 0.4375em 0.625em;
+    
+    //media queries//
     @include smarthphone{
         font-size: 8px;
     }
-    
 }
+
+

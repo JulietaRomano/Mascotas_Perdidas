@@ -1,3 +1,4 @@
+/*Index*/
 main{
     font-size: 16px;
     .responsive{
@@ -5,26 +6,27 @@ main{
             display: none;
         }
     }
-
+    //-----------SECCION Inicial (cajas)-----------//
     .Inicio_Index{
-        padding-top: 10em;
-        font-size:16px;
-        background-image: linear-gradient(to bottom, #ffffff, white, rgba(207, 204, 171, 0.247));
+        padding-top: 8em;
+        background-image: linear-gradient(to bottom, #f4fff252,rgba(99, 99, 99, 0.082));
 
-
-            @include smarthphone{
-                font-size:10px;
-                margin-top: 3em;
-            }
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size:10px;
+            padding-top: 5em;
+        }
         .Inicio_Index-Sub{
             padding: 0 10em 5em 10em;
             p{
                 @include textoThambi (1.3em,500);
                 color: #686767;
             }
-                @include smarthphone{
-                    padding: 0 .5em 1em 1.5em;
-                }
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                padding: 0 1em 1em 1.5em;
+            }
         } 
         //Cajas informativas//
         .Inicio_Index-Container{
@@ -33,6 +35,8 @@ main{
             justify-content: space-around;
             margin:auto;
             margin-bottom: 4em;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                 width: 100%;
                 }
@@ -43,9 +47,28 @@ main{
                 text-align: center;
                 transition: 1s;
                 cursor: pointer;
-                    @include smarthphone{
-                    font-size:7px;
-                    }
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                font-size:7px;
+                }
+
+                //Imagenes//
+                .Inicio_Index-Imagen{
+                    @include imagenes_animadas;
+                    background-position: center;
+                }
+                .Inicio_Index-Img1 {
+                background-image: url(../Imagenes/Index/registro.png);
+                }
+                .Inicio_Index-Img2 {
+                background-image: url(../Imagenes/Index/colabora.jpg);
+                }
+                .Inicio_Index-Img3 {
+                background-image: url(../Imagenes/Index/tips.jpg);
+                }
+
+
                 &:hover{
                     transform: translateY(-15px);
                     .Inicio_Index-Img1 {
@@ -59,77 +82,69 @@ main{
                         background-image: url(../Imagenes/Index/gif1.gif);
                     }
                 }
-                    .Inicio_Index-Img1 {
-                    @include imagenes_animadas;
-                    background-image: url(../Imagenes/Index/registro.png);
-                    background-position: center;
-                    }
-                    .Inicio_Index-Img2 {
-                    @include imagenes_animadas;
-                    background-image: url(../Imagenes/Index/colabora.jpg);
-                    background-position: center;
+            } 
 
-                    }
-                    .Inicio_Index-Img3 {
-                        @include imagenes_animadas;
-                        background-image: url(../Imagenes/Index/tips.jpg);
-                        background-position: center;
-                        }
-                } 
-                    .Inicio_Index-Texto {
-                        font-size: 16px;
-                        box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
-                        padding: 7.5rem 1.5em 1.5em 1.5em;
-                        border-radius: 1.25em;
-                        background: rgb(255, 255, 255);
-                        margin: -7.5em 0 0 0;
-                        line-height: 1.1875em;
-                         @include smarthphone{
-                        font-size:9px;
-                        padding: 4.5rem 1em 1em 1em;
-                        }
-                        h3 {
-                            margin: .625em 0px .625em 0px;
-                            @include tituloRammetto (1.3em, 400);
-                             color: #466572;
-                            @include smarthphone{
-                            font-size:11px;
-                            margin: 0;
-                            }
-                        }
-                        p{
-                            @include textoThambi (1em,400);
-                            color: #686767;                        
-                        }
+            .Inicio_Index-Texto {
+                font-size: 16px;
+                box-shadow: 0px 0px .625em 0px rgba(0,0,0,0.2);
+                padding: 7.5rem 1.5em 1.5em 1.5em;
+                border-radius: 1.25em;
+                background: rgb(255, 255, 255);
+                margin: -7.5em 0 0 0;
+                line-height: 1.1875em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                font-size:9px;
+                padding: 4.5rem 1em 1em 1em;
+                }
+                h3 {
+                    margin: .625em 0px .625em 0px;
+                    @include tituloRammetto (1.3em);
+                    color: #466572;
+
+                    //MEDIA QUERIES//
+                    @include smarthphone{
+                    font-size:11px;
+                    margin: 0;
                     }
                 }
             }
-            .wave{
-                height: 8em; 
-                overflow: hidden;
-                svg{
-                    height: 100%; 
-                    width: 100%;
-                    path{
-                        stroke: none; 
-                        fill:#FFFCF2;
-                    }
-                    .footer{
-                        stroke: none; 
-                        fill:#F4F4F4;
-                    }
-                }
-                @include smarthphone{
-                    font-size: 7px;
-                }
         }
     }
+    //--------OLA-------//
+        .wave{
+            height: 8em; 
+            overflow: hidden;
+            svg{
+                height: 100%; 
+                width: 100%;
+                path{
+                    stroke: none; 
+                    fill:#FFFCF2;
+                }
+                .footer{
+                    stroke: none; 
+                    fill:#F4F4F4;
+                }
+            }
+            //MEDIA QUERIES//
+            @include smarthphone{
+                font-size: 7px;
+            }
+        }
+    }
+    .colabora-wave{
+    background-color: $bg-color;
+    }
 
-    //Seccion: ¿Como podemos ayudarte?//
+    //-----------Seccion: ¿Como podemos ayudarte?----------//
     .funcionamiento{
         background-image: url(../Imagenes/Fondos/fondo_animales.png);
         font-size: 16px;
         padding-top: 6em;
+
+        //MEDIA QUERIES//
         @include smarthphone{
             font-size: 7px;
         }
@@ -138,9 +153,12 @@ main{
             display: flex;
             justify-content: space-between;
             padding-bottom: 8em;
+
+            //MEDIA QUERIES//
             @include smarthphone{
                 padding-top: 2em;
-                padding-top: 0em;
+                font-size: 10px;
+                justify-content: center;
             }
 
             .Funcionamiento_Imagen{
@@ -156,33 +174,42 @@ main{
                 background-color: rgb(250, 249, 242);
                 height:31.25em;
                 box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
-
                 img{
                     width: 40em;
                 }
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     display: none;
                 }
             }
             
-            .Funcionamiento_Grid{
+            .Funcionamiento_Cajas{
                 background-color: white;
                 width: 45%;
                 margin-top: 13em;
                 padding: 2.5em 0 2.5em 0;
-                border-top-left-radius: 25px;
-                border-bottom-left-radius: 25px;
+                border-top-left-radius: 1.5625em;
+                border-bottom-left-radius: 1.5625em;
                 border-bottom: solid 10px #85b1a2;
                 box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
+
+                //MEDIA QUERIES//
                 @include smarthphone{ 
-                    width: 100%;
-                    padding-top: 0em;
+                    margin-top: 1em;
+                    width: 85%;
+                    border-radius: 2em;
+                    padding: 1em;
                 }
                 .Funcionamiento_Caja{
                     display: flex;
                     margin-top: 1em;
+
+                    //MEDIA QUERIES//
                     @include smarthphone{
                         margin-bottom: 0em;
+                        margin: auto;
+                        justify-content: center;
                     }
                     .Funcionamiento_Numero{
                         @include flex;
@@ -195,6 +222,8 @@ main{
                         font-size: 1.3em;
                         color: rgb(236, 233, 233);
                         font-weight: 700;
+
+                        //MEDIA QUERIES//
                         @include smarthphone{
                             display: none;
                         }
@@ -204,23 +233,20 @@ main{
                         margin-left: 1.5em;
                         text-align: justify;
                         
+                        //MEDIA QUERIES//
                         @include smarthphone{
                             width: 23em;
                             font-size: 12px;
                             flex-direction: column;
-                            margin: auto;
                             margin-left:0;  
+                            text-align: center;
                         }
-                        .Funcionamiento_Texto-p{
-                            @include textoThambi (1em,400);
-                            color: #686767;
-                                @include smarthphone{
-                                    font-size: 14px;                        
-                                }
-                        }
+                        
                         .Funcionamiento_Sub{
                             @include textoThambi (1.7em,800);
                             color: #466572;
+
+                            //MEDIA QUERIES//
                             @include smarthphone{
                             margin-top: 1em;
                             }
@@ -231,30 +257,58 @@ main{
         }
     }
 
-    //Seccion: Mascotas aun perdidas//
+    //-----------SECCION: Mascotas aun perdidas-----------//
     .mascotasExtraviadas_container{
         background-image: linear-gradient(to top, #ffffff, white, #FFFCF2);
         padding: 2em 0 8em 0;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+        font-size: 10px;   
+        padding: 0em 0em 3em 0em;         
+        }
+
         h3{
             @include textoThambi (2em,800);
             padding: 0 7em 2.5em 7em;
             color: #686767; 
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                padding: 1em
+            }
         }
+
         .mascotasExtraviadas_cajaConteiner{
             margin: auto;
             width: 85%;
             display: flex;
             justify-content: space-around;
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                width: 100%;
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows:50% 50%;
+                gap: 1.5em;
+            }
             .mascotasExtraviadas_caja{
                 box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
                 width: 14.375em;
                 padding: 1.5em;
-                border-radius: 25px;
-                background-color: white;
+                border-radius: 1.5625em;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                font-size: 11px; 
+                margin: auto;
+                }
+    
                 .mascotasExtraviadas_caja-img{
                     border: solid #a1aedb .30em;
-                    width: 150px;
-                    height: 150px;
+                    width: 9.375em;
+                    height: 9.375em;
                     border-radius: 100%;
                     margin: auto;
                 }
@@ -277,18 +331,18 @@ main{
                 .mascotasExtraviadas_caja-texto{
                     h5{//mismo codigo que las cajas de .Inicio_Index-Texto//
                         margin: 1em 0px .625em 0px;
-                        @include tituloRammetto (1.3em, 400);
+                        @include tituloRammetto (1.3em);
                          color: #466572; 
                     }
                     p{
-                        @include textoThambi (1em,400);
-                        color: #686767;                        
+                        font-size: 1em;
+                        color: $texto1                        
                     }
                 }
             }
         }
     }
-    //Boletin de mascotas perdidas//
+    //-----------Boletin de mascotas perdidas-----------//
 
     .Boletin_Imagen{
         font-size: 16px;
@@ -298,9 +352,12 @@ main{
         background-size: cover;
         display: flex;
         align-items: center;
+
+        //MEDIA QUERIES//
         @include smarthphone{
+            margin-top: 5em;
             font-size: 6.5px;
-            height: 25vh;
+            height: 26vh;
             background-attachment:scroll;
             background-position: center;
         }
@@ -314,76 +371,83 @@ main{
             background-color: rgb(255, 250, 233);
             border-right: solid #a1aedb 0.8125em;
             border-bottom: solid #a1aedb 0.8125em;
-                @include smarthphone{
-                    width: 27em;
-                    font-size: 7px;
-                    height: 18.75em;
-                    padding:1.5em 1em 0 1em;
-                }
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                width: 27em;
+                font-size: 7px;
+                height: 18.75em;
+                padding:1.5em 1em 0 1em;
+            }
 
             h3{
-                @include tituloRammetto (1.75em, 800);
+                @include tituloRammetto (1.75em);
                 color: #466572;
                 margin-bottom: 1.25em;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     font-size: 11px;
                     margin-bottom: .9em;
                 }
             }
             p{
-                @include textoThambi (1em,400);
-                        color: #686767;  
+                font-size: 1.3em;
+                color: #686767;  
                 margin-bottom: 1.625em;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     font-size: 11px;
                     margin-bottom: .4em;
                 }
             }
-            .md-form{
-                text-align: justify;
-                display: flex;
-                .btn{
-                    background-color: rgb(252, 164, 0);
-                }
-            }
         }
     }
 
-    //Seccion:Nuestra Historia//
+    //-----------Seccion:Nuestra Historia-----------//
     #SobreNosotros_Container{
         font-size: 16px;
         background-color: hsl(60, 100%, 100%);
         padding-top: 8em;
+
+        //MEDIA QUERIES//
         @include smarthphone{
-            font-size: 12px;
+            font-size: 10px;
+            padding-top: 5em;
         }
        
         .SobreNosotros_article {
             display: flex;
             justify-content: center;
             margin: 4em 0 4em 0;
+
+            //MEDIA QUERIES//
             @include smarthphone{
-                padding:0em 0em .5em 0em;
+                margin:0em 0em 3em 0em;
             }
            
             .SobreNosotros_texto{
                 width: 40.625em;
                 text-align: justify;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     margin-top: 1em;
                 }
                
                 .SobreNosotros_p{
-                    @include textoThambi (1.25em, 400);
+                    font-size: 1.25em;
                     line-height: 1.7em;
                     color: $texto1;
+
+                    //MEDIA QUERIES//
                     @include smarthphone{
                         margin-top: 1em;
                         padding: 0 1em 0 1em;
-                        font-size: 15px;
+                        font-size: 16px;
                         margin-top:.5em;
                     }
-
                 }
             }
             .SobreNosotros_imagen{
@@ -391,12 +455,14 @@ main{
                 img{
                     width: 26.875em;
                 }
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     display: none;
                 }
             }
         }
-        //Seccion:Amigos de las mascotas//
+        //-----------Seccion:Amigos de las mascotas-----------//
         .tarjetas_Container{
             font-size: 16px;
             padding-top: 3.125em;
@@ -407,8 +473,11 @@ main{
             border-top: solid rgb(235, 234, 234) 0.625em;
             border-bottom: solid white 0.3125em;
             transform-style: preserve-3d;
+
+                //MEDIA QUERIES//
                 @include smarthphone{
                     font-size: 5.5px;
+                    border-radius: 0px;
                 }
             .tarjetas_Subtitulo{
                 @include SubtitulosIndex;
@@ -420,6 +489,13 @@ main{
                 -webkit-box-pack: center;
                 -webkit-justify-content: space-around;
                 -ms-flex-pack: center;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    flex-direction: column;
+                    font-size: 8px;
+                }
+
                 .tarjeta_Caja{
                     margin: 0.625em;
                     perspective: 800;
@@ -440,6 +516,12 @@ main{
                         border-radius: 1.25em;
                         -webkit-transform-style: preserve-3d;
                         transform-style: preserve-3d;
+
+                        //MEDIA QUERIES//
+                        @include smarthphone{
+                        margin: auto;  
+                        }
+
                         .adelante,.atras{
                             width: 100%;
                             height: 100%;
@@ -481,9 +563,10 @@ main{
                                 text-align: justify;
                                 padding: 0.625em 0.625em 0rem 0.625em;
 
+                                //MEDIA QUERIES//
                                 @include smarthphone{
                                     text-align: center;
-                                    font-size: 8px;
+                                    font-size: 11px;
                                     padding: 0;
                                 }
                             } 
@@ -492,8 +575,9 @@ main{
                                 color: $celeste;
                                 @include textoThambi (1.75em, 900);
 
+                                //MEDIA QUERIES//
                                 @include smarthphone{
-                                    font-size: 9px;
+                                    font-size: 15px;
                                     padding: 0em;
                                     margin-bottom: .2em;
                                 }
@@ -506,14 +590,21 @@ main{
     }
 
 
-    /*Seccion anuncios*/
+    //--------Seccion anuncios---------//
     .anuncios{
         padding: 1em 1em 0em 1em;
         background-color: #F4F4F4;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size: 10px;
+        }
         h3{ //mismo que en mascotas extraviadas//
             @include textoThambi (1.7em,800);
             color: #686767; 
         }
+
+        // Carousel //
             
         .contenedor-principal {
             display: flex;
@@ -545,8 +636,7 @@ main{
             .flecha-izquierda:hover, .flecha-derecha:hover {
                 background: rgba(0,0,0, .9);
             }
-            
-            /* ---- ----- ----- Carousel ----- ----- ----- */
+        
             .contenedor-carousel {
                 width: 100%;
                 overflow: hidden;
@@ -567,6 +657,11 @@ main{
                         img {
                             width: 80%;
                             vertical-align: top;
+
+                            //MEDIA QUERIES//
+                            @include smarthphone{
+                                width: 100%;
+                            }
                         }
                         &:hover {
                             transform: scale(1.2);
@@ -578,89 +673,69 @@ main{
         }
     }
     
-    /* ---- ----- ----- Media Queries ----- ----- ----- */
-    @media screen and (max-width: 800px) {
-        header .logotipo {
-            margin-bottom: 10px;
-            font-size: 30px;
-        }
+    //---------Blog-----------//
     
-        header .contenedor {
-            flex-direction: column;
-            text-align: center;
+    #blog{
+        font-size: 16px;
+        padding: 5em 3em 5em 3em;
+
+        //MEDIA QUERIES//
+        @include smarthphone{
+            padding: 2em 1em 0em 1em;
+            font-size: 10px;
         }
-    
-        .pelicula-principal {
-            font-size: 14px;
+        h3{
+            @include textoThambi (1.75em, 600);
+            color: $texto1; 
         }
-    
-        .pelicula-principal .descripcion {
-            max-width: 100%;
+        p{
+            font-size: 1.1em;
+            margin-bottom: .8em;
+            color: $texto1; 
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                font-size: 1.2em;
+            }
         }
-    
-        .peliculas-recomendadas .contenedor-carousel {
-            overflow: visible;
-        }
-    
-        .peliculas-recomendadas .contenedor-carousel .carousel {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-    
-        .peliculas-recomendadas .indicadores,
-        .peliculas-recomendadas .flecha-izquierda,
-        .peliculas-recomendadas .flecha-derecha {
-            display: none;
-        }
-    }
-    
-.blog{
-    font-size: 16px;
-    padding: 5em 3em 5em 3em;
-    p{
-        @include textoThambi (1.7em,600);
-        margin-bottom: .8em;
-        color: #686767; 
-    }
-    .card-deck{
+        .card-deck{
         margin-top: 5em;
-        .card-body{
-            text-align: justify;
+        @include smarthphone{
+            width: 80%;
+            margin: auto;            
+        }
+        .card{
+
+            //MEDIA QUERIES//
+            @include smarthphone{
+                max-height: 40em;
+                margin-top: 2em;
+            }
+    
+            .card-body{
+                text-align: justify;
+
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    text-align: center;
+                    margin-bottom: .5em;
+                }
+                .card-title{
+                    @include textoThambi (1.2em,800);
+                    color: #466572;
+
+                    //MEDIA QUERIES//
+                    @include smarthphone{
+                        font-size: 1.4em;
+                    }
+                }
+            }
+            img{
+                //MEDIA QUERIES//
+                @include smarthphone{
+                    width: 100%;
+                }
+            }
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-        
-        
-
-
