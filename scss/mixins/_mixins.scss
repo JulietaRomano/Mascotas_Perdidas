@@ -48,6 +48,10 @@
     padding-top: 35px;
     border: rgb(255, 255, 255) solid;
     z-index: 1;
+    @include tablet {
+        font-size: 10px;
+        width: 60%;
+    }
 }
 
     //Index Inicio imagenes animadas//
@@ -80,6 +84,9 @@
         background-attachment: scroll;
         background-position:center ;
     }
+    @include tablet{
+        background-position:center ;
+    }
 }
 
  //Tips Grid Imagenes//
@@ -94,27 +101,21 @@
 
     //MEDIA QUERIES//
     @include smarthphone{
-        font-size: 9px;
         height: 13em;
         margin: auto;
+        font-size: 9px;
     } 
 }
 
 /*Media Queries*/
 
 @mixin smarthphone {
-
-    @media (max-width:480px){
+    @media (max-width:480px) {
         @content;
     }
 }
 @mixin tablet {
-    @media (min-width:480px) and (max-width:728px){
-        @content;
-    }
-}
-@mixin escritorio {
-    @media (min-width:728px) and (max-width:1024px){
+    @media (min-width:480px) and (max-width:770px){
         @content;
     }
 }

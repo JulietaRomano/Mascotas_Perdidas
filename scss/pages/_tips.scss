@@ -14,12 +14,16 @@
 
     //MEDIA QUERIES//
     @include smarthphone{
-        font-size: 9px;
         display: flex;
         flex-direction: column;
         margin-top: 3em;
         row-gap: 3em;
     } 
+    @include tablet{
+        font-size: 13px;
+    } 
+
+
     .tipsCaja_Imagen{
         @include tipsGridImg;
     }
@@ -74,7 +78,7 @@
 
         //MEDIA QUERIES//
         @include smarthphone{
-            font-size: 1.3em;
+            font-size: 14px;
         } 
     }
     .tipsGrid_Numeros{
@@ -91,6 +95,9 @@
             font-size: 1.5625em;
             font-weight: 800;
         }
+        @include smarthphone{
+            font-size: 10px;
+        } 
     }
 }
 .tipsImg_Final{

@@ -114,5 +114,8 @@
         @include smarthphone{
             width: 25em;
         }
+        @include tablet{
+            width: 30em;
+        } 
     }
 }

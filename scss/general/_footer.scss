@@ -39,6 +39,10 @@ footer{
             @include smarthphone{
                 display: none;
             }
+            @include tablet {
+                display: none;
+            }
+
         }
         h6{
             @include textoThambi (1.3em,600);

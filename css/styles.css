@@ -95,6 +95,9 @@ header {
     @media (max-width: 480px) {
       header .navbar {
         background-color: white; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .navbar {
+        background-color: white; } }
   header .top-nav-collapse {
     background-color: white;
     box-shadow: 3px 3px 8px rgba(138, 137, 136, 0.568); }
@@ -105,17 +108,26 @@ header {
     @media (max-width: 480px) {
       header .portadaIndexImg {
         height: 45vh; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .portadaIndexImg {
+        height: 45vh; } }
   header h2 {
     display: inline-block;
     position: relative;
     font-family: 'Rammetto One';
     font-size: 1.875rem;
     color: #108896; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header h2 {
+        font-size: 1.8em; } }
   header .carouselPortada_texto {
     font-size: 1.1875rem;
     font-weight: 600;
     color: #706666;
     margin: .5em 0 .5em 0; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .carouselPortada_texto {
+        font-size: 1.8em; } }
   header .carouselPortada_caja {
     background-color: #a7a7a421;
     border-radius: 40px;
@@ -127,6 +139,10 @@ header {
     padding-top: 35px;
     border: white solid;
     z-index: 1; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .carouselPortada_caja {
+        font-size: 10px;
+        width: 60%; } }
   header .carouselPortada_container-1 {
     height: 80%; }
     header .carouselPortada_container-1 .carouselPortada_caja-1 {
@@ -141,7 +157,7 @@ header {
   header .carouselPortada_container-3 {
     height: 85%; }
     header .carouselPortada_container-3 .carouselPortada_caja-3 {
-      margin-left: 50%; }
+      margin-left: 0%; }
   header .portada_Container {
     position: relative;
     width: 100%;
@@ -161,6 +177,9 @@ header {
           font-size: 8px;
           height: 22em;
           background-attachment: scroll;
+          background-position: center; } }
+      @media (min-width: 480px) and (max-width: 770px) {
+        header .portada_Container .portada_Caja {
           background-position: center; } }
     header .portada_Container .portada_Imagen-Registro {
       background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
@@ -185,7 +204,7 @@ header {
       background-position: center; }
       @media (max-width: 480px) {
         header .portada_Container .portada_Imagen-Tips {
-          background-position-y: 6em; } }
+          background-position-y: 0em; } }
     header .portada_Container .portada_Imagen-Microchip {
       background-image: url(../Imagenes/Portadas/portada_microchip.jpeg);
       background-position-y: -8em; }
@@ -223,6 +242,9 @@ footer {
       width: 18.75em;
       height: 2.8125em; }
       @media (max-width: 480px) {
+        footer .mapaDeSitio_conteiner .logo-footer {
+          display: none; } }
+      @media (min-width: 480px) and (max-width: 770px) {
         footer .mapaDeSitio_conteiner .logo-footer {
           display: none; } }
     footer .mapaDeSitio_conteiner h6 {
@@ -385,6 +407,9 @@ a {
       font-size: 9px;
       height: 11.8em;
       padding-top: 1em; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .PagesSub_Conteiner {
+      font-size: 12px; } }
   .PagesSub_Conteiner .PagesSub_texto {
     font-size: 1.1875em;
     color: #706666;
@@ -641,6 +666,9 @@ main {
       @media (max-width: 480px) {
         main .Inicio_Index .Inicio_Index-Container {
           width: 100%; } }
+      @media (min-width: 480px) and (max-width: 770px) {
+        main .Inicio_Index .Inicio_Index-Container {
+          width: 100%; } }
       main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
         display: inline-block;
         width: 15em;
@@ -723,6 +751,9 @@ main {
   @media (max-width: 480px) {
     .funcionamiento {
       font-size: 7px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .funcionamiento {
+      font-size: 10px; } }
   .funcionamiento .Funcionamiento_Container {
     display: flex;
     justify-content: space-between;
@@ -815,6 +846,9 @@ main {
     .mascotasExtraviadas_container {
       font-size: 10px;
       padding: 0em 0em 3em 0em; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .mascotasExtraviadas_container {
+      font-size: 10px; } }
   .mascotasExtraviadas_container h3 {
     font-size: 2em;
     font-weight: 800;
@@ -839,7 +873,10 @@ main {
       box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
       width: 14.375em;
       padding: 1.5em;
-      border-radius: 1.5625em; }
+      border-radius: 1.5625em;
+      transition: 1s; }
+      .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja:hover {
+        transform: translateY(-15px); }
       @media (max-width: 480px) {
         .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja {
           font-size: 11px;
@@ -885,6 +922,12 @@ main {
     .Boletin_Imagen {
       margin-top: 5em;
       font-size: 6.5px;
+      height: 26vh;
+      background-attachment: scroll;
+      background-position: center; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .Boletin_Imagen {
+      font-size: 9px;
       height: 26vh;
       background-attachment: scroll;
       background-position: center; } }
@@ -978,6 +1021,9 @@ main {
       #SobreNosotros_Container .tarjetas_Container {
         font-size: 5.5px;
         border-radius: 0px; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      #SobreNosotros_Container .tarjetas_Container {
+        font-size: 12px; } }
     #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
       display: inline-block;
       position: relative;
@@ -1141,6 +1187,9 @@ main {
     #blog {
       padding: 2em 1em 0em 1em;
       font-size: 10px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    #blog {
+      font-size: 12px; } }
   #blog h3 {
     font-size: 1.75em;
     font-weight: 600;
@@ -1162,6 +1211,9 @@ main {
       #blog .card-deck .card {
         max-height: 41em;
         margin-top: 2em; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      #blog .card-deck .card {
+        max-height: 38em; } }
     #blog .card-deck .card .card-body {
       text-align: justify; }
       @media (max-width: 480px) {
@@ -1190,11 +1242,13 @@ main {
   row-gap: 7.5em; }
   @media (max-width: 480px) {
     .tipsGrid_Container {
-      font-size: 9px;
       display: flex;
       flex-direction: column;
       margin-top: 3em;
       row-gap: 3em; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .tipsGrid_Container {
+      font-size: 13px; } }
   .tipsGrid_Container .tipsCaja_Imagen {
     background-size: 28.125em;
     width: 28.125em;
@@ -1204,9 +1258,9 @@ main {
     box-shadow: 0.3125em 0.3125em 0.625em #999; }
     @media (max-width: 480px) {
       .tipsGrid_Container .tipsCaja_Imagen {
-        font-size: 9px;
         height: 13em;
-        margin: auto; } }
+        margin: auto;
+        font-size: 9px; } }
   .tipsGrid_Container .tipsGrid_Caja1 {
     padding: 0em 1.25em 0em 1.25em;
     grid-area: caja1; }
@@ -1243,7 +1297,7 @@ main {
     color: #706666; }
     @media (max-width: 480px) {
       .tipsGrid_Container .tipsGrid_Texto {
-        font-size: 1.3em; } }
+        font-size: 14px; } }
   .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;
@@ -1257,6 +1311,9 @@ main {
       color: white;
       font-size: 1.5625em;
       font-weight: 800; }
+    @media (max-width: 480px) {
+      .tipsGrid_Container .tipsGrid_Numeros {
+        font-size: 10px; } }
 
 .tipsImg_Final {
   width: 100%;
@@ -1345,6 +1402,8 @@ main {
   .reencuentro_pruebas .reencuentro_pruebas-imagen {
     background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 1.25em;
     width: 25em;
     box-shadow: 0.1875em 0.1875em 0.5em #999; }
@@ -1356,6 +1415,9 @@ main {
 .mascotasPerdidas {
   padding-top: 8em; }
   @media (max-width: 480px) {
+    .mascotasPerdidas {
+      font-size: 10px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
     .mascotasPerdidas {
       font-size: 10px; } }
   .mascotasPerdidas .row {
@@ -1636,6 +1698,9 @@ main {
     @media (max-width: 480px) {
       .microchips_section img {
         width: 25em; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      .microchips_section img {
+        width: 30em; } }
 
 .notfound {
   background-image: url(../Imagenes/notfound.jpeg);

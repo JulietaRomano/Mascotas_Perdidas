@@ -83,7 +83,7 @@
         @include smarthphone{
             font-size: 9px;
             padding-bottom:0em;
-        }
+        }    
     }
 
 //-------------Subtitulos Portadas-----------------//
@@ -101,6 +101,10 @@
         height: 11.8em;
         padding-top: 1em;
     }
+    @include tablet{
+        font-size: 12px;
+    }
+
     .PagesSub_texto{
         font-size: 1.1875em;
         color: $texto1;
