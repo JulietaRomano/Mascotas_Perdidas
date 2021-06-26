@@ -16,6 +16,7 @@ main{
             font-size:10px;
             padding-top: 5em;
         }
+        
         .Inicio_Index-Sub{
             padding: 0 10em 5em 10em;
             p{
@@ -40,7 +41,10 @@ main{
                 @include smarthphone{
                 width: 100%;
                 }
-
+                @include tablet {
+                    width: 100%;
+                }
+            
             .Inicio_Index-Caja {
                 display: inline-block;
                 width: 15em;
@@ -148,7 +152,9 @@ main{
         @include smarthphone{
             font-size: 7px;
         }
-        
+        @include tablet {
+            font-size: 10px;
+        }
         .Funcionamiento_Container{
             display: flex;
             justify-content: space-between;
@@ -182,6 +188,7 @@ main{
                 @include smarthphone{
                     display: none;
                 }
+
             }
             
             .Funcionamiento_Cajas{
@@ -238,18 +245,14 @@ main{
                             width: 23em;
                             font-size: 12px;
                             flex-direction: column;
-                            margin-left:0;  
+                            margin:1em 0 .5em 0;  
                             text-align: center;
+                            font-weight: 500;
                         }
                         
                         .Funcionamiento_Sub{
                             @include textoThambi (1.7em,800);
                             color: #466572;
-
-                            //MEDIA QUERIES//
-                            @include smarthphone{
-                            margin-top: 1em;
-                            }
                         }
                     }
                 }
@@ -265,7 +268,10 @@ main{
         //MEDIA QUERIES//
         @include smarthphone{
         font-size: 10px;   
-        padding: 0em 0em 3em 0em;         
+        padding: 0em 0em 3em 0em;    
+        }
+        @include tablet {
+            font-size: 10px;
         }
 
         h3{
@@ -287,7 +293,7 @@ main{
 
             //MEDIA QUERIES//
             @include smarthphone{
-                width: 100%;
+                width: 93%;
                 display: grid;
                 grid-template-columns: 50% 50%;
                 grid-template-rows:50% 50%;
@@ -298,6 +304,10 @@ main{
                 width: 14.375em;
                 padding: 1.5em;
                 border-radius: 1.5625em;
+                transition: 1s;
+                &:hover{
+                    transform: translateY(-15px);
+                }
 
                 //MEDIA QUERIES//
                 @include smarthphone{
@@ -361,6 +371,13 @@ main{
             background-attachment:scroll;
             background-position: center;
         }
+        @include tablet {
+            font-size: 9px;
+            height: 26vh;
+            background-attachment:scroll;
+            background-position: center;
+        }
+
         .Boletin_Caja{
             border-radius: 1.875em;
             height: 18.75em;
@@ -378,6 +395,9 @@ main{
                 font-size: 7px;
                 height: 18.75em;
                 padding:1.5em 1em 0 1em;
+            }
+            input{
+                margin-right: 1.5em;
             }
 
             h3{
@@ -479,6 +499,10 @@ main{
                     font-size: 5.5px;
                     border-radius: 0px;
                 }
+                @include tablet {
+                    font-size: 12px;
+                }
+        
             .tarjetas_Subtitulo{
                 @include SubtitulosIndex;
                 margin-bottom: 2em;
@@ -676,7 +700,6 @@ main{
     //---------Blog-----------//
     
     #blog{
-        font-size: 16px;
         padding: 5em 3em 5em 3em;
 
         //MEDIA QUERIES//
@@ -684,6 +707,10 @@ main{
             padding: 2em 1em 0em 1em;
             font-size: 10px;
         }
+        @include tablet {
+            font-size: 12px;
+        }
+
         h3{
             @include textoThambi (1.75em, 600);
             color: $texto1; 
@@ -697,6 +724,7 @@ main{
             @include smarthphone{
                 font-size: 1.2em;
             }
+    
         }
         .card-deck{
         margin-top: 5em;
@@ -708,8 +736,11 @@ main{
 
             //MEDIA QUERIES//
             @include smarthphone{
-                max-height: 40em;
+                max-height: 41em;
                 margin-top: 2em;
+            }
+            @include tablet {
+                max-height: 38em;
             }
     
             .card-body{

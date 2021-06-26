@@ -30,6 +30,57 @@ body {
     margin-block-end: 0em;
     margin: 0; }
 
+.hidden {
+  overflow: hidden; }
+
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .loader .lds-heart {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+    transform: rotate(45deg);
+    transform-origin: 40px 40px; }
+    .loader .lds-heart div {
+      top: 32px;
+      left: 32px;
+      position: absolute;
+      width: 32px;
+      height: 32px;
+      background: #fdd;
+      animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1); }
+      .loader .lds-heart div:after, .loader .lds-heart div:before {
+        content: " ";
+        position: absolute;
+        display: block;
+        width: 32px;
+        height: 32px;
+        background: #fdd; }
+      .loader .lds-heart div:before {
+        left: -24px;
+        border-radius: 50% 0 0 50%; }
+      .loader .lds-heart div:after {
+        top: -24px;
+        border-radius: 50% 50% 0 0; }
+
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95); }
+  5% {
+    transform: scale(1.1); }
+  39% {
+    transform: scale(0.85); }
+  45% {
+    transform: scale(1); }
+  60% {
+    transform: scale(0.95); }
+  100% {
+    transform: scale(0.9); } }
+
 /*Portadas*/
 header {
   background-color: #FFFCF2; }
@@ -44,6 +95,9 @@ header {
     @media (max-width: 480px) {
       header .navbar {
         background-color: white; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .navbar {
+        background-color: white; } }
   header .top-nav-collapse {
     background-color: white;
     box-shadow: 3px 3px 8px rgba(138, 137, 136, 0.568); }
@@ -54,17 +108,26 @@ header {
     @media (max-width: 480px) {
       header .portadaIndexImg {
         height: 45vh; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .portadaIndexImg {
+        height: 45vh; } }
   header h2 {
     display: inline-block;
     position: relative;
     font-family: 'Rammetto One';
     font-size: 1.875rem;
     color: #108896; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header h2 {
+        font-size: 1.8em; } }
   header .carouselPortada_texto {
     font-size: 1.1875rem;
     font-weight: 600;
     color: #706666;
     margin: .5em 0 .5em 0; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .carouselPortada_texto {
+        font-size: 1.8em; } }
   header .carouselPortada_caja {
     background-color: #a7a7a421;
     border-radius: 40px;
@@ -76,6 +139,10 @@ header {
     padding-top: 35px;
     border: white solid;
     z-index: 1; }
+    @media (min-width: 480px) and (max-width: 770px) {
+      header .carouselPortada_caja {
+        font-size: 10px;
+        width: 60%; } }
   header .carouselPortada_container-1 {
     height: 80%; }
     header .carouselPortada_container-1 .carouselPortada_caja-1 {
@@ -90,7 +157,7 @@ header {
   header .carouselPortada_container-3 {
     height: 85%; }
     header .carouselPortada_container-3 .carouselPortada_caja-3 {
-      margin-left: 50%; }
+      margin-left: 0%; }
   header .portada_Container {
     position: relative;
     width: 100%;
@@ -110,6 +177,9 @@ header {
           font-size: 8px;
           height: 22em;
           background-attachment: scroll;
+          background-position: center; } }
+      @media (min-width: 480px) and (max-width: 770px) {
+        header .portada_Container .portada_Caja {
           background-position: center; } }
     header .portada_Container .portada_Imagen-Registro {
       background-image: url(../Imagenes/Portadas/portada_registro.jpeg);
@@ -134,7 +204,7 @@ header {
       background-position: center; }
       @media (max-width: 480px) {
         header .portada_Container .portada_Imagen-Tips {
-          background-position-y: 6em; } }
+          background-position-y: 0em; } }
     header .portada_Container .portada_Imagen-Microchip {
       background-image: url(../Imagenes/Portadas/portada_microchip.jpeg);
       background-position-y: -8em; }
@@ -172,6 +242,9 @@ footer {
       width: 18.75em;
       height: 2.8125em; }
       @media (max-width: 480px) {
+        footer .mapaDeSitio_conteiner .logo-footer {
+          display: none; } }
+      @media (min-width: 480px) and (max-width: 770px) {
         footer .mapaDeSitio_conteiner .logo-footer {
           display: none; } }
     footer .mapaDeSitio_conteiner h6 {
@@ -225,12 +298,12 @@ a {
   a .item1_botones .item1_botones1 {
     background-color: rgba(226, 138, 5, 0.856);
     border-radius: .20em;
-    padding: .5em;
+    padding: .1em .5em .1em .5em;
     box-shadow: 0em 0.125em 0.1875em #2b2929;
     transition: .6s linear;
     display: inline-block;
     color: rgba(253, 253, 253, 0.925);
-    font-size: 1em;
+    font-size: 1.3em;
     font-weight: 600;
     margin-bottom: 1em; }
     a .item1_botones .item1_botones1:hover {
@@ -238,7 +311,7 @@ a {
       background-color: #ffa600; }
   @media (max-width: 480px) {
     a .item1_botones {
-      font-size: 10px; } }
+      font-size: 9px; } }
 
 .botonmasc {
   background-color: #fc7405;
@@ -320,7 +393,7 @@ a {
       font-size: 9px;
       padding-bottom: 0em; } }
 
-main .PagesSub_Conteiner {
+.PagesSub_Conteiner {
   width: 100%;
   display: flex;
   align-items: center;
@@ -330,45 +403,53 @@ main .PagesSub_Conteiner {
   padding-top: 4em;
   border-bottom: #c5bfad 0.3125em solid; }
   @media (max-width: 480px) {
-    main .PagesSub_Conteiner {
+    .PagesSub_Conteiner {
       font-size: 9px;
       height: 11.8em;
       padding-top: 1em; } }
-  main .PagesSub_Conteiner .PagesSub_texto {
+  @media (min-width: 480px) and (max-width: 770px) {
+    .PagesSub_Conteiner {
+      font-size: 12px; } }
+  .PagesSub_Conteiner .PagesSub_texto {
     font-size: 1.1875em;
     color: #706666;
     padding: 0 6em 0 6em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_texto {
+      .PagesSub_Conteiner .PagesSub_texto {
         font-size: 13px;
         padding: 0 1em 0 1em;
         text-justify: justify; } }
-  main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+  .PagesSub_Conteiner .PagesSub_Registro-Img img {
     width: 16.3em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Registro-Img img {
+      .PagesSub_Conteiner .PagesSub_Registro-Img img {
         font-size: 6.4px; } }
-  main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+  .PagesSub_Conteiner .PagesSub_Colabora-Img img {
     width: 12em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Colabora-Img img {
+      .PagesSub_Conteiner .PagesSub_Colabora-Img img {
         font-size: 6.3px; } }
-  main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+  .PagesSub_Conteiner .PagesSub_Tips-Img img {
     width: 14em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Tips-Img img {
+      .PagesSub_Conteiner .PagesSub_Tips-Img img {
         font-size: 6.5px; } }
-  main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+  .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
     width: 16em; }
     @media (max-width: 480px) {
-      main .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
+      .PagesSub_Conteiner .PagesSub_Reencuentro-Img img {
         font-size: 6.5px; } }
+  .PagesSub_Conteiner .PagesSub_Microchips-Img img {
+    width: 14em; }
+  @media (max-width: 480px) {
+    .PagesSub_Conteiner .PagesSub_Microchips-Img {
+      font-size: 6.9px; } }
 
-main .textoResaltado {
+.textoResaltado {
   font-size: 1.125em;
   font-weight: 800; }
 
-main .textoChico {
+.textoChico {
   font-size: 1em;
   color: #706666; }
 
@@ -585,6 +666,9 @@ main {
       @media (max-width: 480px) {
         main .Inicio_Index .Inicio_Index-Container {
           width: 100%; } }
+      @media (min-width: 480px) and (max-width: 770px) {
+        main .Inicio_Index .Inicio_Index-Container {
+          width: 100%; } }
       main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
         display: inline-block;
         width: 15em;
@@ -667,6 +751,9 @@ main {
   @media (max-width: 480px) {
     .funcionamiento {
       font-size: 7px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .funcionamiento {
+      font-size: 10px; } }
   .funcionamiento .Funcionamiento_Container {
     display: flex;
     justify-content: space-between;
@@ -744,15 +831,13 @@ main {
               width: 23em;
               font-size: 12px;
               flex-direction: column;
-              margin-left: 0;
-              text-align: center; } }
+              margin: 1em 0 .5em 0;
+              text-align: center;
+              font-weight: 500; } }
           .funcionamiento .Funcionamiento_Container .Funcionamiento_Cajas .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
             font-size: 1.7em;
             font-weight: 800;
             color: #466572; }
-            @media (max-width: 480px) {
-              .funcionamiento .Funcionamiento_Container .Funcionamiento_Cajas .Funcionamiento_Caja .Funcionamiento_Texto .Funcionamiento_Sub {
-                margin-top: 1em; } }
 
 .mascotasExtraviadas_container {
   background-image: linear-gradient(to top, #ffffff, white, #FFFCF2);
@@ -761,6 +846,9 @@ main {
     .mascotasExtraviadas_container {
       font-size: 10px;
       padding: 0em 0em 3em 0em; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .mascotasExtraviadas_container {
+      font-size: 10px; } }
   .mascotasExtraviadas_container h3 {
     font-size: 2em;
     font-weight: 800;
@@ -776,7 +864,7 @@ main {
     justify-content: space-around; }
     @media (max-width: 480px) {
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner {
-        width: 100%;
+        width: 93%;
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: 50% 50%;
@@ -785,7 +873,10 @@ main {
       box-shadow: 0 0.625em 1.875em 0 rgba(114, 111, 102, 0.4);
       width: 14.375em;
       padding: 1.5em;
-      border-radius: 1.5625em; }
+      border-radius: 1.5625em;
+      transition: 1s; }
+      .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja:hover {
+        transform: translateY(-15px); }
       @media (max-width: 480px) {
         .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja {
           font-size: 11px;
@@ -834,6 +925,12 @@ main {
       height: 26vh;
       background-attachment: scroll;
       background-position: center; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .Boletin_Imagen {
+      font-size: 9px;
+      height: 26vh;
+      background-attachment: scroll;
+      background-position: center; } }
   .Boletin_Imagen .Boletin_Caja {
     border-radius: 1.875em;
     height: 18.75em;
@@ -850,6 +947,8 @@ main {
         font-size: 7px;
         height: 18.75em;
         padding: 1.5em 1em 0 1em; } }
+    .Boletin_Imagen .Boletin_Caja input {
+      margin-right: 1.5em; }
     .Boletin_Imagen .Boletin_Caja h3 {
       display: inline-block;
       position: relative;
@@ -922,6 +1021,9 @@ main {
       #SobreNosotros_Container .tarjetas_Container {
         font-size: 5.5px;
         border-radius: 0px; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      #SobreNosotros_Container .tarjetas_Container {
+        font-size: 12px; } }
     #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
       display: inline-block;
       position: relative;
@@ -1080,12 +1182,14 @@ main {
             transform-origin: center; }
 
 #blog {
-  font-size: 16px;
   padding: 5em 3em 5em 3em; }
   @media (max-width: 480px) {
     #blog {
       padding: 2em 1em 0em 1em;
       font-size: 10px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    #blog {
+      font-size: 12px; } }
   #blog h3 {
     font-size: 1.75em;
     font-weight: 600;
@@ -1105,8 +1209,11 @@ main {
         margin: auto; } }
     @media (max-width: 480px) {
       #blog .card-deck .card {
-        max-height: 40em;
+        max-height: 41em;
         margin-top: 2em; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      #blog .card-deck .card {
+        max-height: 38em; } }
     #blog .card-deck .card .card-body {
       text-align: justify; }
       @media (max-width: 480px) {
@@ -1135,11 +1242,13 @@ main {
   row-gap: 7.5em; }
   @media (max-width: 480px) {
     .tipsGrid_Container {
-      font-size: 9px;
       display: flex;
       flex-direction: column;
       margin-top: 3em;
       row-gap: 3em; } }
+  @media (min-width: 480px) and (max-width: 770px) {
+    .tipsGrid_Container {
+      font-size: 13px; } }
   .tipsGrid_Container .tipsCaja_Imagen {
     background-size: 28.125em;
     width: 28.125em;
@@ -1149,9 +1258,9 @@ main {
     box-shadow: 0.3125em 0.3125em 0.625em #999; }
     @media (max-width: 480px) {
       .tipsGrid_Container .tipsCaja_Imagen {
-        font-size: 9px;
         height: 13em;
-        margin: auto; } }
+        margin: auto;
+        font-size: 9px; } }
   .tipsGrid_Container .tipsGrid_Caja1 {
     padding: 0em 1.25em 0em 1.25em;
     grid-area: caja1; }
@@ -1188,7 +1297,7 @@ main {
     color: #706666; }
     @media (max-width: 480px) {
       .tipsGrid_Container .tipsGrid_Texto {
-        font-size: 1.3em; } }
+        font-size: 14px; } }
   .tipsGrid_Container .tipsGrid_Numeros {
     background-color: #118996;
     border-radius: 100%;
@@ -1202,6 +1311,9 @@ main {
       color: white;
       font-size: 1.5625em;
       font-weight: 800; }
+    @media (max-width: 480px) {
+      .tipsGrid_Container .tipsGrid_Numeros {
+        font-size: 10px; } }
 
 .tipsImg_Final {
   width: 100%;
@@ -1290,6 +1402,8 @@ main {
   .reencuentro_pruebas .reencuentro_pruebas-imagen {
     background-image: url(../Imagenes/Reencuentro/cieloReencuentro.jpeg);
     background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: 1.25em;
     width: 25em;
     box-shadow: 0.1875em 0.1875em 0.5em #999; }
@@ -1301,6 +1415,9 @@ main {
 .mascotasPerdidas {
   padding-top: 8em; }
   @media (max-width: 480px) {
+    .mascotasPerdidas {
+      font-size: 10px; } }
+  @media (min-width: 480px) and (max-width: 770px) {
     .mascotasPerdidas {
       font-size: 10px; } }
   .mascotasPerdidas .row {
@@ -1581,3 +1698,41 @@ main {
     @media (max-width: 480px) {
       .microchips_section img {
         width: 25em; } }
+    @media (min-width: 480px) and (max-width: 770px) {
+      .microchips_section img {
+        width: 30em; } }
+
+.notfound {
+  background-image: url(../Imagenes/notfound.jpeg);
+  width: 100vw;
+  height: 100vh;
+  background-size: cover; }
+  .notfound .notfound_logo {
+    width: 65%;
+    margin-left: auto; }
+    .notfound .notfound_logo img {
+      max-width: 50%;
+      margin-top: 2%;
+      margin-left: 35%; }
+  .notfound .notfound_Caja {
+    margin-top: 9%;
+    margin-left: 50%;
+    font-size: 16px;
+    width: 600px;
+    background-color: #a7a7a421;
+    border-radius: 2.5rem;
+    box-shadow: 0.1875rem 0.1875rem 0.5rem #464335;
+    border: white solid;
+    padding: 1em; }
+    .notfound .notfound_Caja h1 {
+      display: inline-block;
+      position: relative;
+      font-family: 'Rammetto One';
+      font-size: 3.5em;
+      color: #108896; }
+    .notfound .notfound_Caja p {
+      font-size: 1.3em; }
+  .notfound .notfound_botones {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 1em; }

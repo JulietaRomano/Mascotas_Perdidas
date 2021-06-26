@@ -15,7 +15,10 @@ header{
         background:rgba(219, 219, 219, 0);
         box-shadow: none;
         //MEDIA QUERIES//
-        @include smarthphone{
+        @include smarthphone {
+            background-color: rgb(255, 255, 255);
+        }
+        @include tablet{
             background-color: rgb(255, 255, 255);
         }
     }
@@ -33,7 +36,10 @@ header{
         object-fit: cover;
 
         //MEDIA QUERIES//
-        @include smarthphone{
+        @include smarthphone {
+            height:45vh;
+        }
+        @include tablet {
             height:45vh;
         }
     }
@@ -42,12 +48,19 @@ header{
     h2{
     @include tituloRammetto(1.875rem);
     color: $celeste;
+        @include tablet {
+            font-size: 1.8em;
+        }
     }
     .carouselPortada_texto{
         @include textoThambi (1.1875rem,600);
         color: $texto1;
         margin: .5em 0 .5em 0;
+        @include tablet {
+            font-size: 1.8em;
+        }
     }
+
  
     //Cajas//
     .carouselPortada_caja{
@@ -74,7 +87,7 @@ header{
         .carouselPortada_container-3{
             height: 85%;
             .carouselPortada_caja-3{
-                margin-left: 50%;
+                margin-left: 0%;
             }
         }
 
@@ -125,7 +138,7 @@ header{
 
             //MEDIA QUERIES//
             @include smarthphone{
-                background-position-y:6em;
+                background-position-y:0em;
             }
         }
         //Portada Microchip//
