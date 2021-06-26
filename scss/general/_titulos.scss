@@ -31,7 +31,17 @@
             font-size:20px;
         }
     }
-
+//---------Titulos Index h5---------//
+    .Mini-Titulo {
+        margin: .625em 0px .625em 0px;
+        @include tituloRammetto (1.3em);
+        color: #466572;
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size:11px;
+            margin: 0em;
+        }
+    }
 //---------Titulos portadas---------//
 
     .portada_Titulo{

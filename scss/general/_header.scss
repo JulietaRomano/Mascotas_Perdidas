@@ -45,7 +45,7 @@ header{
     }
 
     //Textos//
-    h2{
+    h4{
     @include tituloRammetto(1.875rem);
     color: $celeste;
         @include tablet {

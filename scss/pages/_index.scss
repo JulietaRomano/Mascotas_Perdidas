@@ -102,42 +102,34 @@ main{
                 font-size:9px;
                 padding: 4.5rem 1em 1em 1em;
                 }
-                h3 {
-                    margin: .625em 0px .625em 0px;
-                    @include tituloRammetto (1.3em);
-                    color: #466572;
+            }
+        }
+    }
+}
 
-                    //MEDIA QUERIES//
-                    @include smarthphone{
-                    font-size:11px;
-                    margin: 0;
-                    }
-                }
-            }
-        }
-    }
+
     //--------OLA-------//
-        .wave{
-            height: 8em; 
-            overflow: hidden;
-            svg{
-                height: 100%; 
-                width: 100%;
-                path{
-                    stroke: none; 
-                    fill:#FFFCF2;
-                }
-                .footer{
-                    stroke: none; 
-                    fill:#F4F4F4;
-                }
+    .wave{
+        height: 8em; 
+        overflow: hidden;
+        svg{
+            height: 100%; 
+            width: 100%;
+            path{
+                stroke: none; 
+                fill:#FFFCF2;
             }
-            //MEDIA QUERIES//
-            @include smarthphone{
-                font-size: 7px;
+            .footer{
+                stroke: none; 
+                fill:#F4F4F4;
             }
         }
+        //MEDIA QUERIES//
+        @include smarthphone{
+            font-size: 7px;
+        }
     }
+    
     .colabora-wave{
     background-color: $bg-color;
     }
@@ -311,7 +303,7 @@ main{
 
                 //MEDIA QUERIES//
                 @include smarthphone{
-                font-size: 11px; 
+                font-size: 10px; 
                 margin: auto;
                 }
     
@@ -321,6 +313,11 @@ main{
                     height: 9.375em;
                     border-radius: 100%;
                     margin: auto;
+                    //MEDIA QUERIES//
+                    @include smarthphone{
+                        margin-bottom: 1em;
+                        }
+        
                 }
                 .img1{
                     background-image: url(../Imagenes/Perdidos/perdido2.png);
@@ -339,11 +336,6 @@ main{
                     background-size: cover;
                 }
                 .mascotasExtraviadas_caja-texto{
-                    h5{//mismo codigo que las cajas de .Inicio_Index-Texto//
-                        margin: 1em 0px .625em 0px;
-                        @include tituloRammetto (1.3em);
-                         color: #466572; 
-                    }
                     p{
                         font-size: 1em;
                         color: $texto1                        
@@ -595,7 +587,7 @@ main{
                                 }
                             } 
                             
-                            h2{
+                            h5{
                                 color: $celeste;
                                 @include textoThambi (1.75em, 900);
 
