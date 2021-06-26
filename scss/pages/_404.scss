@@ -3,25 +3,31 @@
     width: 100vw;
     height: 100vh;
     background-size: cover;
+    padding-top: 2em;
+    @include smarthphone{
+        font-size: 9px;
+        background-position-x:-12em ;
+    }
 
     .notfound_logo{
-        width: 65%;
+        width: 35%;
         margin-left: auto;
-        img{
-            max-width: 50%;
-            margin-top: 2%;
-            margin-left: 35%;
+        background-image: url(../Imagenes/Logos/logo.png);
+        height: 5em;
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include smarthphone{
+            width: 45%;
         }
     }
    
     .notfound_Caja{
         margin-top: 9%;
         margin-left: 50%;
-        font-size: 16px;
-        width: 600px;
+        width: 37.5em;
         background-color: #a7a7a421;
-        border-radius:2.5rem;
-        box-shadow: 0.1875rem 0.1875rem 0.5rem rgb(70, 67, 53);
+        border-radius:2.5em;
+        box-shadow: 0.1875em 0.1875em 0.5em rgb(70, 67, 53);
         border: rgb(255, 255, 255) solid;
         padding: 1em;
 
@@ -32,6 +38,13 @@
         }
         p{
             font-size: 1.3em;
+        }
+
+        @include smarthphone{
+            margin: 70% auto 0em auto;
+        }
+        @include tablet{
+            margin: 70% auto 0em auto;
         }
     }   
     .notfound_botones{

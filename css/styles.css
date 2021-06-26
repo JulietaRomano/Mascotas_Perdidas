@@ -95,7 +95,7 @@ header {
     @media (max-width: 480px) {
       header .navbar {
         background-color: white; } }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       header .navbar {
         background-color: white; } }
   header .top-nav-collapse {
@@ -108,24 +108,24 @@ header {
     @media (max-width: 480px) {
       header .portadaIndexImg {
         height: 45vh; } }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       header .portadaIndexImg {
         height: 45vh; } }
-  header h2 {
+  header h4 {
     display: inline-block;
     position: relative;
     font-family: 'Rammetto One';
     font-size: 1.875rem;
     color: #108896; }
-    @media (min-width: 480px) and (max-width: 770px) {
-      header h2 {
+    @media (min-width: 480px) and (max-width: 1366px) {
+      header h4 {
         font-size: 1.8em; } }
   header .carouselPortada_texto {
     font-size: 1.1875rem;
     font-weight: 600;
     color: #706666;
     margin: .5em 0 .5em 0; }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       header .carouselPortada_texto {
         font-size: 1.8em; } }
   header .carouselPortada_caja {
@@ -139,7 +139,7 @@ header {
     padding-top: 35px;
     border: white solid;
     z-index: 1; }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       header .carouselPortada_caja {
         font-size: 10px;
         width: 60%; } }
@@ -178,7 +178,7 @@ header {
           height: 22em;
           background-attachment: scroll;
           background-position: center; } }
-      @media (min-width: 480px) and (max-width: 770px) {
+      @media (min-width: 480px) and (max-width: 1366px) {
         header .portada_Container .portada_Caja {
           background-position: center; } }
     header .portada_Container .portada_Imagen-Registro {
@@ -244,7 +244,7 @@ footer {
       @media (max-width: 480px) {
         footer .mapaDeSitio_conteiner .logo-footer {
           display: none; } }
-      @media (min-width: 480px) and (max-width: 770px) {
+      @media (min-width: 480px) and (max-width: 1366px) {
         footer .mapaDeSitio_conteiner .logo-footer {
           display: none; } }
     footer .mapaDeSitio_conteiner h6 {
@@ -347,6 +347,18 @@ a {
     .titulo_celeste {
       font-size: 20px; } }
 
+.Mini-Titulo {
+  margin: .625em 0px .625em 0px;
+  display: inline-block;
+  position: relative;
+  font-family: 'Rammetto One';
+  font-size: 1.3em;
+  color: #466572; }
+  @media (max-width: 480px) {
+    .Mini-Titulo {
+      font-size: 11px;
+      margin: 0em; } }
+
 .portada_Titulo {
   width: 34.375em;
   padding: 1.875em 0.625em 1.5em 0.625em;
@@ -407,7 +419,7 @@ a {
       font-size: 9px;
       height: 11.8em;
       padding-top: 1em; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .PagesSub_Conteiner {
       font-size: 12px; } }
   .PagesSub_Conteiner .PagesSub_texto {
@@ -666,7 +678,7 @@ main {
       @media (max-width: 480px) {
         main .Inicio_Index .Inicio_Index-Container {
           width: 100%; } }
-      @media (min-width: 480px) and (max-width: 770px) {
+      @media (min-width: 480px) and (max-width: 1366px) {
         main .Inicio_Index .Inicio_Index-Container {
           width: 100%; } }
       main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Caja {
@@ -714,32 +726,22 @@ main {
           main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto {
             font-size: 9px;
             padding: 4.5rem 1em 1em 1em; } }
-        main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
-          margin: .625em 0px .625em 0px;
-          display: inline-block;
-          position: relative;
-          font-family: 'Rammetto One';
-          font-size: 1.3em;
-          color: #466572; }
-          @media (max-width: 480px) {
-            main .Inicio_Index .Inicio_Index-Container .Inicio_Index-Texto h3 {
-              font-size: 11px;
-              margin: 0; } }
-  main .wave {
-    height: 8em;
-    overflow: hidden; }
-    main .wave svg {
-      height: 100%;
-      width: 100%; }
-      main .wave svg path {
-        stroke: none;
-        fill: #FFFCF2; }
-      main .wave svg .footer {
-        stroke: none;
-        fill: #F4F4F4; }
-    @media (max-width: 480px) {
-      main .wave {
-        font-size: 7px; } }
+
+.wave {
+  height: 8em;
+  overflow: hidden; }
+  .wave svg {
+    height: 100%;
+    width: 100%; }
+    .wave svg path {
+      stroke: none;
+      fill: #FFFCF2; }
+    .wave svg .footer {
+      stroke: none;
+      fill: #F4F4F4; }
+  @media (max-width: 480px) {
+    .wave {
+      font-size: 7px; } }
 
 .colabora-wave {
   background-color: #FFFCF2; }
@@ -751,7 +753,7 @@ main {
   @media (max-width: 480px) {
     .funcionamiento {
       font-size: 7px; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .funcionamiento {
       font-size: 10px; } }
   .funcionamiento .Funcionamiento_Container {
@@ -846,7 +848,7 @@ main {
     .mascotasExtraviadas_container {
       font-size: 10px;
       padding: 0em 0em 3em 0em; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .mascotasExtraviadas_container {
       font-size: 10px; } }
   .mascotasExtraviadas_container h3 {
@@ -879,7 +881,7 @@ main {
         transform: translateY(-15px); }
       @media (max-width: 480px) {
         .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja {
-          font-size: 11px;
+          font-size: 10px;
           margin: auto; } }
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .mascotasExtraviadas_caja-img {
         border: solid #a1aedb .30em;
@@ -887,6 +889,9 @@ main {
         height: 9.375em;
         border-radius: 100%;
         margin: auto; }
+        @media (max-width: 480px) {
+          .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .mascotasExtraviadas_caja-img {
+            margin-bottom: 1em; } }
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .img1 {
         background-image: url(../Imagenes/Perdidos/perdido2.png);
         background-size: cover; }
@@ -899,13 +904,6 @@ main {
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .img4 {
         background-image: url(../Imagenes/Perdidos/perdido3.png);
         background-size: cover; }
-      .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .mascotasExtraviadas_caja-texto h5 {
-        margin: 1em 0px .625em 0px;
-        display: inline-block;
-        position: relative;
-        font-family: 'Rammetto One';
-        font-size: 1.3em;
-        color: #466572; }
       .mascotasExtraviadas_container .mascotasExtraviadas_cajaConteiner .mascotasExtraviadas_caja .mascotasExtraviadas_caja-texto p {
         font-size: 1em;
         color: #706666; }
@@ -925,7 +923,7 @@ main {
       height: 26vh;
       background-attachment: scroll;
       background-position: center; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .Boletin_Imagen {
       font-size: 9px;
       height: 26vh;
@@ -1021,7 +1019,7 @@ main {
       #SobreNosotros_Container .tarjetas_Container {
         font-size: 5.5px;
         border-radius: 0px; } }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       #SobreNosotros_Container .tarjetas_Container {
         font-size: 12px; } }
     #SobreNosotros_Container .tarjetas_Container .tarjetas_Subtitulo {
@@ -1112,12 +1110,12 @@ main {
                   text-align: center;
                   font-size: 11px;
                   padding: 0; } }
-            #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
+            #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h5 {
               color: #108896;
               font-size: 1.75em;
               font-weight: 900; }
               @media (max-width: 480px) {
-                #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h2 {
+                #SobreNosotros_Container .tarjetas_Container .tarjetas_Flex .tarjeta_Caja .tarjeta .atras h5 {
                   font-size: 15px;
                   padding: 0em;
                   margin-bottom: .2em; } }
@@ -1187,7 +1185,7 @@ main {
     #blog {
       padding: 2em 1em 0em 1em;
       font-size: 10px; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     #blog {
       font-size: 12px; } }
   #blog h3 {
@@ -1211,7 +1209,7 @@ main {
       #blog .card-deck .card {
         max-height: 41em;
         margin-top: 2em; } }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       #blog .card-deck .card {
         max-height: 38em; } }
     #blog .card-deck .card .card-body {
@@ -1246,7 +1244,7 @@ main {
       flex-direction: column;
       margin-top: 3em;
       row-gap: 3em; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .tipsGrid_Container {
       font-size: 13px; } }
   .tipsGrid_Container .tipsCaja_Imagen {
@@ -1417,7 +1415,7 @@ main {
   @media (max-width: 480px) {
     .mascotasPerdidas {
       font-size: 10px; } }
-  @media (min-width: 480px) and (max-width: 770px) {
+  @media (min-width: 480px) and (max-width: 1366px) {
     .mascotasPerdidas {
       font-size: 10px; } }
   .mascotasPerdidas .row {
@@ -1698,7 +1696,7 @@ main {
     @media (max-width: 480px) {
       .microchips_section img {
         width: 25em; } }
-    @media (min-width: 480px) and (max-width: 770px) {
+    @media (min-width: 480px) and (max-width: 1366px) {
       .microchips_section img {
         width: 30em; } }
 
@@ -1706,22 +1704,29 @@ main {
   background-image: url(../Imagenes/notfound.jpeg);
   width: 100vw;
   height: 100vh;
-  background-size: cover; }
+  background-size: cover;
+  padding-top: 2em; }
+  @media (max-width: 480px) {
+    .notfound {
+      font-size: 9px;
+      background-position-x: -12em; } }
   .notfound .notfound_logo {
-    width: 65%;
-    margin-left: auto; }
-    .notfound .notfound_logo img {
-      max-width: 50%;
-      margin-top: 2%;
-      margin-left: 35%; }
+    width: 35%;
+    margin-left: auto;
+    background-image: url(../Imagenes/Logos/logo.png);
+    height: 5em;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    @media (max-width: 480px) {
+      .notfound .notfound_logo {
+        width: 45%; } }
   .notfound .notfound_Caja {
     margin-top: 9%;
     margin-left: 50%;
-    font-size: 16px;
-    width: 600px;
+    width: 37.5em;
     background-color: #a7a7a421;
-    border-radius: 2.5rem;
-    box-shadow: 0.1875rem 0.1875rem 0.5rem #464335;
+    border-radius: 2.5em;
+    box-shadow: 0.1875em 0.1875em 0.5em #464335;
     border: white solid;
     padding: 1em; }
     .notfound .notfound_Caja h1 {
@@ -1732,6 +1737,12 @@ main {
       color: #108896; }
     .notfound .notfound_Caja p {
       font-size: 1.3em; }
+    @media (max-width: 480px) {
+      .notfound .notfound_Caja {
+        margin: 70% auto 0em auto; } }
+    @media (min-width: 480px) and (max-width: 1366px) {
+      .notfound .notfound_Caja {
+        margin: 70% auto 0em auto; } }
   .notfound .notfound_botones {
     display: flex;
     justify-content: space-evenly;
